@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Home"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+
+				<div class="main-title">
+					<div class="main-title__container">
+						<div class="main-title__title">
+							<h1>Welcome Home</h1>
+						</div>
+					</div>
+				</div>
+
+				<!-- SECTION CONTENT -->
+				<section class="content">
+					<div class="content__container">
+						<div class="content__blocks">
+
+							<div class="content__col content__col--wide">
+								<div class="content-block content-block-1">
+									<div class="top-line">
+										<div class="top-line__title">Outstanding Invoices</div>
+										<a href="" class="button-create-invoice">
+											<img src="@img/icon-plus.svg" alt="">
+											<span>Create Invoice</span>
+										</a>
+									</div>
+									<div class="content-block-1__row">
+										<div class="content-block-1__col content-block-1__col--left">
+											<img src="@img/circle.jpg" alt="">
+										</div>
+										<div class="content-block-1__col content-block-1__col--right">
+											<div class="statistic">
+												<div class="statistic__row">
+													<div class="statistic__col">
+														<div class="item-1__color"></div>
+														<div class="item-1__text">
+															1 - 30 days overdue
+														</div>
+													</div>
+													<div class="statistic__col statistic__col--right">
+														<div class="item-1__result">
+															R 700.00
+														</div>
+													</div>
+												</div>
+
+												<div class="statistic__row">
+													<div class="statistic__col">
+														<div class="item-2__color"></div>
+														<div class="item-2__text">
+															31 - 60 days overdue
+														</div>
+													</div>
+													<div class="statistic__col statistic__col--right">
+														<div class="item-2__result">
+															R 600.00
+														</div>
+													</div>
+												</div>
+
+												<div class="statistic__row">
+													<div class="statistic__col">
+														<div class="item-3__color"></div>
+														<div class="item-3__text">
+															61 - 90 days overdue
+														</div>
+													</div>
+													<div class="statistic__col statistic__col--right">
+														<div class="item-3__result">
+															R 900.00
+														</div>
+													</div>
+												</div>
+
+												<div class="statistic__row">
+													<div class="statistic__col">
+														<div class="item-4__color">
+															
+														</div>
+														<div class="item-4__text">
+															90 days + overdue
+														</div>
+													</div>
+													<div class="statistic__col statistic__col--right">
+														<div class="item-4__result">
+															R 1,600.00
+														</div>
+													</div>
+												</div>
+
+												<div class="statistic__row">
+													<div class="statistic__col">
+														<div class="total">
+															Total
+														</div>
+													</div>
+													<div class="statistic__col statistic__col--right">
+														<div class="total">
+															R 3,800.00
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="content-block">
+									Широкий нижний
+								</div>
+							</div>
+							<div class="content__col content__col--narrow">
+								<div class="content-block content-block-2">
+									<div class="content-block-2__title">
+										Monthly Billing Target
+									</div>
+									<div class="content-block-2__subtitle">
+										R 1,200.00
+									</div>
+									<div class="content-block-2__diagram">
+										<img src="@img/circle-half.jpg" alt="">
+									</div>
+									<div class="content-block-2__bottom-row">
+										<div class="content-block-2__col">
+											<span class="set-target">Set target</span>
+										</div>
+										<div class="content-block-2__col content-block-2__col--right">
+											<select name="form[]" data-class-modif="form">
+												<option value="1" selected>This Month</option>
+												<option value="2">Last month</option>
+												<option value="3">2 months ago</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="content-block content-block-4">
+									<div class="content-block-4__title">
+										Top 5 Clients
+									</div>
+
+									<div class="five-clients">
+										<div class="five-clients__client five-clients__client--1">
+											<span class="client-circle">W</span>
+											<span class="client-name">Wade Diyan</span>
+										</div>
+										<div class="five-clients__client five-clients__client--2">
+											<span class="client-circle">B</span>
+											<span class="client-name">Brookiyn</span>
+										</div>
+										<div class="five-clients__client five-clients__client--3">
+											<span class="client-circle">G</span>
+											<span class="client-name">Guy</span>
+										</div>
+										<div class="five-clients__client five-clients__client--4">
+											<span class="client-circle">J</span>
+											<span class="client-name">Jacob</span>
+										</div>
+										<div class="five-clients__client five-clients__client--5">
+											<span class="client-circle">D</span>
+											<span class="client-name">Darlene</span>
+										</div>
+									</div>
+
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>This Year</option>
+										<option value="2">Last Year</option>
+										<option value="3">2 years ago</option>
+										<option value="4">3 years ago</option>
+									</select>
+									
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<!-- End of SECTION CONTENT -->
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

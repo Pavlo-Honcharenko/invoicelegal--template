@@ -1,0 +1,269 @@
+//========================================================HOME===============================================
+
+.content__blocks {
+	display: flex;
+	gap: 30px;
+	width: 100%;
+}
+
+.content {
+	display: flex;
+	gap: 30px;
+		// .content__col
+		&__col {
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			// .content__col--wide
+			&--wide {
+				flex: 1 1 100%;
+			}
+			// .content__col--narrow
+			&--narrow {
+				flex: 0 0 380px;
+			}
+		}
+}
+
+.content-block {
+	padding: 40px 40px 30px;
+	background-color: #fff;
+}
+
+.top-line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.top-line__title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 100%;
+	color:#485D6B;
+}
+.button-create-invoice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #7715CD;
+	gap: 8px;
+	border-radius: 4px;
+	padding: 18px 25px;
+
+	img {
+		display: block;
+		width: 24px;
+		height: 24px;
+	}
+
+	span {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 171%;
+		color: #fff;
+	}
+}
+
+.content-block-1 {
+
+	// .content-block-1__row
+		&__row {
+			display: flex;
+			gap: 30px;
+		}
+
+		// .content-block-1__col
+		&__col {
+			// .content-block-1__col--left
+			&--left {
+				flex: 0 1 33%;
+				img {
+					width: 100%;
+				}
+			}
+			// .content-block-1__col--right
+			&--right {
+				flex: 0 1 66%;
+			}
+		}
+}
+
+.statistic {
+	margin-top: 50px;
+		// .statistic__row
+		&__row {
+			display: flex;
+			gap: 20px;
+			&:not(:last-child) {
+				margin-bottom: 24px;
+			}
+		}
+		// .statistic__col
+		&__col {
+			flex: 0 1 50%;
+			display: flex;
+			align-items: center;
+			gap: 18px;
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 141%;
+
+			// .statistic__col--right
+			&--right {
+				justify-content: flex-end;
+			}
+		}
+}
+
+.item-1__color, .item-2__color, .item-3__color, .item-4__color {
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+}
+
+.item-1__color {
+	background: #15a1cd;
+}
+.item-2__color {
+	background: #156acd;
+}
+.item-3__color {
+	background: #15cdac;
+}
+.item-4__color {
+	background-color: #7715CD;
+}
+
+.total {
+	padding-top: 6px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 120%;
+}
+
+.content-block-2 {
+		// .content-block-2__title
+		&__title {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 100%;
+			text-align: center;
+			margin-bottom: 30px;
+			color: #485D6B;
+		}
+		// .content-block-2__subtitle
+		&__subtitle {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 100%;
+			text-align: center;
+			margin-bottom: 30px;
+			color: #485D6B;
+		}
+		// .content-block-2__bottom-row
+		&__bottom-row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			font-weight: 500 !important;
+			font-size: 17px !important;
+			line-height: 141%;
+			color: #485D6B !important;
+
+			
+		}
+		// .content-block-2__col
+		&__col {
+			flex: 0 1 50%;
+		}
+}
+.content-block-2__col--right {
+	display: flex;
+	justify-content: flex-end;
+}
+.set-target {
+	    display: block;
+    padding: 0 0 5px;
+}
+
+
+
+.content-block-4 {
+		// .content-block-4__title
+		&__title {
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 100%;
+			text-align: center;
+			margin-bottom: 30px;
+			color: #485D6B;
+			padding-bottom: 30px;
+			border-bottom: 1px solid #F7F7F7;
+		}
+}
+.five-clients {
+		// .five-clients__client
+		&__client {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+
+			&:not(:last-child) {
+				margin-bottom: 60px;
+			}
+			// .five-clients__client--1
+			&--1 {
+				.client-circle {
+					background-color: #F8D3E0;
+					color: #c36281;
+				}
+			}
+			// .five-clients__client--2
+			&--2 {
+				.client-circle {
+					background-color: #D3D7F8;
+					color: #6266c3;
+				}
+			}
+			// .five-clients__client--3
+			&--3 {
+				.client-circle {
+					background-color: #D3F1F8;
+					color: #62a0c3;
+				}
+			}
+			// .five-clients__client--4
+			&--4 {
+				.client-circle {
+					background-color: #F8E5D3;
+					color: #c37962;
+				}
+			}
+			// .five-clients__client--5
+			&--5 {
+				.client-circle {
+					background-color: #E8D3F8;
+					color: #bb62c3;
+				}
+			}
+		}
+}
+.client-circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	font-weight: 600;
+	font-size: 15px;
+	text-align: center;
+	
+}
+.client-name {
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 160%;
+	color: #757575;
+}
