@@ -1,5 +1,6 @@
 .page {
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .main-title {
@@ -33,6 +34,10 @@
 
 .select_form {
 	position: relative;
+	font-weight: 500 !important;
+	font-size: 17px !important;
+	line-height: 141%;
+	color: #485D6B !important;
 }
 .select__title {
 	display: flex;
@@ -63,10 +68,11 @@
 	width: 100%;
 	background-color: #fff;
 	border-radius: 4px;
+	
 }
 .select__option {
 	white-space: nowrap;
-	padding: 5px 0;
+	padding: 5px 0 8px;
 }
 .select__scroll {
 	width: min-content;
@@ -79,4 +85,29 @@
 	line-height: 141%;
 	color: #485D6B !important;
 	letter-spacing: initial;
+}
+
+.table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+
+	thead {
+		background-color: #F1F2F6;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 160%;
+	}
+	th, td {
+		text-align: left;
+		padding: 14px 14px 14px 7%;
+	}
+	td {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 160%;
+	}
+	tbody tr {
+		border-top: 1px solid #F1F2F6;
+	}
 }

@@ -110,9 +110,77 @@
 										</div>
 									</div>
 								</div>
+
 								<div class="content-block">
-									Широкий нижний
+									<div class="content-block-3">
+										<div class="top-line">
+											<div class="top-line__title">
+												Paid Invoices
+											</div>
+											<div class="top-line__select">
+												<select name="months-paid-invoices" data-class-modif="form">
+													<option value="1" selected>Last Month</option>
+													<option value="2">This Month</option>
+													<option value="3">Last 3 months</option>
+													<option value="4">Last 6 months</option>
+													<option value="4">Custom Range</option>
+												</select>
+											</div>
+											<div class="top-line__amount">
+												R 2,900.00
+											</div>
+										</div>
+
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Invoice</th>
+													<th>Client</th>
+													<th>Invoice Date</th>
+													<th>Amount</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>vvm1</td>
+													<td>Wade</td>
+													<td>15.02.2023</td>
+													<td>R 1,600.00</td>
+												</tr>
+												<tr>
+													<td>vvm2</td>
+													<td>Brooklyn</td>
+													<td>15.02.2023</td>
+													<td>R 200.00</td>
+												</tr>
+												<tr>
+													<td>vvm3</td>
+													<td>Guy</td>
+													<td>15.02.2023</td>
+													<td>R 200.00</td>
+												</tr>
+												<tr>
+													<td>vvm4</td>
+													<td>Jacob</td>
+													<td>15.02.2023</td>
+													<td>R 300.00</td>
+												</tr>
+												<tr>
+													<td>vvm5</td>
+													<td>Darlene</td>
+													<td>15.02.2023</td>
+													<td>R 600.00</td>
+												</tr>
+											</tbody>
+										</table>
+										
+										<div class="content-block-3__bottom-row">
+											<a href="" class="view-all">View All</a>
+										</div>
+
+									</div>
 								</div>
+
 							</div>
 							<div class="content__col content__col--narrow">
 								<div class="content-block content-block-2">
@@ -130,7 +198,7 @@
 											<span class="set-target">Set target</span>
 										</div>
 										<div class="content-block-2__col content-block-2__col--right">
-											<select name="form[]" data-class-modif="form">
+											<select name="month-target" data-class-modif="form">
 												<option value="1" selected>This Month</option>
 												<option value="2">Last month</option>
 												<option value="3">2 months ago</option>
@@ -138,6 +206,7 @@
 										</div>
 									</div>
 								</div>
+
 								<div class="content-block content-block-4">
 									<div class="content-block-4__title">
 										Top 5 Clients
@@ -166,12 +235,14 @@
 										</div>
 									</div>
 
-									<select name="form[]" data-class-modif="form">
-										<option value="1" selected>This Year</option>
-										<option value="2">Last Year</option>
-										<option value="3">2 years ago</option>
-										<option value="4">3 years ago</option>
-									</select>
+									<div class="content-block-4__bottom-row">
+										<select name="year-5-clients" data-class-modif="form">
+											<option value="1" selected>This Year</option>
+											<option value="2">Last Year</option>
+											<option value="3">2 years ago</option>
+											<option value="4">3 years ago</option>
+										</select>
+									</div>
 									
 								</div>
 							</div>
