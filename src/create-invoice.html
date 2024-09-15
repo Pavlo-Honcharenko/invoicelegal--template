@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Create Invoice (Invoice Page 1.2, Invoice Page 2.1)"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+
+				<div class="main-title">
+					<div class="main-title__container">
+						<div class="main-title__title">
+							<h1>Welcome Home</h1>
+						</div>
+					</div>
+				</div>
+
+				<!-- SECTION CONTENT -->
+				<section class="content">
+					<div class="content__container">
+						<div class="content__blocks">
+
+							<div class="content__col content__col--wide">
+
+								<!-- content-block -->
+								<div class="content-block">
+									<div class="top-line">
+										<div class="top-line__title">INVOICE</div>
+										<img src="@img/logo-company.svg" alt="company">
+									</div>
+
+									<div class="form-row">
+										<div class="form-row__col">
+											<div class="form-row__label">From :</div>
+											<textarea name="from" id="from" cols="30" rows="10" placeholder="Enter Your Details"></textarea>
+										</div>
+										<div class="form-row__col">
+											<div class="form-row__label">To :</div>
+											<textarea name="to" id="from" cols="30" rows="10" placeholder="Enter Your Details"></textarea>
+										</div>
+									</div>
+								</div>
+								<!-- end of content-block -->
+
+							</div>
+
+
+							<div class="content__col content__col--narrow">
+
+								<!-- content-block -->
+								<div class="content-block">
+									<div class="choice-of-currency">
+										<div class="choice-of-currency__label">Currency</div>
+										<div class="choice-of-currency__select">
+											<select name="select-currency" data-class-modif="form">
+												<option value="ZAR" selected>ZAR</option>
+												<option value="Euro">Euro</option>
+												<option value="Dollar">Dollar</option>
+											</select>
+										</div>
+									</div>
+									<div class="choice-of-colour">
+										<div class="choice-of-colour__label">Colour</div>
+										<div class="choice-of-colour__select">
+											<span>Select</span>
+											<img src="@img/icon-colour.svg" alt="colour">
+										</div>
+									</div>
+								</div>
+								<!-- end of content-block -->
+
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<!-- End of SECTION CONTENT -->
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -22,6 +22,8 @@
 						<div class="content__blocks">
 
 							<div class="content__col content__col--wide">
+
+								<!-- content-block-1 -->
 								<div class="content-block content-block-1">
 									<div class="top-line">
 										<div class="top-line__title">Outstanding Invoices</div>
@@ -32,10 +34,18 @@
 									</div>
 									<div class="content-block-1__row">
 										<div class="content-block-1__col content-block-1__col--left">
-											<img src="@img/circle.jpg" alt="">
+
+											<div id="diagram1" class="diagram1">
+												<div class="diagram1__center-area">
+													<div class="diagram1__number">700</div>
+													<div class="diagram1__text">Invoices</div>
+												</div>
+											</div>										
+
 										</div>
 										<div class="content-block-1__col content-block-1__col--right">
 											<div class="statistic">
+
 												<div class="statistic__row">
 													<div class="statistic__col">
 														<div class="item-1__color"></div>
@@ -45,7 +55,7 @@
 													</div>
 													<div class="statistic__col statistic__col--right">
 														<div class="item-1__result">
-															R 700.00
+															R <span class="diagram1-value">700.00</span>
 														</div>
 													</div>
 												</div>
@@ -59,7 +69,7 @@
 													</div>
 													<div class="statistic__col statistic__col--right">
 														<div class="item-2__result">
-															R 600.00
+															R <span class="diagram1-value">600.00</span>
 														</div>
 													</div>
 												</div>
@@ -73,7 +83,7 @@
 													</div>
 													<div class="statistic__col statistic__col--right">
 														<div class="item-3__result">
-															R 900.00
+															R <span class="diagram1-value">900.00</span>
 														</div>
 													</div>
 												</div>
@@ -89,7 +99,7 @@
 													</div>
 													<div class="statistic__col statistic__col--right">
 														<div class="item-4__result">
-															R 1,600.00
+															R <span class="diagram1-value">1,600.00</span>
 														</div>
 													</div>
 												</div>
@@ -111,8 +121,9 @@
 									</div>
 								</div>
 
-								<div class="content-block">
-									<div class="content-block-3">
+
+								<!-- content-block-3 -->
+								<div class="content-block content-block-3" data-da=".content__col--narrow,993,0">
 										<div class="top-line">
 											<div class="top-line__title">
 												Paid Invoices
@@ -131,7 +142,7 @@
 											</div>
 										</div>
 
-										<table class="table">
+										<table class="table table-pc">
 											<thead>
 												<tr>
 													<th>Invoice</th>
@@ -173,17 +184,76 @@
 												</tr>
 											</tbody>
 										</table>
+
+										<table class="table table-mobile">
+											<tbody>
+												<tr>
+													<td>
+														<div class="table__client">Wade</div>
+														<div class="table__invoice">vvm1</div>
+														<div class="table__amount">R 1,600.00</div>
+													</td>
+													<td class="table__date">
+														15.02.2023
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="table__client">Brooklyn</div>
+														<div class="table__invoice">vvm2</div>
+														<div class="table__amount">R 200.00</div>
+													</td>
+													<td class="table__date">
+														15.02.2023
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="table__client">Guy</div>
+														<div class="table__invoice">vvm3</div>
+														<div class="table__amount">R 200.00</div>
+													</td>
+													<td class="table__date">
+														15.02.2023
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="table__client">Jacob</div>
+														<div class="table__invoice">vvm4</div>
+														<div class="table__amount">R 300.00</div>
+													</td>
+													<td class="table__date">
+														15.02.2023
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<div class="table__client">Darlene</div>
+														<div class="table__invoice">vvm5</div>
+														<div class="table__amount">R 600.00</div>
+													</td>
+													<td class="table__date">
+														15.02.2023
+													</td>
+												</tr>
+											</tbody>
+										</table>
 										
 										<div class="content-block-3__bottom-row">
 											<a href="" class="view-all">View All</a>
 										</div>
 
 									</div>
-								</div>
+
 
 							</div>
+
+
 							<div class="content__col content__col--narrow">
-								<div class="content-block content-block-2">
+
+								<!-- content-block-2 -->
+								<div class="content-block content-block-2" data-da=".content__col--wide,993">
 									<div class="content-block-2__title">
 										Monthly Billing Target
 									</div>
@@ -191,7 +261,16 @@
 										R 1,200.00
 									</div>
 									<div class="content-block-2__diagram">
-										<img src="@img/circle-half.jpg" alt="">
+										
+										<div class="diagram2-wrapper">
+											<div id="diagram2" class="diagram2">
+												<div class="diagram2__center-area">
+												</div>
+											</div>
+										</div>
+
+										<div class="diagram2__number">70%</div>
+
 									</div>
 									<div class="content-block-2__bottom-row">
 										<div class="content-block-2__col">
@@ -207,6 +286,7 @@
 									</div>
 								</div>
 
+								<!-- content-block-4 -->
 								<div class="content-block content-block-4">
 									<div class="content-block-4__title">
 										Top 5 Clients
