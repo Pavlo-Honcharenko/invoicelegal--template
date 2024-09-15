@@ -32,12 +32,28 @@
 }
 
 
+//=============================================== ELEMENTS OF FORM ========================================================
+
 .select_form {
 	position: relative;
 	font-weight: 500 !important;
 	font-size: 17px !important;
 	line-height: 141%;
 	color: #485D6B !important;
+}
+.select-mini {
+	.select_form {
+		border: 1px solid #E3E5ED;
+		border-radius: 4px;
+		padding: 4px 12px 1px;
+	}
+	.select__title {
+		width: calc(100% - 15px);
+	}
+	.select__options {
+		margin-left: -12px;
+		padding: 10px 15px 5px 22px;
+	}
 }
 .select__title {
 	display: flex;
@@ -98,66 +114,203 @@
 	}
 }
 
-.table {
-	width: 100%;
-	border-spacing: 0;
-	border-collapse: collapse;
+.form-row {
+	display: flex;
+	gap: 30px;
 
-	thead {
-		background-color: #F1F2F6;
-		font-weight: 600;
-		font-size: 15px;
-		line-height: 160%;
+	@media (max-width:$mobile){
+		flex-wrap: wrap; 
 	}
-
-	th, td {
-		text-align: left;
-		padding: 14px 14px 14px 7%;
+	// .form-row__col
+	&__col {
+		flex: 0 1 50%;
 
 		@media (max-width:$mobile){
-			padding: 12px 8px 12px 4%;
+			 flex: 1 1 100%; 
 		}
 	}
-	td {
-		font-weight: 500;
-		font-size: 15px;
-		line-height: 160%;
-	}
-	tbody tr {
-		border-top: 1px solid #F1F2F6;
-	}
+}
+.form-row__label {
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 141%;
+	margin-bottom: 10px;
+}
+textarea {
+	border: 1px solid #E3E5ED;
+	border-radius: 4px;
+	padding: 13px 20px;
+	font-weight: 500;
+}
+input {
+	border: 1px solid #E3E5ED;
+	border-radius: 4px;
+	padding: 13px 20px;
+	font-weight: 500;
 }
 
-.table-pc {
-	display: table;
-	@media (max-width:$mobile){
-		display: none; 
-	}
+
+
+
+.color-picker-wrapper {
+	position: relative;
+	display: inline-block;
+	width: 100%;
 }
 
-.table-mobile {
+.color-picker-wrapper input[type="color"] {
+	opacity: 0; 
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.color-placeholder {
+	display: inline-block;
+	border-radius: 4px;
+	width: 100px;
+	height: 23px;
+	font-size: 16px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+.color-picker-wrapper input[type="color"]:focus + .color-placeholder {
+	border-color: #007bff;
+}
+.color-picker-wrapper input[type="color"].selected + .color-placeholder {
+	background-color: transparent;
+	color: transparent;
+	background-image: none;
+}
+#colorPicker {
+	padding: 0;
+}
+.icon-colour {
+	position: absolute;
+	top: -4px;
+	right: 4px;
+	pointer-events: none;
+}
+
+
+
+/* Скрываем стандартный чекбокс */
+.checkbox__input {
 	display: none;
 }
 
-@media (max-width:$mobile){
-	.table-mobile {
-		display: table;
-	}
-	.table-mobile td {
-		font-size: 13px;
-	}
-	.table__client {
-		font-weight: 600;
-	}
-	.table__date {
-		text-align: right !important;
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-end;
-	}
+/* Стили для кастомного чекбокса */
+.checkbox__label {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	border: 1px solid #E3E5ED;
+	border-radius: 4px;
+	cursor: pointer;
+	position: relative;
+}
+
+/* При выборе чекбокса - чёрный фон */
+.checkbox__input:checked + .checkbox__label {
+	background-color: #485D6B;
+}
+
+/* Стили для галочки (псевдоэлемент для отображения) */
+.checkbox__input:checked + .checkbox__label::after {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 8px;
+	width: 6px;
+	height: 12px;
+	border: solid white;
+	border-width: 0 2px 2px 0;
+	transform: rotate(45deg);
 }
 
 
+
+
+
+
+.blue-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	font-size: 16px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	padding: 15px 40px;
+	background-color: #7715CD;
+	width: fit-content;
+	gap: 8px;
+	cursor: pointer;
+
+	@media (max-width:$mobile){
+		padding: 11px 20px;
+		font-size: 14px; 
+	}
+}
+.blue-button.new-row {
+	font-weight: 600;
+	font-size: 14px;
+	padding: 9px 14px;
+	@media (max-width:$mobile){
+		 width: 100%; 
+	}
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.to-left {
+	margin-left: auto;
+}
+.to-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (max-width:$mobile){
+	.mob-to-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.weight-600 {
+	font-weight: 600 !important;
+}
+.weight-700 {
+	font-weight: 700 !important;
+}
+
+//=======================================================================================================
+
+
+
+.grey-line {
+	width: 100%;
+	height: 1px;
+	background-color: #F7F7F7;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
 
 
 

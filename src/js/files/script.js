@@ -80,3 +80,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Применяем градиент как фон для элемента с id "diagram2"
 	diagramElement.style.background = gradientStyle;
 });
+
+
+
+// COLOUR PICKER:
+const colorPicker = document.getElementById('colorPicker');
+const placeholder = document.querySelector('.color-placeholder');
+
+colorPicker.addEventListener('input', function () {
+	// Показываем выбранный цвет в элементе placeholder
+	placeholder.style.backgroundColor = colorPicker.value;
+	colorPicker.classList.add('selected'); // Добавляем класс для скрытия текста
+});

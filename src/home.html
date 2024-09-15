@@ -27,7 +27,7 @@
 								<div class="content-block content-block-1">
 									<div class="top-line">
 										<div class="top-line__title">Outstanding Invoices</div>
-										<a href="" class="button-create-invoice">
+										<a href="create-invoice.html" class="button-create-invoice">
 											<img src="@img/icon-plus.svg" alt="">
 											<span>Create Invoice</span>
 										</a>
@@ -274,7 +274,7 @@
 									</div>
 									<div class="content-block-2__bottom-row">
 										<div class="content-block-2__col">
-											<span class="set-target">Set target</span>
+											<span class="set-target" data-popup="#newtarget">Set target</span>
 										</div>
 										<div class="content-block-2__col content-block-2__col--right">
 											<select name="month-target" data-class-modif="form">
@@ -334,7 +334,8 @@
 
 			</main>
 			@@include('html/_footer.htm',{})
-		</div>
+		</div><!-- main-wrapper -->
+		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>
 </html>

@@ -156,19 +156,32 @@
 		left: -10px;
 		background-color: #29353D;
 		padding: 10px;
+		height: 20px;
 		overflow: hidden;
 
 		.menu-item {
 			justify-content: flex-start;
 			align-items: flex-start;
 			text-align: left;
-			margin-top: -10vh;
+			margin-top: -20vh;
 			opacity: 0;
-			transition: all 0.4s linear 0s; 
+			transition: all 0.3s linear 0s; 
+
+			a {
+				opacity: 0;
+				transition: opacity 0.1s linear 0s; 
+			}
 		}
+	}
+	.menu-item._open .more-menu-items {
+		height: initial;
 	}
 	.menu-item._open .more-menu-items .menu-item {
 		opacity: 1;
-		margin-top: 0;
+		margin-top: 0vh;
+
+		a {
+			opacity: 1;
+		}
 	}
 }

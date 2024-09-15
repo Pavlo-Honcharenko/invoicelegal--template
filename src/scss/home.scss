@@ -272,15 +272,19 @@
 	justify-content: flex-end;
 }
 .set-target {
-	    display: block;
-    padding: 0 0 5px;
-	 font-size: 17px;
-	 @media (max-width:$mobile){
-		 font-size: 16px; 
-	 }
-	 @media (max-width:$mobileSmall){
-		 font-size: 15px; 
-	 }
+	display: block;
+	padding: 0 0 5px;
+	font-size: 18px;
+	font-weight: 500;
+	@media (max-width:$tablet){
+		font-size: 17px;
+	}
+	@media (max-width:$mobile){
+		font-size: 16px; 
+	}
+	@media (max-width:$mobileSmall){
+		font-size: 15px; 
+	}
 }
 
 
@@ -524,3 +528,68 @@
 	overflow: hidden;
 	margin: 0 auto;
 }
+
+
+
+
+//=============================================TABLE==========================================================
+.table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+
+	thead {
+		background-color: #F1F2F6;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 160%;
+	}
+
+	th, td {
+		text-align: left;
+		padding: 14px 14px 14px 7%;
+
+		@media (max-width:$mobile){
+			padding: 12px 8px 12px 4%;
+		}
+	}
+	td {
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 160%;
+	}
+	tbody tr {
+		border-top: 1px solid #F1F2F6;
+	}
+}
+
+.table-pc {
+	display: table;
+	@media (max-width:$mobile){
+		display: none; 
+	}
+}
+
+.table-mobile {
+	display: none;
+}
+
+@media (max-width:$mobile){
+	.table-mobile {
+		display: table;
+	}
+	.table-mobile td {
+		font-size: 13px;
+	}
+	.table__client {
+		font-weight: 600;
+	}
+	.table__date {
+		text-align: right !important;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+}
+//=======================================================================================================
+

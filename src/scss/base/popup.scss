@@ -50,12 +50,38 @@ body::after {
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
-	padding: 20px;
+	background-color: #fff;
+	padding: 0;
 	width: 100%;
 	max-width: 900px;
-	border-radius: 20px;
+
 	.lock & {
 		visibility: visible;
+	}
+}
+.popup__header {
+	background-color: #485D6B;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 23px 30px;
+}
+.popup__title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 120%;
+	color: #fff;
+}
+.popup__body {
+	background-color: #fff;
+	padding: 23px 30px;
+}
+#newtarget {
+	.popup__content {
+		max-width: 460px;
+
+		@media (max-width:$mobile){
+			max-width: 354px;
+		}
 	}
 }
