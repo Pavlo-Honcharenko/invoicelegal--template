@@ -27,58 +27,66 @@ document.addEventListener("DOMContentLoaded", function () {
 	const values = document.querySelectorAll('.diagram1-value');
 	const diagramElement = document.getElementById('diagram1');
 
-	// We convert the obtained values ​​into an array of numbers
-	const amounts = Array.from(values).map(el => {
-		// We remove the commas and convert the line to the number
-		return parseFloat(el.textContent.replace(/,/g, ''));
-	});
+	if (values.length > 0 && diagramElement) {
 
-	// We calculate the total amount of all values
-	const total = amounts.reduce((sum, current) => sum + current, 0);
+		// We convert the obtained values ​​into an array of numbers
+		const amounts = Array.from(values).map(el => {
+			// We remove the commas and convert the line to the number
+			return parseFloat(el.textContent.replace(/,/g, ''));
+		});
 
-	// We calculate interest for each value
-	const percentages = amounts.map(amount => (amount / total) * 100);
+		// We calculate the total amount of all values
+		const total = amounts.reduce((sum, current) => sum + current, 0);
 
-	// We form stops for the gradient
-	let gradientStops = [];
-	let accumulatedPercentage = 0;
-	const colors = ['#15a1cd', '#156acd', '#15cdac', '#7715CD']; // Certain colors for the gradient
+		// We calculate interest for each value
+		const percentages = amounts.map(amount => (amount / total) * 100);
 
-	percentages.forEach((percentage, index) => {
-		const start = accumulatedPercentage;
-		const end = accumulatedPercentage + percentage;
-		gradientStops.push(`${colors[index]} ${start.toFixed(2)}% ${end.toFixed(2)}%`);
-		accumulatedPercentage += percentage;
-	});
+		// We form stops for the gradient
+		let gradientStops = [];
+		let accumulatedPercentage = 0;
+		const colors = ['#15a1cd', '#156acd', '#15cdac', '#7715CD']; // Certain colors for the gradient
 
-	// We use the Inline-style of Background with the gradient to the element with id "diagram1"
-	const gradientStyle = `conic-gradient(${gradientStops.join(', ')})`;
-	diagramElement.style.background = gradientStyle;
+		percentages.forEach((percentage, index) => {
+			const start = accumulatedPercentage;
+			const end = accumulatedPercentage + percentage;
+			gradientStops.push(`${colors[index]} ${start.toFixed(2)}% ${end.toFixed(2)}%`);
+			accumulatedPercentage += percentage;
+		});
+
+		// We use the Inline-style of Background with the gradient to the element with id "diagram1"
+		const gradientStyle = `conic-gradient(${gradientStops.join(', ')})`;
+		diagramElement.style.background = gradientStyle;
+	}
+
 });
 
 
 // Creating a circular diagram number 2:
 document.addEventListener("DOMContentLoaded", function () {
-	// Получаем элемент с числом
+	// We get an element with a number
 	const percentageElement = document.querySelector('.diagram2__number');
 	const diagramElement = document.getElementById('diagram2');
 
-	// Преобразуем текст в процент (убираем символ % и преобразуем в число)
-	const percentage = parseFloat(percentageElement.textContent.replace('%', ''));
+	if (percentageElement && diagramElement) {
+		// We convert the text as a percentage (we remove the symbol % and transform into the number)
+		const percentage = parseFloat(percentageElement.textContent.replace('%', ''));
 
-	// Проверяем, чтобы значение процента было в пределах от 0 до 100
-	const validPercentage = Math.min(Math.max(percentage, 0), 100);
+		// We check that the interest value is in the range from 0 to 100
+		const validPercentage = Math.min(Math.max(percentage, 0), 100);
 
-	// Вычисляем начальную и конечную точки для синего цвета
-	const startPoint = 0;
-	const endPoint = validPercentage / 2;
+		// Вычисляем начальную и конечную точки для синего цвета
+		const startPoint = 0;
+		const endPoint = validPercentage / 2;
 
 
-	// Создаем градиент: синий цвет от startPoint до endPoint, голубой на оставшуюся часть
-	const gradientStyle = `conic-gradient(#0000FF ${startPoint}% ${endPoint}%, #ADD8E6 ${endPoint}% 100%)`;
+		// Создаем градиент: синий цвет от startPoint до endPoint, голубой на оставшуюся часть
+		const gradientStyle = `conic-gradient(#0000FF ${startPoint}% ${endPoint}%, #ADD8E6 ${endPoint}% 100%)`;
 
-	// Применяем градиент как фон для элемента с id "diagram2"
-	diagramElement.style.background = gradientStyle;
+		// Применяем градиент как фон для элемента с id "diagram2"
+		diagramElement.style.background = gradientStyle;
+	}
+
+
 });
 
 
@@ -87,8 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
 const colorPicker = document.getElementById('colorPicker');
 const placeholder = document.querySelector('.color-placeholder');
 
-colorPicker.addEventListener('input', function () {
-	// Показываем выбранный цвет в элементе placeholder
-	placeholder.style.backgroundColor = colorPicker.value;
-	colorPicker.classList.add('selected'); // Добавляем класс для скрытия текста
-});
+if (colorPicker) {
+	colorPicker.addEventListener('input', function () {
+		// Показываем выбранный цвет в элементе placeholder
+		placeholder.style.backgroundColor = colorPicker.value;
+		colorPicker.classList.add('selected'); // Добавляем класс для скрытия текста
+	});
+}
+
+

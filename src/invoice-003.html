@@ -11,7 +11,12 @@
 				<div class="main-title">
 					<div class="main-title__container">
 						<div class="main-title__title">
-							<h1>Welcome Home</h1>
+							<h1>Invoice 003</h1>
+						</div>
+
+						<div class="actions" data-popup="#all-actions">
+							<span>Actions</span>
+							<img src="@img/icon-actions.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -72,135 +77,96 @@
 
 									<div class="grey-line mb-30"></div>
 
-									<table class="table table-create-invoice table-invoice table-pc">
-										<thead>
-											<tr>
-												<th>Date</th>
-												<th>Description</th>
-												<th>Rate</th>
-												<th>Hrs</th>
-												<th>Total</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													11.05.2014
-												</td>
-												<td>
-													Consulting with client
-												</td>
-												<td class="nowrap">
-													R 200.00
-												</td>
-												<td  class="nowrap">
-													1 : 00
-												</td>
-												<td  class="nowrap">
-													R 200.00
-												</td>
-											</tr>
-
-											<tr>
-												<td>
-													14.05.2014
-												</td>
-												<td>
-													Afterday consult
-												</td>
-												<td class="nowrap">
-													R 20 000.00
-												</td>
-												<td class="nowrap">
-													1 Day
-												</td>
-												<td class="nowrap">
-													R 20 000.00
-												</td>
-											</tr>
-
-											<tr>
-												<td>
-													15.05.2021
-												</td>
-												<td>
-													Reason for not making payment in respect of those invoices was due to the fact that the plaintiff did not perform or render any services 
-												</td>
-												<td class="nowrap">
-													R 250.00
-												</td>
-												<td class="nowrap">
-													2 : 00
-												</td>
-												<td class="nowrap">
-													R 500.00
-												</td>
-											</tr>
-
-											<tr>
-												<td>
-													16.05.2021
-												</td>
-												<td>
-													Petrol
-												</td>
-												<td class="nowrap">
-													R 100.00
-												</td>
-												<td class="nowrap">
-													-
-												</td>
-												<td class="nowrap">
-													R 100.00
-												</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<table class="table table-create-invoice table-mobile">
-										<tbody>
-											<tr>
-												<td>
-													<div class="table__date">
+									<div class="wrapper-scroll">
+										<table class="table table-create-invoice table-invoice">
+											<thead>
+												<tr>
+													<th>Date</th>
+													<th>Description</th>
+													<th>Rate</th>
+													<th>Hrs</th>
+													<th>Total</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
 														11.05.2014
-													</div>
-													<div class="table__description">
-														Consulting
-													</div>
-												</td>
-												<td>
-													<div class="table__amount">
+													</td>
+													<td>
+														Consulting with client
+													</td>
+													<td class="nowrap">
 														R 200.00
-													</div>
-													<div class="table__total">
-														1.0 × R 200.00
-													</div>
-												</td>
-											</tr>
-
-											<tr>
-												<td>
-													<div class="table__date">
-														11.05.2014
-													</div>
-													<div class="table__description">
-														Consulting
-													</div>
-												</td>
-												<td>
-													<div class="table__amount">
+													</td>
+													<td  class="nowrap">
+														1 : 00
+													</td>
+													<td  class="nowrap">
 														R 200.00
-													</div>
-													<div class="table__total">
-														1.0 × R 200.00
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+													</td>
+												</tr>
+
+												<tr>
+													<td>
+														14.05.2014
+													</td>
+													<td>
+														Afterday consult
+													</td>
+													<td class="nowrap">
+														R 20 000.00
+													</td>
+													<td class="nowrap">
+														1 Day
+													</td>
+													<td class="nowrap">
+														R 20 000.00
+													</td>
+												</tr>
+
+												<tr>
+													<td>
+														15.05.2021
+													</td>
+													<td>
+														Reason for not making payment in respect of those invoices was due to the fact that the plaintiff did not perform or render any services 
+													</td>
+													<td class="nowrap">
+														R 250.00
+													</td>
+													<td class="nowrap">
+														2 : 00
+													</td>
+													<td class="nowrap">
+														R 500.00
+													</td>
+												</tr>
+
+												<tr>
+													<td>
+														16.05.2021
+													</td>
+													<td>
+														Petrol
+													</td>
+													<td class="nowrap">
+														R 100.00
+													</td>
+													<td class="nowrap">
+														-
+													</td>
+													<td class="nowrap">
+														R 100.00
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
 
 
-									<div class="summary">
+									<div class="summary mt-30">
 										<div class="summary__content">
 											<div class="summary__row">
 												<div class="summary__col">Sub Total</div>
@@ -278,7 +244,7 @@
 							<div class="content__col content__col--narrow">
 
 								<!-- content-block -->
-								<div class="content-block">
+								<div class="content-block" data-da=".actions-popup__body,768,0">
 									
 									<div class="invoice-menu">
 										<ul>

@@ -11,7 +11,11 @@
 				<div class="main-title">
 					<div class="main-title__container">
 						<div class="main-title__title">
-							<h1>Welcome Home</h1>
+							<h1>Invoice 001</h1>
+						</div>
+						<div class="actions" data-popup="#all-actions">
+							<span>Actions</span>
+							<img src="@img/icon-actions.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -24,165 +28,161 @@
 							<div class="content__col content__col--wide">
 
 								<!-- content-block -->
-								<div class="content-block">
-									<div class="top-line">
-										<div class="top-line__title">INVOICE</div>
-										<img src="@img/logo-company.svg" alt="company">
-									</div>
+								<div class="content-block blue-border">
+									<div class="top-line top-line--invoice">
+										<div class="top-line__col">
+											<p class="name"><strong>Guy Hawkins</strong></p>
+											<p>220 Dey Street</p>
+											<p>Pretoria</p>
+											<p>00081</p>
+											<p>VAT No : 000816</p>
+											<p>guihawkins@gmail.com</p>
+											<p>072 950 2307</p>
+										</div>
+										<div class="top-line__col">
+											<div class="top-line__title">INVOICE</div>
 
-									<div class="form-row">
-										<div class="form-row__col">
-											<div class="form-row__label">From :</div>
-											<textarea name="from" id="from" cols="30" rows="10" placeholder="Enter Your Details"></textarea>
-										</div>
-										<div class="form-row__col">
-											<div class="form-row__label">To :</div>
-											<textarea name="to" id="from" cols="30" rows="10" placeholder="Enter Your Details"></textarea>
-										</div>
-									</div>
-
-									<div class="grey-line mt-30 mb-30"></div>
-
-									<div class="form-row mb-30">
-										<div class="form-row__col">
-											<div class="form-row__label">Invoice Number</div>
-											<input autocomplete="off" type="text" name="invoice-number" data-error="Error" placeholder="" class="input" value="INV001">
-										</div>
-										<div class="form-row__col">
-											<div class="form-row__label">Date</div>
-											<input autocomplete="off" type="date" name="invoice-date" data-error="Error" placeholder="" class="input" value="19.02.2023">
-										</div>
-									</div>
-
-									<div class="form-row mb-30">
-										<div class="form-row__col select-mini">
-											<div class="form-row__label">Invoice Due</div>
-											<select name="invoice-due" data-class-modif="form">
-												<option value="1" selected>Select One</option>
-												<option value="2">One</option>
-												<option value="3">Two</option>
-											</select>
-										</div>
-										<div class="form-row__col">
-											<div class="form-row__label">Rate per Hour</div>
-											<input autocomplete="off" type="text" name="invoice-rate-hour" data-error="Error" placeholder="" class="input" value="">
+											<div class="invoice-info">
+												<div class="invoice-info__row">
+													<div class="invoice-info__col weight-600">Invoice :</div>
+													<div class="invoice-info__col">001</div>
+												</div>
+												<div class="invoice-info__row">
+													<div class="invoice-info__col weight-600">Due date :</div>
+													<div class="invoice-info__col">11.02.2023</div>
+												</div>
+												<div class="invoice-info__row">
+													<div class="invoice-info__col weight-600">Inv date :</div>
+													<div class="invoice-info__col">15.01.2023</div>
+												</div>
+											</div>
 										</div>
 									</div>
 
-									<div class="form-row">
-										<div class="form-row__col">
-											<div class="form-row__label">Rate per Day</div>
-											<input autocomplete="off" type="text" name="invoice-rate-day" data-error="Error" placeholder="" class="input" value="R 50.00">
-										</div>
-										<div class="form-row__col">
-											<div class="form-row__label">Matter/Subject</div>
-											<input autocomplete="off" type="text" name="invoice-matter" data-error="Error" placeholder="" class="input" value="">
+									<div class="invoice-row">
+										<div class="invoice-row__col">
+											<div class="invoice-row__label">To :</div>
+											<p><strong>Harobit Tech</strong></p>
+											<p>ROB Boulevard</p>
+											<p>5th Floor</p>
+											<p>Pretoria</p>
+											<p>South Africa</p>
 										</div>
 									</div>
 
-									<div class="grey-line mt-30 mb-30"></div>
+									<div class="central-text">
+										Re: Guy Hawkins // Code Case No: 661
+									</div>
 
-									<table class="table table-create-invoice table-pc">
-										<thead>
-											<tr>
-												<th>Date</th>
-												<th>Description</th>
-												<th>Time Spent</th>
-												<th>Rate/Amount</th>
-												<th>Total</th>
-												<th>VAT</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>
-													<input autocomplete="off" type="date" name="invoice-date" data-error="Error" class="input" value="">
-												</td>
-												<td>
-													<textarea name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
-												</td>
-												<td>
-													<input autocomplete="off" type="time" name="invoice-time" data-error="Error" class="input" value="">
-												</td>
-												<td>
-													<input autocomplete="off" type="text" name="invoice-amount" data-error="Error" placeholder="0" class="input">
-												</td>
-												<td>
-													<input autocomplete="off" type="text" name="invoice-total" data-error="Error" placeholder="0" class="input">
-												</td>
-												<td>
-													<input data-error="Error" class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
-													<label class="checkbox__label" for="invoice-checkbox"></label>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+									<div class="grey-line mb-30"></div>
 
-									<table class="table table-create-invoice table-mobile">
-										<tbody>
-											<tr>
-												<td>
-													<div class="table__date">
+									<div class="wrapper-scroll">
+										<table class="table table-create-invoice table-invoice">
+											<thead>
+												<tr>
+													<th>Date</th>
+													<th>Description</th>
+													<th>Rate</th>
+													<th>Hrs</th>
+													<th>Total</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
 														11.05.2014
-													</div>
-													<div class="table__description">
-														Consulting
-													</div>
-												</td>
-												<td>
-													<div class="table__amount">
+													</td>
+													<td>
+														Consulting with client
+													</td>
+													<td class="nowrap">
 														R 200.00
-													</div>
-													<div class="table__total">
-														1.0 × R 200.00
-													</div>
-												</td>
-											</tr>
-
-											<tr>
-												<td>
-													<div class="table__date">
-														11.05.2014
-													</div>
-													<div class="table__description">
-														Consulting
-													</div>
-												</td>
-												<td>
-													<div class="table__amount">
+													</td>
+													<td  class="nowrap">
+														1 : 00
+													</td>
+													<td  class="nowrap">
 														R 200.00
-													</div>
-													<div class="table__total">
-														1.0 × R 200.00
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
+													</td>
+												</tr>
 
-									<div class="grey-line mt-30 mb-30"></div>
+												<tr>
+													<td>
+														14.05.2014
+													</td>
+													<td>
+														Afterday consult
+													</td>
+													<td class="nowrap">
+														R 20 000.00
+													</td>
+													<td class="nowrap">
+														1 Day
+													</td>
+													<td class="nowrap">
+														R 20 000.00
+													</td>
+												</tr>
 
-									<div class="blue-button new-row"><img src="@img/icon-plus.svg" alt=""> <span>New Row</span></div>
+												<tr>
+													<td>
+														15.05.2021
+													</td>
+													<td>
+														Reason for not making payment in respect of those invoices was due to the fact that the plaintiff did not perform or render any services 
+													</td>
+													<td class="nowrap">
+														R 250.00
+													</td>
+													<td class="nowrap">
+														2 : 00
+													</td>
+													<td class="nowrap">
+														R 500.00
+													</td>
+												</tr>
 
-									<div class="grey-line mt-30 mb-30"></div>
+												<tr>
+													<td>
+														16.05.2021
+													</td>
+													<td>
+														Petrol
+													</td>
+													<td class="nowrap">
+														R 100.00
+													</td>
+													<td class="nowrap">
+														-
+													</td>
+													<td class="nowrap">
+														R 100.00
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
 
-									<div class="summary">
+
+									<div class="summary mt-30">
 										<div class="summary__content">
 											<div class="summary__row">
 												<div class="summary__col">Sub Total</div>
-												<div class="summary__col summary__col--right">R 0.00</div>
+												<div class="summary__col summary__col--right">R 20 800.00</div>
 											</div>
 											<div class="summary__row">
 												<div class="summary__col">VAT 0%</div>
 												<div class="summary__col summary__col--right">R 0.00</div>
 											</div>
-											<div class="summary__row">
+											<div class="grey-line"></div>
+											<div class="summary__row weight-700">
 												<div class="summary__col">Total</div>
-												<div class="summary__col summary__col--right">R 0.00</div>
+												<div class="summary__col summary__col--right">R 20 800.00</div>
 											</div>
-											<div class="summary__row">
+											<div class="summary__row weight-700 bg-gray">
 												<div class="summary__col">Balance Due</div>
-												<div class="summary__col summary__col--right">R 0.00</div>
+												<div class="summary__col summary__col--right">R 20 800.00</div>
 											</div>
 										</div>
 									</div>
@@ -192,14 +192,29 @@
 									<div class="form-row form-row-details">
 										<div class="form-row__col">
 											<div class="form-row__label">Banking Details</div>
-											<input autocomplete="off" type="text" name="banking-details" data-error="Error" placeholder="Enter Banking Details" class="input">
-										</div>
-										<div class="form-row__col">
-											<div class="add-note">
-												<img src="@img/icon-plus-blue.svg" alt="">
-												<span>Add Note</span>
+											<div class="details">
+												<div class="details__row">
+													<div class="details__col weight-600">Account Name :</div>
+													<div class="details__col">Guy Hawkins</div>
+												</div>
+												<div class="details__row">
+													<div class="details__col weight-600">Bank Name :</div>
+													<div class="details__col">Citybank</div>
+												</div>
+												<div class="details__row">
+													<div class="details__col weight-600">Account No :</div>
+													<div class="details__col">0031 618-18</div>
+												</div>
+												<div class="details__row">
+													<div class="details__col weight-600">Reference :</div>
+													<div class="details__col">001</div>
+												</div>
+												<div class="details__row">
+													<a href="">Edit Details</a>
+												</div>
 											</div>
 										</div>
+										
 									</div>
 
 									<div class="created">
@@ -209,43 +224,47 @@
 								</div>
 								<!-- end of content-block -->
 
-								<div class="create-invoice-buttons">
-									<div class="blue-button grey-button">
-										Save as Draft
-									</div>
-									<div class="blue-button">
-										Done
-									</div>
-								</div>
-
 							</div>
 
 
 							<div class="content__col content__col--narrow">
 
 								<!-- content-block -->
-								<div class="content-block">
-									<div class="choice-of-currency">
-										<div class="choice-of-currency__label">Currency</div>
-										<div class="choice-of-currency__select">
-											<select name="select-currency" data-class-modif="form">
-												<option value="ZAR" selected>ZAR</option>
-												<option value="Euro">Euro</option>
-												<option value="Dollar">Dollar</option>
-											</select>
-										</div>
+								<div class="content-block" data-da=".actions-popup__body,768,0">
+									
+									<div class="invoice-menu">
+										<ul>
+											<li>
+												<img src="@img/icon-edit.svg" alt="">
+												<span>Edit Invoice</span>
+											</li>
+											<li>
+												<img src="@img/icon-download.svg" alt="">
+												<span>Download Invoice</span>
+											</li>
+											<li>
+												<img src="@img/icon-preview.svg" alt="">
+												<span>PDF Preview</span>
+											</li>
+											<li>
+												<img src="@img/icon-send-invoice.svg" alt="">
+												<span>Send Invoice</span>
+											</li>
+											<li>
+												<img src="@img/icon-record-payment.svg" alt="">
+												<span>Record Payment</span>
+											</li>
+											<li>
+												<img src="@img/icon-activity.svg" alt="">
+												<span>Activity</span>
+											</li>
+											<li>
+												<img src="@img/icon-delete-invoice.svg" alt="">
+												<span>Delete Invoice</span>
+											</li>
+										</ul>
 									</div>
-									<div class="choice-of-colour">
-										<div class="choice-of-colour__label">Colour</div>
-										
-										<div class="choice-of-colour__select">
-											<div class="color-picker-wrapper">
-												<input type="color" id="colorPicker" name="colour">
-												<div class="color-placeholder">Select</div>
-												<img class="icon-colour" src="@img/icon-colour.svg" alt="colour">
-											</div>
-										</div>
-									</div>
+									
 								</div>
 								<!-- end of content-block -->
 

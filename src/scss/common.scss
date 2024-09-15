@@ -8,6 +8,7 @@
 	&__container {
 		padding-top: 40px;
 		padding-bottom: 40px;
+		position: relative;
 
 		@media (max-width:$tablet){
 			padding-top: 35px;
@@ -28,6 +29,26 @@
 		line-height: 100%;
 		color: #485D6B;
 		@include adaptiveValue("font-size", 28, 16);
+	}
+
+	.actions {
+		display: none;
+
+		@media (max-width:$mobile){
+			position: absolute;
+			top: 30px;
+			right: 30px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 11px; 
+			cursor: pointer;
+		}
+
+		@media (max-width:$mobileSmall){
+			 top: 20px;
+			 right: 20px; 
+		}
 	}
 }
 
@@ -310,6 +331,20 @@ input {
 
 .nowrap {
 	white-space: nowrap;
+}
+
+p {
+   line-height: 160%;
+	margin-bottom: 6px;
+
+	@media (max-width:$mobile){
+		font-size: 13px; 
+	}
+}
+.blue-border {
+	@media (max-width:$mobile){
+		 border-top: 8px solid #7715CD; 
+	}
 }
 
 

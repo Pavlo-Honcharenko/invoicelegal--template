@@ -49,6 +49,7 @@
 .content-block {
 	padding: 40px 40px 30px;
 	background-color: #fff;
+	border-radius: 4px;
 
 	@media (max-width: 1300px){
 		padding: 30px 30px 20px;
@@ -593,3 +594,10 @@
 }
 //=======================================================================================================
 
+.content-block-3 .select-mini {
+	margin-top: -6px;
+
+	.select_form {
+		padding: 1px 12px;
+	}
+}

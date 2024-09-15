@@ -318,11 +318,11 @@ class Popup {
 			document.querySelector(`${window.location.hash}`) ? `${window.location.hash}` :
 				null;
 
-		const buttons = document.querySelector(`[${this.options.attributeOpenButton} = "${classInHash}"]`) ? document.querySelector(`[${this.options.attributeOpenButton} = "${classInHash}"]`) : document.querySelector(`[${this.options.attributeOpenButton} = "${classInHash.replace('.', "#")}"]`);
+		const buttons = document.querySelectorAll(`[${this.options.attributeOpenButton} = "${classInHash}"]`) ? document.querySelectorAll(`[${this.options.attributeOpenButton} = "${classInHash}"]`) : document.querySelectorAll(`[${this.options.attributeOpenButton} = "${classInHash.replace('.', "#")}"]`);
 
-		this.youTubeCode = buttons.getAttribute(this.options.youtubeAttribute) ?
-			buttons.getAttribute(this.options.youtubeAttribute) :
-			null;
+		// this.youTubeCode = buttons.getAttribute(this.options.youtubeAttribute) ?
+		// 	buttons.getAttribute(this.options.youtubeAttribute) :
+		// 	null;
 
 		if (buttons && classInHash) this.open(classInHash);
 	}
