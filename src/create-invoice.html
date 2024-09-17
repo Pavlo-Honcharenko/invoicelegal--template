@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	@@include('html/_head.htm',{
-	"title":"Create Invoice (Invoice Page 1.2, Invoice Page 2.1)"
+	"title":"Create Invoice"
 	})
 	<body>
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
 
-				<div class="main-title">
-					<div class="main-title__container">
-						<div class="main-title__title">
-							<h1>Welcome Home</h1>
-						</div>
-					</div>
-				</div>
-
 				<!-- SECTION CONTENT -->
 				<section class="content">
-					<div class="content__container">
+					<div class="content__container mt-30">
 						<div class="content__blocks">
 
 							<div class="content__col content__col--wide">
@@ -33,11 +25,11 @@
 									<div class="form-row">
 										<div class="form-row__col">
 											<div class="form-row__label">From :</div>
-											<textarea name="from" id="from" cols="30" rows="10" placeholder="Enter Your Details"></textarea>
+											<textarea name="from" id="from" cols="30" rows="8" placeholder="Enter Your Details"></textarea>
 										</div>
 										<div class="form-row__col">
 											<div class="form-row__label">To :</div>
-											<textarea name="to" id="from" cols="30" rows="10" placeholder="Enter Your Details"></textarea>
+											<textarea name="to" id="to" cols="30" rows="8" placeholder="Enter Client Details"></textarea>
 										</div>
 									</div>
 
@@ -46,11 +38,11 @@
 									<div class="form-row mb-30">
 										<div class="form-row__col">
 											<div class="form-row__label">Invoice Number</div>
-											<input autocomplete="off" type="text" name="invoice-number" data-error="Error" placeholder="" class="input" value="INV001">
+											<input autocomplete="off" type="text" name="invoice-number" placeholder="" class="input" value="INV001">
 										</div>
 										<div class="form-row__col">
 											<div class="form-row__label">Date</div>
-											<input autocomplete="off" type="date" name="invoice-date" data-error="Error" placeholder="" class="input" value="19.02.2023">
+											<input autocomplete="off" type="date" name="invoice-date" placeholder="" class="input" value="19.02.2023">
 										</div>
 									</div>
 
@@ -65,18 +57,18 @@
 										</div>
 										<div class="form-row__col">
 											<div class="form-row__label">Rate per Hour</div>
-											<input autocomplete="off" type="text" name="invoice-rate-hour" data-error="Error" placeholder="" class="input" value="">
+											<input autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input" value="">
 										</div>
 									</div>
 
 									<div class="form-row">
 										<div class="form-row__col">
 											<div class="form-row__label">Rate per Day</div>
-											<input autocomplete="off" type="text" name="invoice-rate-day" data-error="Error" placeholder="" class="input" value="R 50.00">
+											<input autocomplete="off" type="text" name="invoice-rate-day" placeholder="" class="input" value="R 50.00">
 										</div>
 										<div class="form-row__col">
 											<div class="form-row__label">Matter/Subject</div>
-											<input autocomplete="off" type="text" name="invoice-matter" data-error="Error" placeholder="" class="input" value="">
+											<input autocomplete="off" type="text" name="invoice-matter" placeholder="" class="input" value="">
 										</div>
 									</div>
 
@@ -94,24 +86,24 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+											<tr id="row1">
 												<td>
-													<input autocomplete="off" type="date" name="invoice-date" data-error="Error" class="input" value="">
+													<input id="datepicker" type="text" name="invoice-date" class="input" value="" placeholder="Enter" >
 												</td>
 												<td>
 													<textarea name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
 												</td>
 												<td>
-													<input autocomplete="off" type="time" name="invoice-time" data-error="Error" class="input" value="">
+													<input autocomplete="off" type="time" name="invoice-time" class="input text-align-right" value="">
 												</td>
 												<td>
-													<input autocomplete="off" type="text" name="invoice-amount" data-error="Error" placeholder="0" class="input">
+													<input autocomplete="off" type="text" name="invoice-amount" placeholder="0" class="input text-align-right">
 												</td>
 												<td>
-													<input autocomplete="off" type="text" name="invoice-total" data-error="Error" placeholder="0" class="input">
+													<input autocomplete="off" type="text" name="invoice-total" placeholder="0" class="input text-align-right">
 												</td>
 												<td>
-													<input data-error="Error" class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+													<input class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
 													<label class="checkbox__label" for="invoice-checkbox"></label>
 												</td>
 											</tr>
@@ -120,24 +112,6 @@
 
 									<table class="table table-create-invoice table-mobile">
 										<tbody>
-											<tr>
-												<td>
-													<div class="table__date">
-														11.05.2014
-													</div>
-													<div class="table__description">
-														Consulting
-													</div>
-												</td>
-												<td>
-													<div class="table__amount">
-														R 200.00
-													</div>
-													<div class="table__total">
-														1.0 × R 200.00
-													</div>
-												</td>
-											</tr>
 
 											<tr>
 												<td>
@@ -193,7 +167,7 @@
 									<div class="form-row form-row-details">
 										<div class="form-row__col">
 											<div class="form-row__label">Banking Details</div>
-											<input autocomplete="off" type="text" name="banking-details" data-error="Error" placeholder="Enter Banking Details" class="input">
+											<input autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input">
 										</div>
 										<div class="form-row__col">
 											<div class="add-note">

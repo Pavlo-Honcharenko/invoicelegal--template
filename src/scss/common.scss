@@ -162,12 +162,20 @@ textarea {
 	border-radius: 4px;
 	padding: 13px 20px;
 	font-weight: 500;
+	outline: none;
 }
 input {
 	border: 1px solid #E3E5ED;
 	border-radius: 4px;
 	padding: 13px 20px;
 	font-weight: 500;
+	outline: none;
+}
+td input {
+	padding: 11px 20px;
+}
+textarea:focus, input:focus {
+	border-color: #7715CD;
 }
 
 
@@ -274,7 +282,7 @@ input {
 	cursor: pointer;
 
 	@media (max-width:$mobile){
-		padding: 11px 20px;
+		padding: 13px 20px;
 		font-size: 14px; 
 	}
 }
@@ -311,6 +319,9 @@ input {
 		margin-right: auto;
 	}
 }
+.text-align-right {
+	text-align: right;
+}
 
 .weight-600 {
 	font-weight: 600 !important;
@@ -346,6 +357,8 @@ p {
 		 border-top: 8px solid #7715CD; 
 	}
 }
+
+
 
 
 
