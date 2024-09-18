@@ -695,6 +695,7 @@ body.the-datepicker-page {
 	}
 }
 
-#datepicker {
+.datepicker {
 	background: url('@img/icon-calendar.svg') 90% 12px no-repeat;
+	padding-right: 40px !important;
 }
