@@ -479,3 +479,22 @@
 		transform: translate(0, 0);
 	}
 }
+
+
+.TimePick_POPUP .second {
+	display: none;
+}
+#cobwq_0 {
+	opacity: 0;
+	width: 50px;
+	height: 30px;
+	transform: translate(-25px, 0);
+}
+.TimePick_POPUP {
+	position: absolute;
+	top: calc(100% + 8px) !important;
+	bottom: initial !important;
+	left: initial !important;
+	right: 13px !important;
+	margin: 0 !important;
+}
