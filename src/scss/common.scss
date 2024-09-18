@@ -286,14 +286,7 @@ textarea:focus, input:focus {
 		font-size: 14px; 
 	}
 }
-.blue-button.new-row {
-	font-weight: 600;
-	font-size: 14px;
-	padding: 9px 14px;
-	@media (max-width:$mobile){
-		 width: 100%; 
-	}
-}
+
 .mt-20 {
 	margin-top: 20px;
 }
