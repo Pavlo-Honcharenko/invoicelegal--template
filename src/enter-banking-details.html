@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Enter Banking Details"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+
+				<!-- SECTION CONTENT -->
+				<section class="content">
+					<div class="content__container mt-30">
+						<div class="content__blocks">
+
+							<a href="create-invoice.html" class="title-link">
+								<img src="@img/icon-enter-details.svg" alt="">
+								<span>Enter banking details</span>
+							</a>
+
+							<div class="content__col content__col--wide mobile-element">
+
+								<!-- content-block -->
+								<div class="content-block">
+									
+									<div class="popup__body">
+										<div class="row">
+											<div class="form-element-wrapper">
+												<label for="accountName">Account Name</label>
+												<input id="accountName" autocomplete="off" type="text" name="Account Name" placeholder="" class="input" value="">
+											</div>
+											<div class="form-element-wrapper">
+												<label for="bank">Bank</label>
+												<input id="bank" autocomplete="off" type="text" name="Bank" placeholder="" class="input" value="">
+											</div>
+											<div class="form-element-wrapper">
+												<label for="accountNumber">Account Number</label>
+												<input id="accountNumber" autocomplete="off" type="text" name="Account Number" placeholder="" class="input" value="">
+											</div>
+											<div class="form-element-wrapper">
+												<label for="confirmAccountNumber">Confirm Account Number</label>
+												<input id="confirmAccountNumber" autocomplete="off" type="text" name="Confirm Account Number" placeholder="" class="input" value="">
+											</div>
+											<div class="form-element-wrapper">
+												<label for="branchCode">Branch Code</label>
+												<input id="branchCode" autocomplete="off" type="text" name="Branch Code" placeholder="" class="input" value="">
+												<div class="form-element-note">(optional)</div>
+											</div>
+											<div class="form-element-wrapper">
+												<label for="reference">Reference</label>
+												<input id="reference" autocomplete="off" type="text" name="Reference" placeholder="" class="input" value="">
+											</div>
+										</div>
+										<div class="buttons-wrapper">
+											<div data-close class="grey-button mt-20">
+												Cancel
+											</div>
+											<div data-close class="blue-button mt-20">
+												Save
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<!-- end of content-block -->
+
+							</div>
+
+						</div>
+					</div>
+				</section>
+				<!-- End of SECTION CONTENT -->
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div><!-- main-wrapper -->
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>

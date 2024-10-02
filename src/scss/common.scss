@@ -1,26 +1,34 @@
+html {
+  font-size: 80%;
+}
+
 .page {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: toRem(100);
+	padding-bottom: toRem(100);
+
+	@media (max-width:$mobile){
+		 padding-bottom: 0; 
+	}
 }
 
 .main-title {
 	// .main-title__container
 	&__container {
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: toRem(40);
+		padding-bottom: toRem(40);
 		position: relative;
 
 		@media (max-width:$tablet){
-			padding-top: 35px;
-			padding-bottom: 35px;
+			padding-top: toRem(35);
+			padding-bottom: toRem(35);
 		}
 		@media (max-width:$mobile){
-			padding-top: 30px;
-			padding-bottom: 30px; 
+			padding-top: toRem(30);
+			padding-bottom: toRem(30); 
 		}
 		@media (max-width:$mobileSmall){
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: toRem(20);
+			padding-bottom: toRem(20);
 		}
 	}
 	// .main-title__title
@@ -36,8 +44,8 @@
 
 		@media (max-width:$mobile){
 			position: absolute;
-			top: 30px;
-			right: 30px;
+			top: toRem(30);
+			right: toRem(30);
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -46,8 +54,8 @@
 		}
 
 		@media (max-width:$mobileSmall){
-			 top: 20px;
-			 right: 20px; 
+			 top: toRem(20);
+			 right: toRem(20); 
 		}
 	}
 }
@@ -58,36 +66,36 @@
 .select_form {
 	position: relative;
 	font-weight: 500 !important;
-	font-size: 17px !important;
+	font-size: toRem(17) !important;
 	line-height: 141%;
 	color: #485D6B !important;
 }
 .select-mini {
 	.select_form {
 		border: 1px solid #E3E5ED;
-		border-radius: 4px;
-		padding: 4px 12px 1px;
+		border-radius: toRem(4);
+		padding: toRem(4) toRem(12) 1px;
 	}
 	.select__title {
-		width: calc(100% - 15px);
+		width: calc(100% - toRem(15));
 	}
 	.select__options {
-		margin-left: -12px;
-		padding: 10px 15px 5px 22px;
+		margin-left: toRem(-12);
+		padding: toRem(10) toRem(15) toRem(5) toRem(22);
 	}
 }
 .select__title {
 	display: flex;
 	align-items: center;
-	gap: 8px;
-	margin: 5px 5px 10px 10px;
+	gap: toRem(8);
+	margin: toRem(5) toRem(5) toRem(10) toRem(10);
 	width: 100%;
 	
 	&::after {
 		content:'';
 		display: block;
-		width: 15px;
-		height: 8px;
+		width: toRem(15);
+		height: toRem(8);
 		background: url('@img/icon-select.svg') center center no-repeat;
 	}
 }
@@ -105,7 +113,7 @@
 }
 .select__options {
 	box-shadow: -0 6px 16px 0 rgba(0, 0, 0, 0.05);
-	padding: 10px 10px 5px;
+	padding: toRem(10) toRem(10) toRem(5);
 	position: absolute;
 	width: 100%;
 	background-color: #fff;
@@ -114,7 +122,7 @@
 }
 .select__option {
 	white-space: nowrap;
-	padding: 5px 0 8px;
+	padding: toRem(5) 0 toRem(8);
 }
 .select__scroll {
 	width: min-content;
@@ -123,24 +131,25 @@
 .select__content {
 	font-family: "Montserrat" !important;
 	font-weight: 500 !important;
-	font-size: 17px !important;
+	font-size: toRem(17) !important;
 	line-height: 141%;
 	color: #485D6B !important;
 	letter-spacing: initial;
 	@media (max-width:$mobile){
-		 font-size: 16px !important; 
+		 font-size: toRem(16) !important; 
 	 }
 	@media (max-width:$mobileSmall){
-		font-size: 15px !important; 
+		font-size: toRem(15) !important; 
 	}
 }
 
 .form-row {
 	display: flex;
-	gap: 30px;
+	gap: toRem(30);
 
 	@media (max-width:$mobile){
 		flex-wrap: wrap; 
+		gap: 0;
 	}
 	// .form-row__col
 	&__col {
@@ -153,26 +162,30 @@
 }
 .form-row__label {
 	font-weight: 600;
-	font-size: 17px;
+	font-size: toRem(17);
 	line-height: 141%;
-	margin-bottom: 10px;
+	margin-bottom: toRem(10);
+
+	@media (max-width:$mobile){
+		padding-top: toRem(18);
+	}
 }
 textarea {
 	border: 1px solid #E3E5ED;
 	border-radius: 4px;
-	padding: 13px 20px;
+	padding: toRem(13) toRem(20);
 	font-weight: 500;
 	outline: none;
 }
 input {
 	border: 1px solid #E3E5ED;
 	border-radius: 4px;
-	padding: 13px 20px;
+	padding: toRem(13) toRem(20);
 	font-weight: 500;
 	outline: none;
 }
 td input {
-	padding: 11px 20px;
+	padding: toRem(11) toRem(20);
 }
 textarea:focus, input:focus {
 	border-color: #7715CD;
@@ -190,7 +203,7 @@ textarea:focus, input:focus {
 .color-picker-wrapper input[type="color"] {
 	opacity: 0; 
 	width: 100%;
-	height: 40px;
+	height: toRem(40);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -199,10 +212,10 @@ textarea:focus, input:focus {
 .color-placeholder {
 	display: inline-block;
 	border-radius: 4px;
-	width: 100px;
-	height: 23px;
-	font-size: 16px;
-	line-height: 20px;
+	width: toRem(100);
+	height: toRem(23);
+	font-size: toRem(16);
+	line-height: toRem(20);
 	display: flex;
 	align-items: center;
 	cursor: pointer;
@@ -220,8 +233,8 @@ textarea:focus, input:focus {
 }
 .icon-colour {
 	position: absolute;
-	top: -4px;
-	right: 4px;
+	top: toRem(-4);
+	right: toRem(4);
 	pointer-events: none;
 }
 
@@ -235,8 +248,8 @@ textarea:focus, input:focus {
 /* Стили для кастомного чекбокса */
 .checkbox__label {
 	display: inline-block;
-	width: 26px;
-	height: 26px;
+	width: toRem(26);
+	height: toRem(26);
 	border: 1px solid #E3E5ED;
 	border-radius: 4px;
 	cursor: pointer;
@@ -252,10 +265,10 @@ textarea:focus, input:focus {
 .checkbox__input:checked + .checkbox__label::after {
 	content: '';
 	position: absolute;
-	top: 4px;
-	left: 8px;
-	width: 6px;
-	height: 12px;
+	top: toRem(4);
+	left: toRem(8);
+	width: toRem(6);
+	height: toRem(12);
 	border: solid white;
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
@@ -271,35 +284,38 @@ textarea:focus, input:focus {
 	justify-content: center;
 	align-items: center;
 	font-weight: 600;
-	font-size: 16px;
+	font-size: toRem(16);
 	text-align: center;
 	color: #fff;
 	border-radius: 4px;
-	padding: 15px 40px;
+	padding: toRem(15) toRem(40);
 	background-color: #7715CD;
 	width: fit-content;
-	gap: 8px;
+	gap: toRem(8);
 	cursor: pointer;
 
 	@media (max-width:$mobile){
-		padding: 13px 20px;
-		font-size: 14px; 
+		padding: toRem(13) toRem(20);
+		font-size: toRem(14); 
 	}
 }
 
 .mt-20 {
-	margin-top: 20px;
+	margin-top: toRem(20);
 }
 .mt-30 {
-	margin-top: 30px;
+	margin-top: toRem(30);
 }
 .mb-20 {
-	margin-bottom: 20px;
+	margin-bottom: toRem(20);
 }
 .mb-30 {
-	margin-bottom: 30px;
+	margin-bottom: toRem(30);
 }
 .to-left {
+	margin-right: auto;
+}
+.to-right {
 	margin-left: auto;
 }
 .to-center {
@@ -339,15 +355,48 @@ textarea:focus, input:focus {
 
 p {
    line-height: 160%;
-	margin-bottom: 6px;
+	margin-bottom: toRem(6);
 
 	@media (max-width:$mobile){
-		font-size: 13px; 
+		font-size: toRem(13); 
 	}
 }
 .blue-border {
 	@media (max-width:$mobile){
-		 border-top: 8px solid #7715CD; 
+		 border-top: toRem(8) solid #7715CD; 
+	}
+}
+
+
+
+//=======================================================================================================
+
+.mobile-element {
+	display: block !important;
+
+	@media (min-width:$mobile){
+		display: none !important;
+	}
+}
+.pc-element {
+	display: none !important;
+
+	@media (min-width:$mobile){
+		display: block !important; 
+	}
+}
+.mobile-element-flex {
+	display: flex !important;
+
+	@media (min-width:$mobile){
+		display: none !important;
+	}
+}
+.pc-element-flex {
+	display: none !important;
+
+	@media (min-width:$mobile){
+		display: flex !important; 
 	}
 }
 

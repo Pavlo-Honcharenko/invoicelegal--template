@@ -2,7 +2,7 @@
 
 .content__blocks {
 	display: flex;
-	gap: 30px;
+	gap: toRem(30);
 	width: 100%;
 
 	@media (max-width: 993px){
@@ -12,16 +12,16 @@
 
 .content {
 	display: flex;
-	gap: 30px;
+	gap: toRem(30);
 
 		// .content__col
 		&__col {
 			display: flex;
 			flex-direction: column;
-			gap: 30px;
+			gap: toRem(30);
 
 			@media (max-width: 1300px){
-				gap: 24px;
+				gap: toRem(24);
 			}
 
 			@media (max-width: 993px){
@@ -34,34 +34,27 @@
 			}
 			// .content__col--narrow
 			&--narrow {
-				flex: 0 0 380px;
-
-				@media (max-width:$pc){
-					flex: 0 0 350px;
-				}
-				@media (max-width: 1300px){
-					flex: 0 0 320px;
-				}
+				flex: 0 0 toRem(320);
 			}
 		}
 }
 
 .content-block {
-	padding: 40px 40px 30px;
+	padding: toRem(40) toRem(30) toRem(30);
 	background-color: #fff;
-	border-radius: 4px;
+	border-radius: toRem(4);
 
 	@media (max-width: 1300px){
-		padding: 30px 30px 20px;
+		padding: toRem(30) toRem(30) toRem(20);
 	}
 	@media (max-width: 993px){
-		margin-bottom: 24px;
+		margin-bottom: toRem(24);
 	}
 	@media (max-width:$mobile){
-		padding: 25px 20px 20px;
+		padding: toRem(25) toRem(20) toRem(20);
 	}
 	@media (max-width:$mobileSmall){
-		padding: 20px 12px;
+		padding: toRem(20) toRem(12);
 	}
 }
 
@@ -76,19 +69,19 @@
 	color:#485D6B;
 	@include adaptiveValue("font-size", 24, 16);
 	@media (max-width:$mobile){
-		 margin-top: 5px; 
+		 margin-top: toRem(5); 
 	}
 }
 .top-line__select {
-	margin-left: 30px;
+	margin-left: toRem(30);
 	margin-right: auto;
 	
 	.select_form {
 		border: 1px solid #E3E5ED;
-		border-radius: 4px;
+		border-radius: toRem(4);
 	}
 	.select__title {
-		margin: 5px 10px 5px 10px;
+		margin: toRem(5) toRem(10) toRem(5) toRem(10);
 	}
 }
 .top-line__amount {
@@ -105,17 +98,17 @@
 	background-color: #7715CD;
 	gap: 8px;
 	border-radius: 4px;
-	padding: 18px 25px;
+	padding: toRem(18) toRem(25);
 
 	img {
 		display: block;
-		width: 24px;
-		height: 24px;
+		width: toRem(24);
+		height: toRem(24);
 	}
 
 	span {
 		font-weight: 600;
-		font-size: 14px;
+		font-size: toRem(14);
 		line-height: 171%;
 		color: #fff;
 	}
@@ -126,7 +119,7 @@
 	// .content-block-1__row
 		&__row {
 			display: flex;
-			gap: 30px;
+			gap: toRem(30);
 
 			@media (max-width: 1300px){
 				flex-direction: column;
@@ -155,29 +148,29 @@
 		}
 		.button-create-invoice {
 			order: 1; 
-			margin-bottom: 20px;
+			margin-bottom: toRem(20);
 			margin-left: auto;
-			font-size: 14px;
-			gap: 6px;
-			padding: 7px 12px;
+			font-size: toRem(14);
+			gap: toRem(6);
+			padding: toRem(7) toRem(12);
 		}
 
 		.top-line__title {
 			order: 2;
-			margin-bottom: 30px;
+			margin-bottom: toRem(30);
 		}
 
 		.statistic__col {
-			font-size: 14px;
+			font-size: toRem(14);
 		}
 		.total {
-			font-size: 16px;
+			font-size: toRem(16);
 		}
 	}
 
 	@media (max-width:$mobileSmall){
 		.button-create-invoice {
-			font-size: 12px;
+			font-size: toRem(12);
 		}
 	}
 	
@@ -188,13 +181,13 @@
 		// .statistic__row
 		&__row {
 			display: flex;
-			gap: 20px;
+			gap: toRem(20);
 			&:not(:last-child) {
-				margin-bottom: 24px;
+				margin-bottom: toRem(24);
 			}
 
 			@media (max-width:$mobile){
-				 gap: 10px; 
+				 gap: toRem(10); 
 			}
 		}
 		// .statistic__col
@@ -202,9 +195,9 @@
 			flex: 0 1 55%;
 			display: flex;
 			align-items: center;
-			gap: 18px;
+			gap: toRem(18);
 			font-weight: 500;
-			font-size: 17px;
+			font-size: toRem(17);
 			line-height: 141%;
 
 			// .statistic__col--right
@@ -216,9 +209,9 @@
 }
 
 .item-1__color, .item-2__color, .item-3__color, .item-4__color {
-	width: 19px;
-	flex: 0 0 19px;
-	height: 19px;
+	width: toRem(19);
+	flex: 0 0 toRem(19);
+	height: toRem(19);
 	border-radius: 50%;
 }
 
@@ -236,9 +229,9 @@
 }
 
 .total {
-	padding-top: 6px;
+	padding-top: toRem(6);
 	font-weight: 600;
-	font-size: 20px;
+	font-size: toRem(20);
 	line-height: 120%;
 }
 
@@ -248,7 +241,7 @@
 			font-weight: 700;
 			line-height: 100%;
 			text-align: center;
-			margin-bottom: 30px;
+			margin-bottom: toRem(30);
 			color: #485D6B;
 			@include adaptiveValue("font-size", 24, 16);
 		}
@@ -257,7 +250,7 @@
 			font-weight: 600;
 			line-height: 100%;
 			text-align: center;
-			margin-bottom: 30px;
+			margin-bottom: toRem(30);
 			color: #485D6B;
 			@include adaptiveValue("font-size", 24, 20);
 		}
@@ -271,11 +264,11 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			margin: 0 -20px 0 0;
-			width: calc(100% + 20px);
+			margin: 0 toRem(-20) 0 0;
+			width: calc(100% + toRem(20));
 
 			.select_form {
-				padding: 0 25px 0 0;
+				padding: 0 toRem(25) 0 0;
 			}
 
 			.select__content {
@@ -293,26 +286,27 @@
 }
 .set-target {
 	display: block;
-	padding: 0 0 5px;
-	font-size: 18px;
+	padding: 0 0 toRem(5);
+	font-size: toRem(18);
 	font-weight: 500;
+	cursor: pointer;
 	@media (max-width:$tablet){
-		font-size: 17px;
+		font-size: toRem(17);
 	}
 	@media (max-width:$mobile){
-		font-size: 16px; 
+		font-size: toRem(16); 
 	}
 	@media (max-width:$mobileSmall){
-		font-size: 15px; 
+		font-size: toRem(15); 
 	}
 }
 
 
 .content-block-3 {
 	.top-line {
-		padding-bottom: 30px;
+		padding-bottom: toRem(30);
 		border-bottom: 1px solid #E3E5ED;
-		margin-bottom: 30px;
+		margin-bottom: toRem(30);
 
 		@media (max-width:$mobileSmall){
 			border-bottom: initial;
@@ -321,14 +315,14 @@
 	}
 		// .content-block-3__bottom-row
 		&__bottom-row {
-			padding-top: 15px;
+			padding-top: toRem(15);
 			display: flex;
 			justify-content: flex-end;
 		}
 
 	@media (max-width:$mobile){
 		 .select__option {
-					font-size: 15px;
+					font-size: toRem(15);
 				} 
 	}
 
@@ -341,24 +335,24 @@
 				margin-right: 0;
 
 				.select__option {
-					font-size: 15px;
+					font-size: toRem(15);
 				}
 			}
 
 			.top-line__amount {
 				flex: 0 0 100%;
-				padding-top: 20px;
+				padding-top: toRem(20);
 			}
 		 } 
 	}
 }
 .view-all {
 	font-weight: 500;
-	font-size: 15px;
+	font-size: toRem(15);
 	line-height: 160%;
 	color: #485D6B;
 	@media (max-width:$mobileSmall){
-		 padding: 0 10px 0 0; 
+		 padding: 0 toRem(10) 0 0; 
 	}
 }
 
@@ -370,18 +364,18 @@
 			text-align: center;
 			margin-bottom: 30px;
 			color: #485D6B;
-			padding-bottom: 30px;
+			padding-bottom: toRem(30);
 			border-bottom: 1px solid #F7F7F7;
 			@include adaptiveValue("font-size", 24, 16);
 		}
 	.content-block-4__bottom-row {
 		display: flex;
 		justify-content: flex-end;
-		margin: 0 -20px 0 0;
-		width: calc(100% + 20px);
+		margin: 0 toRem(-20) 0 0;
+		width: calc(100% + toRem(20));
 
 		.select_form {
-			padding: 0 25px 0 0;
+			padding: 0 toRem(25) 0 0;
 		}
 
 		.select__content {
@@ -390,21 +384,21 @@
 	}
 }
 .five-clients {
-	margin-bottom: 15px;
+	margin-bottom: toRem(15);
 
 		// .five-clients__client
 		&__client {
 			display: flex;
 			align-items: center;
-			gap: 14px;
+			gap: toRem(14);
 
 			&:not(:last-child) {
-				margin-bottom: 60px;
+				margin-bottom: toRem(60);
 				@media (max-width:$tablet){
-					margin-bottom: 40px;
+					margin-bottom: toRem(40);
 				}
 				@media (max-width:$mobile){
-					 margin-bottom: 24px; 
+					 margin-bottom: toRem(24); 
 				}
 			}
 			// .five-clients__client--1
@@ -448,17 +442,17 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 45px;
-	height: 45px;
+	width: toRem(45);
+	height: toRem(45);
 	border-radius: 50%;
 	font-weight: 600;
-	font-size: 15px;
+	font-size: toRem(15);
 	text-align: center;
 	
 }
 .client-name {
 	font-weight: 500;
-	font-size: 15px;
+	font-size: toRem(15);
 	line-height: 160%;
 	color: #757575;
 }
@@ -473,8 +467,8 @@
 		#7715CD 75%
 	);
 	border-radius: 50%;
-	width: 260px;
-	height: 260px;
+	width: toRem(260);
+	height: toRem(260);
 }
 .diagram1 {
 	position: relative;
@@ -482,10 +476,10 @@
 	// .diagram1__center-area
 	&__center-area {
 		position: absolute;
-		top: 33px;
-		left: 33px;
-		width: 194px;
-		height: 194px;
+		top: toRem(33);
+		left: toRem(33);
+		width: toRem(194);
+		height: toRem(194);
 		background-color: #fff;
 		border-radius: 50%;
 		z-index: 2;
@@ -497,21 +491,21 @@
 	// .diagram1__number
 	&__number {
 		font-weight: 600;
-		font-size: 38px;
-		margin-bottom: 3px;
+		font-size: toRem(38);
+		margin-bottom: toRem(3);
 	}
 	// .diagram1__text
 	&__text {
 		font-weight: 600;
-		font-size: 22px;	
+		font-size: toRem(22);	
 		color:#757575;
 	}
 }
 
 #diagram2 {
 	border-radius: 50%;
-	width: 260px;
-	height: 260px;
+	width: toRem(260);
+	height: toRem(260);
 }
 
 .diagram2 {
@@ -521,10 +515,10 @@
 		// .diagram2__center-area
 		&__center-area {
 			position: absolute;
-			top: 33px;
-			left: 33px;
-			width: 194px;
-			height: 194px;
+			top: toRem(33);
+			left: toRem(33);
+			width: toRem(194);
+			height: toRem(194);
 			background-color: #fff;
 			border-radius: 50%;
 			z-index: 2;
@@ -537,10 +531,10 @@
 		&__number {
 			position: relative;
 			font-weight: 600;
-			font-size: 40px;
+			font-size: toRem(40);
 			text-align: center;
-			width: 143px;
-			height: 143px;
+			width: toRem(143);
+			height: toRem(143);
 			border-radius: 50%;
 			background-color: #fff;
 			display: flex;
@@ -548,15 +542,15 @@
 			align-items: center;
 			box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1);
 			z-index: 3;
-			margin: -70px auto 30px;
+			margin: toRem(-70) auto toRem(30);
 			@media (max-width:$mobileSmall){
-				font-size: 30px; 
+				font-size: toRem(30); 
 			}
 		}
 }
 .diagram2-wrapper {
-	width: 260px;
-	height: 130px;
+	width: toRem(260);
+	height: toRem(130);
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -573,21 +567,21 @@
 	thead {
 		background-color: #F1F2F6;
 		font-weight: 600;
-		font-size: 15px;
+		font-size: toRem(15);
 		line-height: 160%;
 	}
 
 	th, td {
 		text-align: left;
-		padding: 14px 14px 14px 7%;
+		padding: toRem(14) toRem(14) toRem(14) 7%;
 
 		@media (max-width:$mobile){
-			padding: 12px 8px 12px 4%;
+			padding: toRem(12) toRem(8) toRem(12) 4%;
 		}
 	}
 	td {
 		font-weight: 500;
-		font-size: 15px;
+		font-size: toRem(15);
 		line-height: 160%;
 	}
 	tbody tr {
@@ -611,7 +605,7 @@
 		display: table;
 	}
 	.table-mobile td {
-		font-size: 13px;
+		font-size: toRem(13);
 	}
 	.table__client {
 		font-weight: 600;
@@ -626,9 +620,9 @@
 //=======================================================================================================
 
 .content-block-3 .select-mini {
-	margin-top: -6px;
+	margin-top: toRem(-6);
 
 	.select_form {
-		padding: 1px 12px;
+		padding: toRem(1) toRem(12);
 	}
 }

@@ -113,6 +113,7 @@
 		.header__logo {
 			width: 81px !important;
 			height: 47px !important;
+			margin-left: 0;
 
 			img {
 				width: 81px;
@@ -207,7 +208,7 @@
 }
 
 .icon-menu--open {
-	margin-right: auto;
+
 	z-index: 1;
 }
 .menu-open .icon-menu--open {

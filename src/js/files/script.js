@@ -4546,6 +4546,29 @@ if (inputs.length > 0) {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+	// Находим элемент с id 'vat-yes'
+	var vatYesElement = document.getElementById('vat-yes');
+
+	// Проверяем, существует ли элемент
+	if (vatYesElement) {
+		// Добавляем обработчик события 'click'
+		vatYesElement.addEventListener('click', function () {
+			// Находим элемент с id 'vat-step-2'
+			var vatStep2Element = document.getElementById('vat-step-2');
+
+			// Если элемент существует, добавляем ему класс '_open'
+			if (vatStep2Element) {
+				vatStep2Element.classList.add('_open');
+			}
+		});
+	}
+});
+
+
+
+
+
 
 
 

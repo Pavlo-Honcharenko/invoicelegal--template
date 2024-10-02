@@ -6,13 +6,13 @@
 					New target
 				</div>
 				<button data-close type="button" class="popup__close">
-					<img src="@img/icon-close.svg" alt=close"">
+					<img src="@img/icon-close.svg" alt="close">
 				</button>
 			</div>
 			
 			<div class="popup__body">
 				<input autocomplete="off" type="text" name="setTarget" placeholder="" class="input" value="R ">
-				<div class="blue-button mt-20 to-left mob-to-center">Save</div>
+				<div data-close class="blue-button mt-20 to-right mob-to-center">Save</div>
 			</div>
 		</div>
 	</div>
@@ -26,7 +26,7 @@
 					Actions
 				</div>
 				<button data-close type="button" class="popup__close">
-					<img src="@img/icon-close.svg" alt=close"">
+					<img src="@img/icon-close.svg" alt="close">
 				</button>
 			</div>
 			
@@ -38,6 +38,275 @@
 </div>
 
 
+
+<div id="enter-your-details" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__header">
+				<div class="popup__title">
+					Enter Your Details
+				</div>
+				<button data-close type="button" class="popup__close">
+					<img src="@img/icon-close.svg" alt="close">
+				</button>
+			</div>
+			
+			<div class="popup__body">
+				<div class="row">
+					<div class="form-element-wrapper">
+						<label for="tradingName">Trading Name</label>
+						<input id="tradingName" autocomplete="off" type="text" name="Trading Name" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="addressLine1">Address Line 1</label>
+						<input id="addressLine1" autocomplete="off" type="text" name="Address Line 1" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="addressLine2">Address Line 2</label>
+						<input id="addressLine2" autocomplete="off" type="text" name="Address Line 2" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="stateProvince">State / Province</label>
+						<input id="stateProvince" autocomplete="off" type="text" name="State / Province" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="city">City</label>
+						<input id="city" autocomplete="off" type="text" name="City" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="postalCode">Postal Code</label>
+						<input id="postalCode" autocomplete="off" type="text" name="Postal Code" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="phoneNumber">Phone Number</label>
+						<input id="phoneNumber" autocomplete="off" type="text" name="Phone Number" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="email">Email</label>
+						<input id="email" autocomplete="off" type="text" name="Email" placeholder="" class="input" value="">
+					</div>
+				</div>
+				<div class="buttons-wrapper">
+					<div data-close class="grey-button mt-20">
+						Cancel
+					</div>
+					<div data-close class="blue-button mt-20">
+						Save
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="enter-time-spent" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__header">
+				<div class="popup__title">
+					<img src="@img/icon-time.svg" alt=""> Enter Time Spent
+				</div>
+				<button data-close type="button" class="popup__close">
+					<img src="@img/icon-close-gray.svg" alt="close">
+				</button>
+			</div>
+			
+			<div class="popup__body">
+				<div class="row">
+					<div class="time-element-wrapper">
+						<input id="days" autocomplete="off" type="text" name="days" placeholder="" class="input" value="0">
+						<label for="days">Days</label>
+					</div>
+					<div class="time-element-wrapper">
+						<input id="hours" autocomplete="off" type="text" name="hours" placeholder="" class="input" value="0">
+						<label for="hours">Hours</label>
+					</div>
+					<div class="time-element-wrapper">
+						<input id="minutes" autocomplete="off" type="text" name="minutes" placeholder="" class="input" value="0">
+						<label for="minutes">Minutes</label>
+					</div>
+				</div>
+				<div data-close class="blue-button mt-30 to-right">
+					Save
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div id="client-details" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__header">
+				<div class="popup__title">
+					Client Details
+				</div>
+				<button data-close type="button" class="popup__close">
+					<img src="@img/icon-close.svg" alt="close">
+				</button>
+			</div>
+			
+			<div class="popup__body">
+				<div class="row">
+					<div class="form-element-wrapper">
+						<label for="clientName">Client Name</label>
+						<input id="clientName" autocomplete="off" type="text" name="Client Name" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="addressLine1">Address Line 1</label>
+						<input id="addressLine1" autocomplete="off" type="text" name="Address Line 1" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="addressLine2">Address Line 2</label>
+						<input id="addressLine2" autocomplete="off" type="text" name="Address Line 2" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="stateProvince">State / Province</label>
+						<input id="stateProvince" autocomplete="off" type="text" name="State / Province" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="city">City</label>
+						<input id="city" autocomplete="off" type="text" name="City" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="postalCode">Postal Code</label>
+						<input id="postalCode" autocomplete="off" type="text" name="Postal Code" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="phoneNumber">Phone Number</label>
+						<input id="phoneNumber" autocomplete="off" type="text" name="Phone Number" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="email">Email</label>
+						<input id="email" autocomplete="off" type="text" name="Email" placeholder="" class="input" value="">
+					</div>
+				</div>
+				<div class="buttons-wrapper">
+					<div data-close class="grey-button mt-20">
+						Cancel
+					</div>
+					<div data-close class="blue-button mt-20">
+						Save
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="banking-details" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__header">
+				<div class="popup__title">
+					Banking Details
+				</div>
+				<button data-close type="button" class="popup__close">
+					<img src="@img/icon-close.svg" alt="close">
+				</button>
+			</div>
+			
+			<div class="popup__body">
+				<div class="row">
+					<div class="form-element-wrapper">
+						<label for="accountName">Account Name</label>
+						<input id="accountName" autocomplete="off" type="text" name="Account Name" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="bank">Bank</label>
+						<input id="bank" autocomplete="off" type="text" name="Bank" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="accountNumber">Account Number</label>
+						<input id="accountNumber" autocomplete="off" type="text" name="Account Number" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="confirmAccountNumber">Confirm Account Number</label>
+						<input id="confirmAccountNumber" autocomplete="off" type="text" name="Confirm Account Number" placeholder="" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="branchCode">Branch Code</label>
+						<input id="branchCode" autocomplete="off" type="text" name="Branch Code" placeholder="" class="input" value="">
+						<div class="form-element-note">(optional)</div>
+					</div>
+					<div class="form-element-wrapper">
+						<label for="reference">Reference</label>
+						<input id="reference" autocomplete="off" type="text" name="Reference" placeholder="" class="input" value="">
+					</div>
+				</div>
+				<div class="buttons-wrapper">
+					<div data-close class="grey-button mt-20">
+						Cancel
+					</div>
+					<div data-close class="blue-button mt-20">
+						Save
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div id="vat" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<div class="popup__header">
+				<div class="popup__title">
+					VAT
+				</div>
+				<button data-close type="button" class="popup__close">
+					<img src="@img/icon-close.svg" alt="close">
+				</button>
+			</div>
+			
+			<div class="popup__body vat-body">
+				<div class="vat-body__title">
+					Are you Registered for VAT?
+				</div>
+
+				<div class="vat-choice-wrapper">
+					<label class="radio-label">
+						<input id="vat-yes" type="radio" name="vat" value="yes" class="radio-input"> Yes
+					</label>
+
+					<label class="radio-label">
+						<input type="radio" name="vat" value="no" class="radio-input" checked> No
+					</label>
+				</div>
+
+				<div id="vat-step-2">
+					<div class="form-element-wrapper">
+						<label for="vatNumber">VAT Number</label>
+						<input id="vatNumber" autocomplete="off" type="text" name="VAT Number" placeholder="Enter Vat Number" class="input" value="">
+					</div>
+					<div class="form-element-wrapper">
+						<label for="vatPercentage">VAT Percentage</label>
+						<input id="vatPercentage" autocomplete="off" type="text" name="VAT Percentage" placeholder="%" class="input" value="">
+					</div>
+
+					<div class="buttons-wrapper">
+						<a href="/invoice-001.html" class="blue-button mt-20">
+							Save
+						</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 <!-- <div id="newtarget" aria-hidden="true" class="popup">
 	<div class="popup__wrapper">
 		<div class="popup__content">
@@ -46,7 +315,7 @@
 					New target
 				</div>
 				<button data-close type="button" class="popup__close">
-					<img src="@img/icon-close.svg" alt=close"">
+					<img src="@img/icon-close.svg" alt="close">
 				</button>
 			</div>
 			

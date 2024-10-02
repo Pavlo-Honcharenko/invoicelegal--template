@@ -117,6 +117,12 @@ body.the-datepicker-page {
 .the-datepicker__main a.the-datepicker__year-button {
   width: auto;
 }
+// .the-datepicker__main a.the-datepicker__year-button {
+//   &::after {
+// 	content:'';
+// 	transform: rotate(90deg);
+//   }
+// }
 .the-datepicker__main a.the-datepicker__year-cell-button {
   width: auto;
 }
@@ -668,6 +674,7 @@ body.the-datepicker-page {
 	}
 	.the-datepicker__cell {
 		padding: 3px 0;
+		min-width: 0 !important;
 	}
 	.the-datepicker__day-content {
 		color: #757575;
@@ -696,6 +703,6 @@ body.the-datepicker-page {
 }
 
 .datepicker {
-	background: url('@img/icon-calendar.svg') 90% 12px no-repeat;
-	padding-right: 40px !important;
+	background: url('@img/icon-calendar.svg') calc(100% - toRem(10)) toRem(9) no-repeat;
+	min-width: toRem(120);
 }

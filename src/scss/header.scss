@@ -1,7 +1,7 @@
 .header {
 	background-color: #29353D;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-top: toRem(14);
+	padding-bottom: toRem(14);
 	position: fixed;
 	width: 100%;
 	z-index: 5;
@@ -11,27 +11,32 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			gap: 40px;
+			gap: toRem(40);
 			@media (max-width:$mobile){
-				gap: 35px; 
+				gap: toRem(35); 
 			}
 			@media (max-width:$mobileSmall){
-				 gap: 30px; 
+				 gap: toRem(30); 
 			}
 		}
 		// .header__logo
 		&__logo {
 			display: block;
-			width: 122px;
-			height: 72px;
+			width: toRem(115);
+			height: toRem(70);
+
+			@media (max-width:$tablet){
+				margin-left: 50px;
+			}
+			
 
 			@media (max-width:$mobileSmall){
-				width: 100px;
-				height: 59px;
+				width: toRem(100);
+				height: toRem(59);
+			}
 
-				img {
-					width: 100%;
-				}
+			img {
+				width: 100%;
 			}
 		}
 }
@@ -39,7 +44,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 40px;
+	gap: toRem(40);
 
 		// .menu-header__icon
 		&__icon {}
@@ -50,13 +55,13 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			gap: 40px;
+			gap: toRem(40);
 
 			@media (max-width:$mobile){
-				gap: 30px; 
+				gap: toRem(30); 
 			}
 			@media (max-width:$mobileSmall){
-				gap: 20px; 
+				gap: toRem(20); 
 			}
 		}
 }
@@ -66,13 +71,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 24px;
+	gap: toRem(24);
 }
 .menu-item {
-	padding: 7px 14px;
-	border-radius: 8px;
+	padding: toRem(7) toRem(14);
+	border-radius: toRem(8);
 	font-weight: 500;
-	font-size: 18px;
+	font-size: toRem(18);
 	line-height: 133%;
 	text-align: center;
 	color: #fff;
@@ -85,7 +90,7 @@
 		display: none;
 
 		@media (max-width:$tablet){
-			margin-right: 14px;
+			margin-right: toRem(14);
 			display: block;
 		}
 	}
@@ -98,13 +103,13 @@
 }
 
 .more-menu-items {
-	min-width: 315px;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
-	border-radius: 4px;
+	min-width: toRem(315);
+	box-shadow: 0 toRem(8) toRem(16) 0 rgba(0, 0, 0, 0.1);
+	border-radius: toRem(4);
 
 	.menu-item {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: toRem(10);
+		padding-right: toRem(10);
 
 		&:not(:last-child) {
 			a {
@@ -122,14 +127,14 @@
 		width: 100%;
 
 		@media (min-width:$tablet){
-			padding: 13px 18px 13px 18px;
+			padding: toRem(13) toRem(18);
 		}
 	}
 	img {
 		display: block;
 		
 		@media (min-width:$tablet){
-			margin-right: 20px;
+			margin-right: toRem(20);
 		}
 	}
 } 
@@ -146,23 +151,23 @@
 	align-items: center;
 
 	img {
-		margin-top: 18px;
+		margin-top: toRem(18);
 	}
 	
 	span {
-		margin-bottom: 18px;
+		margin-bottom: toRem(18);
 		margin-left: -4px;
 		width: fit-content;
-		min-width: 26px;
-		height: 26px;
+		min-width: toRem(26);
+		height: toRem(26);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		background-color: #7715CD;
-		padding: 3px;
+		padding: toRem(3);
 		font-weight: 400;
-		font-size: 18px;
+		font-size: toRem(18);
 		line-height: 133%;
 		text-align: center;
 		border-radius: 50%;
@@ -174,29 +179,29 @@
 	display: none;
 	@media (max-width:$tablet){
 		width: fit-content;
-		min-width: 26px;
-		height: 26px;
+		min-width: toRem(26);
+		height: toRem(26);
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
 		background-color: #7715CD;
-		padding: 3px;
+		padding: toRem(3);
 		font-weight: 500;
-		font-size: 14px;
+		font-size: toRem(14);
 		line-height: 133%;
 		text-align: center;
 		border-radius: 50%;
 		color: #fff;
-		margin-left: 10px;
+		margin-left: toRem(10);
 	}
 }
 
 .user-button {
 	overflow: hidden;
 	border-radius: 50%;
-	width: 48px;
-	height: 48px;
+	width: toRem(48);
+	height: toRem(48);
 	position: relative;
 	border: 1px solid #fff;
 	cursor: pointer;
@@ -213,10 +218,10 @@
 	.more-menu-items {
 		position: absolute;
 		top: 100%;
-		left: -73px;
+		left: toRem(-73);
 		background-color: #29353D;
-		padding: 10px;
-		height: 20px;
+		padding: toRem(10);
+		height: toRem(20);
 		overflow: hidden;
 
 		.menu-item {

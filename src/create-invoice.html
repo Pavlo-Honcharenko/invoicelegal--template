@@ -25,45 +25,68 @@
 									<div class="form-row">
 										<div class="form-row__col">
 											<div class="form-row__label">From :</div>
-											<textarea name="from" id="from" cols="30" rows="8" placeholder="Enter Your Details"></textarea>
+											<textarea class="pc-element" data-popup="#enter-your-details" name="from" id="from" cols="30" rows="8" placeholder="Enter Your Details"></textarea>
+											<a class="mobile-element" href="enter-your-details.html" class="button">
+												<div class="enter-details-button">
+													Enter Your Details
+												</div>
+											</a>
 										</div>
 										<div class="form-row__col">
 											<div class="form-row__label">To :</div>
-											<textarea name="to" id="to" cols="30" rows="8" placeholder="Enter Client Details"></textarea>
+											<textarea class="pc-element" data-popup="#client-details" name="to" id="to" cols="30" rows="8" placeholder="Enter Client Details"></textarea>
+											<a class="mobile-element" href="enter-client-details.html" class="button">
+												<div class="enter-details-button">
+													Enter Client Details
+												</div>
+											</a>
 										</div>
+
+										<div class="form-row__col">
+											<div class="form-row__label">Invoice Details :</div>
+											<a class="mobile-element" href="enter-invoice-details.html" class="button">
+												<div class="enter-details-button">
+													Enter Invoice Details
+												</div>
+											</a>
+										</div>
+										
 									</div>
 
-									<div class="grey-line mt-30 mb-30"></div>
+									<div class="pc-element">
+										<div class="grey-line mt-30 mb-30"></div>
 
-									<div class="form-row mb-30">
-										<div class="form-row__col">
-											<div class="form-row__label">Invoice Number</div>
-											<input autocomplete="off" type="text" name="invoice-number" placeholder="" class="input" value="INV001">
+										<div class="form-row mb-30">
+											<div class="form-row__col">
+												<div class="form-row__label">Invoice Number</div>
+												<input autocomplete="off" type="text" name="invoice-number" placeholder="" class="input" value="INV001">
+											</div>
+											<div class="form-row__col">
+												<div class="form-row__label">Date</div>
+												<input type="text" name="invoice-date" class="input datepicker" value="" placeholder="19.02.2023" >
+											</div>
 										</div>
-										<div class="form-row__col">
-											<div class="form-row__label">Date</div>
-											<input type="text" name="invoice-date" class="input datepicker" value="" placeholder="19.02.2023" >
-											<!-- <input autocomplete="off" type="date" name="invoice-date" placeholder="" class="input" value="19.02.2023"> -->
-										</div>
-									</div>
 
-									<div class="form-row mb-30">
-										<div class="form-row__col select-mini">
-											<div class="form-row__label">Invoice Due</div>
-											<select name="invoice-due" data-class-modif="form">
-												<option value="1" selected>Select One</option>
-												<option value="2">One</option>
-												<option value="3">Two</option>
-											</select>
-										</div>
-										<div class="form-row__col">
-											<div class="form-row__label">Rate per Hour</div>
-											<input autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input" value="">
+										<div class="form-row mb-30">
+											<div class="form-row__col select-mini">
+												<div class="form-row__label">Invoice Due</div>
+												<select name="invoice-due" data-class-modif="form">
+													<option value="0" selected>Select One</option>
+													<option value="7">7 Days</option>
+													<option value="30">30 Days</option>
+													<option value="90">90 Days</option>
+													<option value="custom">Custom</option>
+												</select>
+											</div>
+											<div class="form-row__col">
+												<div class="form-row__label">Rate per Hour</div>
+												<input autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input" value="">
+											</div>
 										</div>
 									</div>
 
 									<div class="form-row">
-										<div class="form-row__col">
+										<div class="form-row__col pc-element">
 											<div class="form-row__label">Rate per Day</div>
 											<input autocomplete="off" type="text" name="invoice-rate-day" placeholder="" class="input" value="R 50.00">
 										</div>
@@ -91,11 +114,11 @@
 												<td>
 													<input type="text" name="invoice-date" class="input datepicker" value="" placeholder="Enter" >
 												</td>
-												<td>
+												<td class="table-create-invoice-textarea">
 													<textarea name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
 												</td>
 												<td>
-													<input type="text" name="invoice-time" class="input text-align-right"  value="09:00">
+													<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input text-align-right"  value="09:00">
 												</td>
 												<td>
 													<input autocomplete="off" type="text" name="invoice-amount" placeholder="0" class="input text-align-right">
@@ -104,7 +127,7 @@
 													<input autocomplete="off" type="text" name="invoice-total" placeholder="0" class="input text-align-right">
 												</td>
 												<td>
-													<input class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+													<input data-popup="#vat" class="checkbox__input" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
 													<label class="checkbox__label" for="invoice-checkbox"></label>
 												</td>
 											</tr>
@@ -138,8 +161,8 @@
 									<div class="grey-line mt-30 mb-30"></div>
 
 									<div class="new-row-wrapper">
-										<div class="blue-button new-row"><img src="@img/icon-plus.svg" alt=""> <span>New Row</span></div>
-										<div class="new-row__items-wrapper">
+										<div class="blue-button new-row pc-element"><img src="@img/icon-plus.svg" alt=""> <span>New Row</span></div>
+										<div class="new-row__items-wrapper pc-element">
 											<div class="new-row__items">
 												<div class="new-row__item">Time Based Billing</div>
 												<div class="new-row__item">Fixed amount Billing</div>
@@ -147,6 +170,8 @@
 												<div class="new-row__item">Expense/Disbursement</div>
 											</div>
 										</div>
+
+										<a href="enter-new-row.html" class="blue-button new-row mobile-element-flex"><img src="@img/icon-plus.svg" alt=""> <span>Add New Row</span></a>
 									</div>
 
 									<div class="grey-line mt-30 mb-30"></div>
@@ -178,7 +203,12 @@
 									<div class="form-row form-row-details">
 										<div class="form-row__col">
 											<div class="form-row__label">Banking Details</div>
-											<input autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input">
+											<input data-popup="#banking-details" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input pc-element">
+											<a class="mobile-element" href="enter-client-details.html" class="button">
+												<div class="enter-details-button">
+													Enter Banking Details
+												</div>
+											</a>
 										</div>
 										<div class="form-row__col">
 											<div class="add-note">
@@ -199,15 +229,17 @@
 									<div class="blue-button grey-button">
 										Save as Draft
 									</div>
-									<div class="blue-button">
-										Done
-									</div>
+									<a href="invoice-001.html">
+										<div class="blue-button">
+											Done
+										</div>
+									</a>
 								</div>
 
 							</div>
 
 
-							<div class="content__col content__col--narrow">
+							<div class="content__col content__col--narrow pc-element">
 
 								<!-- content-block -->
 								<div class="content-block">
