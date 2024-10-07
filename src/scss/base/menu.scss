@@ -155,7 +155,8 @@
 	.menu-header__body {
 		height: 100%;
 		max-height: calc(100vh - 160px);
-		overflow: scroll;
+		overflow-y: scroll;
+      overflow-x: hidden;
 	}
 	.nav-menu {
 		width: fit-content;

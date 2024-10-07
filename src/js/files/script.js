@@ -4568,6 +4568,72 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+// Opening and closing the window with a list with all notifications when clicking on the element '.notifications'
+// Find the element with the class 'notifications'
+const notificationElement = document.querySelector('.notifications');
+
+if (notificationElement) {
+	// Listen for a click event on the notifications element
+	notificationElement.addEventListener('click', function () {
+		// Toggle the class '_open' on the element with the class 'all-notifications'
+		const allNotificationsElement = document.querySelector('.all-notifications');
+		if (allNotificationsElement) {
+			allNotificationsElement.classList.toggle('_open');
+		}
+	});
+}
+
+const userButtonElement = document.querySelector('.user-button');
+if (userButtonElement) {
+	// Listen for a click event on the notifications element
+	userButtonElement.addEventListener('click', function () {
+		// Toggle the class '_open' on the element with the class 'profile-menu'
+		const profileMenuElement = document.querySelector('.profile-menu');
+		if (profileMenuElement) {
+			profileMenuElement.classList.toggle('_open');
+		}
+	});
+}
+
+const actionsElement = document.querySelector('.actions');
+if (actionsElement) {
+	// Listen for a click event on the notifications element
+	actionsElement.addEventListener('click', function () {
+		// Toggle the class '_open' on the element with the class 'profile-menu'
+		const allActionsElement = document.querySelector('#all-actions');
+		if (allActionsElement) {
+			allActionsElement.classList.toggle('_open');
+		}
+	});
+}
+
+// Close the window with a list with all notifications:
+// Find the element with the class 'page'
+const pageElement = document.querySelector('.page');
+
+if (pageElement) {
+	// Listen for a click event on the page element
+	pageElement.addEventListener('click', function () {
+		// Find the element with the class 'all-notifications'
+		const allNotificationsElement = document.querySelector('.all-notifications');
+		const profileMenuElement = document.querySelector('.profile-menu');
+		if (allNotificationsElement) {
+			// Remove the '_open' class if it exists
+			allNotificationsElement.classList.remove('_open');
+		}
+		if (profileMenuElement) {
+			// Remove the '_open' class if it exists
+			profileMenuElement.classList.remove('_open');
+		}
+
+	});
+}
+
+
+
+
+
+
 
 
 
