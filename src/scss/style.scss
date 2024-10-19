@@ -34,7 +34,7 @@ $minWidth: 320;
 // Ширина полотна (макету)
 $maxWidth: 1920;
 // Ширина обмежуючого контейнера (0 = немає обмеження)
-$maxWidthContainer: 1480;
+$maxWidthContainer: 1280;
 // Загальний відступ у контейнера
 // (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
 $containerPadding: 30;
@@ -145,17 +145,32 @@ body {
 	}
 }
 
-@media (min-width: 1400px){
+
+@media (min-width: toEm(1239)){
 	.page {
-		padding-left: 9.4%;
-		padding-right: 9.4%;
+		padding-left: 5.4%;
+		padding-right: 5.4%;
 	}
 	.header {
-		padding-left: 9.4%;
-		padding-right: 9.4%;
+		padding-left: 5.4%;
+		padding-right: 5.4%;
 	}
 }
-@media (min-width: 1800px){
+@media (min-width: toEm(1350)){
+	.page {
+		// padding-left: 9.4%;
+		// padding-right: 9.4%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.header {
+		// padding-left: 9.4%;
+		// padding-right: 9.4%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+}
+@media (min-width: toEm(1800)){
 	.page {
 		padding-left: 13%;
 		padding-right: 13%;
@@ -190,3 +205,4 @@ body {
 
 
 @import "datepicker";
+@import "without-login";

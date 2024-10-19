@@ -1,0 +1,47 @@
+.menu-header__right-col.menu-header__right-col--without-login {
+	gap: toRem(24);
+
+}
+.button-login, .button-sign-up {
+	width: toRem(109);
+	height: toRem(38);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: toRem(18);
+	text-align: center;
+	color: #fff;
+	border-radius: toRem(8);
+	cursor: pointer;
+}
+.button-login {
+	background-color: #7715CD;
+}
+.button-sign-up {
+	background-color: #485D6B;
+}
+
+
+.content {
+		// .content__container
+		&__container {}
+}
+.login-area {
+	width: 100%;
+	max-width: toRem(726);
+	min-height: 500px;
+	margin: toRem(50) auto;
+	padding: toRem(50) toRem(40);
+	background-color: #fff;
+}
+.login-area__title {
+	font-weight: 700;
+	font-size: toRem(28);
+	line-height: 100%;
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+

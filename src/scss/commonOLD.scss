@@ -1,6 +1,10 @@
+// html {
+//   font-size: 80%;
+// }
+
 .page {
-	padding-top: toRem(83);
-	padding-bottom: toRem(83);
+	padding-top: toRem(100);
+	padding-bottom: toRem(100);
 
 	@media (max-width:$mobile){
 		 padding-bottom: 0; 
@@ -10,21 +14,21 @@
 .main-title {
 	// .main-title__container
 	&__container {
-		padding-top: toRem(33);
-		padding-bottom: toRem(33);
+		padding-top: toRem(40);
+		padding-bottom: toRem(40);
 		position: relative;
 
 		@media (max-width:$tablet){
-			padding-top: toRem(29);
-			padding-bottom: toRem(29);
+			padding-top: toRem(35);
+			padding-bottom: toRem(35);
 		}
 		@media (max-width:$mobile){
-			padding-top: toRem(25);
-			padding-bottom: toRem(25); 
+			padding-top: toRem(30);
+			padding-bottom: toRem(30); 
 		}
 		@media (max-width:$mobileSmall){
-			padding-top: toRem(17);
-			padding-bottom: toRem(17);
+			padding-top: toRem(20);
+			padding-bottom: toRem(20);
 		}
 	}
 	// .main-title__title
@@ -32,7 +36,7 @@
 		font-weight: 700;
 		line-height: 100%;
 		color: #485D6B;
-		@include adaptiveValue("font-size", 26, 16);
+		@include adaptiveValue("font-size", 28, 16);
 	}
 
 	.actions {
@@ -40,8 +44,8 @@
 
 		@media (max-width:$mobile){
 			position: absolute;
-			top: toRem(25);
-			right: toRem(25);
+			top: toRem(30);
+			right: toRem(30);
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -50,8 +54,8 @@
 		}
 
 		@media (max-width:$mobileSmall){
-			 top: toRem(17);
-			 right: toRem(17); 
+			 top: toRem(20);
+			 right: toRem(20); 
 		}
 	}
 }
@@ -62,7 +66,7 @@
 .select_form {
 	position: relative;
 	font-weight: 500 !important;
-	font-size: toRem(13) !important;
+	font-size: toRem(15) !important;
 	line-height: 141%;
 	color: #485D6B !important;
 	background-color: #fff;
@@ -70,36 +74,30 @@
 .select-mini {
 	.select_form {
 		border: 1px solid #E3E5ED;
-		border-radius: toRem(3);
-		padding: toRem(7) toRem(10) 1px;
-		height: toRem(42);
-
-		@media (max-width:$mobile){
-			height: toRem(38);
-			padding: toRem(5) toRem(10) 1px;
-		}
+		border-radius: toRem(4);
+		padding: toRem(8) toRem(12) 1px;
 	}
 	.select__title {
-		width: calc(100% - toRem(13));
+		width: calc(100% - toRem(15));
 	}
 	.select__options  {
 		top: calc(100% + 1px);
-		margin-left: toRem(-10);
-		padding: toRem(8) toRem(13) toRem(4) toRem(18);
+		margin-left: toRem(-12);
+		padding: toRem(10) toRem(15) toRem(5) toRem(22);
 	}
 }
 .select__title {
 	display: flex;
 	align-items: center;
-	gap: toRem(7);
-	margin: toRem(4) toRem(4) toRem(8) toRem(8);
+	gap: toRem(8);
+	margin: toRem(5) toRem(5) toRem(10) toRem(10);
 	width: 100%;
 	
 	&::after {
 		content:'';
 		display: block;
-		width: toRem(13);
-		height: toRem(7);
+		width: toRem(15);
+		height: toRem(8);
 		background: url('@img/icon-select.svg') center center no-repeat;
 	}
 }
@@ -109,27 +107,26 @@
 }
 .select__options {
 	font-weight: 500;
-	font-size: toRem(13);
+	font-size: toRem(15);
 	background-color: #fff;
 	box-shadow: -0 6px 16px 0 rgba(0, 0, 0, 0.05);
-	padding: toRem(8) toRem(8) toRem(4);
+	padding: toRem(10) toRem(10) toRem(5);
 	position: absolute;
 	width: 100%;
 	border-radius: 4px;
 
 	@media (max-width:$tablet){
-		font-size: toRem(13);
+		font-size: toRem(14);
 	}
 	@media (max-width:$mobile){
-		font-size: toRem(12); 
+		font-size: toRem(13); 
 	}
 	@media (max-width:$mobileSmall){
-		font-size: toRem(11); 
+		font-size: toRem(12); 
 	}
 }
 ._select-open {
 	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.05);
-
 }
 ._select-open .select__title {
 	&::after {
@@ -139,13 +136,13 @@
 .select__option {
 	font-weight: 500;
 	white-space: nowrap;
-	padding: toRem(11) 0 toRem(7);
+	padding: toRem(13) 0 toRem(8);
 
 	@media (max-width:$mobile){
-		 padding: toRem(10) 0 toRem(7); 
+		 padding: toRem(12) 0 toRem(8); 
 	}
 	@media (max-width:$mobileSmall){
-		padding: toRem(9) 0 toRem(7);
+		padding: toRem(11) 0 toRem(8);
 	}
 }
 .select__scroll {
@@ -155,7 +152,7 @@
 .select__content {
 	font-family: "Montserrat" !important;
 	font-weight: 500 !important;
-	font-size: toRem(13) !important;
+	font-size: toRem(15) !important;
 	line-height: 141%;
 	color: #485D6B !important;
 	letter-spacing: initial;
@@ -163,7 +160,7 @@
 
 .form-row {
 	display: flex;
-	gap: toRem(25);
+	gap: toRem(30);
 
 	@media (max-width:$mobile){
 		flex-wrap: wrap; 
@@ -180,43 +177,37 @@
 }
 .form-row__label {
 	font-weight: 600;
-	font-size: toRem(14);
+	font-size: toRem(17);
 	line-height: 141%;
-	margin-bottom: toRem(8);
+	margin-bottom: toRem(10);
 
 	@media (max-width:$tablet){
-		font-size: toRem(13);
+		font-size: toRem(16);
 	}
 	@media (max-width:$mobile){
-		padding-top: toRem(15);
-		font-size: toRem(13);
+		padding-top: toRem(18);
+		font-size: toRem(15);
 	}
 	@media (max-width:$mobileSmall){
-		 font-size: toRem(12); 
+		 font-size: toRem(14); 
 	}
 }
 textarea {
 	border: 1px solid #E3E5ED;
 	border-radius: 4px;
-	padding: toRem(11) toRem(17);
+	padding: toRem(13) toRem(20);
 	font-weight: 500;
 	outline: none;
 }
 input {
 	border: 1px solid #E3E5ED;
 	border-radius: 4px;
-	padding: toRem(11) toRem(17);
+	padding: toRem(15) toRem(20);
 	font-weight: 500;
 	outline: none;
-	height: toRem(42);
-
-	@media (max-width:$mobile){
-		height: toRem(38);
-		padding: toRem(9) toRem(15);
-	}
 }
 td input {
-	padding: toRem(9) toRem(17);
+	padding: toRem(11) toRem(20);
 }
 textarea:focus, input:focus {
 	border-color: #7715CD;
@@ -233,20 +224,20 @@ textarea:focus, input:focus {
 
 .color-picker-wrapper input[type="color"] {
 	opacity: 0; 
-	width: calc(100% + toRem(27));
-	height: toRem(33);
+	width: calc(100% + 32px);
+	height: toRem(40);
 	position: absolute;
 	top: 0;
-	left: toRem(-15);
+	left: -18px;
 	cursor: pointer;
 }
 .color-placeholder {
 	display: inline-block;
 	border-radius: 4px;
-	width: toRem(83);
-	height: toRem(19);
-	font-size: toRem(13);
-	line-height: toRem(17);
+	width: toRem(100);
+	height: toRem(23);
+	font-size: toRem(16);
+	line-height: toRem(20);
 	display: flex;
 	align-items: center;
 	cursor: pointer;
@@ -264,8 +255,8 @@ textarea:focus, input:focus {
 }
 .icon-colour {
 	position: absolute;
-	top: toRem(-5);
-	right: toRem(2);
+	top: toRem(-4);
+	right: toRem(4);
 	pointer-events: none;
 }
 
@@ -279,8 +270,8 @@ textarea:focus, input:focus {
 /* Стили для кастомного чекбокса */
 .checkbox__label {
 	display: inline-block;
-	width: toRem(22);
-	height: toRem(22);
+	width: toRem(26);
+	height: toRem(26);
 	border: 1px solid #E3E5ED;
 	border-radius: 4px;
 	cursor: pointer;
@@ -296,14 +287,16 @@ textarea:focus, input:focus {
 .checkbox__input:checked + .checkbox__label::after {
 	content: '';
 	position: absolute;
-	top: toRem(3);
-	left: toRem(7);
-	width: toRem(5);
-	height: toRem(10);
+	top: toRem(4);
+	left: toRem(8);
+	width: toRem(6);
+	height: toRem(12);
 	border: solid white;
 	border-width: 0 2px 2px 0;
 	transform: rotate(45deg);
 }
+
+
 
 
 
@@ -313,33 +306,33 @@ textarea:focus, input:focus {
 	justify-content: center;
 	align-items: center;
 	font-weight: 600;
-	font-size: toRem(13);
+	font-size: toRem(16);
 	text-align: center;
 	color: #fff;
 	border-radius: 4px;
-	padding: toRem(13) toRem(33);
+	padding: toRem(15) toRem(40);
 	background-color: #7715CD;
 	width: fit-content;
-	gap: toRem(7);
+	gap: toRem(8);
 	cursor: pointer;
 
 	@media (max-width:$mobile){
-		padding: toRem(11) toRem(17);
-		font-size: toRem(12); 
+		padding: toRem(13) toRem(20);
+		font-size: toRem(14); 
 	}
 }
 
 .mt-20 {
-	margin-top: toRem(17);
+	margin-top: toRem(20);
 }
 .mt-30 {
-	margin-top: toRem(25);
+	margin-top: toRem(30);
 }
 .mb-20 {
-	margin-bottom: toRem(17);
+	margin-bottom: toRem(20);
 }
 .mb-30 {
-	margin-bottom: toRem(25);
+	margin-bottom: toRem(30);
 }
 .to-left {
 	margin-right: auto;
@@ -370,6 +363,8 @@ textarea:focus, input:focus {
 
 //=======================================================================================================
 
+
+
 .grey-line {
 	width: 100%;
 	height: 1px;
@@ -385,17 +380,19 @@ textarea:focus, input:focus {
 
 p {
    line-height: 160%;
-	margin-bottom: toRem(5);
+	margin-bottom: toRem(6);
 
 	@media (max-width:$mobile){
-		font-size: toRem(11); 
+		font-size: toRem(13); 
 	}
 }
 .blue-border {
 	@media (min-width:$mobile){
-		border-top: toRem(7) solid #7715CD; 
+		border-top: toRem(8) solid #7715CD; 
 	}
 }
+
+
 
 //=======================================================================================================
 
@@ -453,3 +450,5 @@ p {
 		max-height: 60px; 
 	}
 }
+
+

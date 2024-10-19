@@ -20,7 +20,7 @@ body::after {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	padding: 30px 10px;
+	padding: toRem(25) toRem(8);
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
@@ -53,7 +53,7 @@ body::after {
 	background-color: #fff;
 	padding: 0;
 	width: 100%;
-	max-width: 900px;
+	max-width: toRem(750);
 
 	.lock & {
 		visibility: visible;
@@ -66,27 +66,27 @@ body::after {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 23px 30px;
+	padding: toRem(19) toRem(25);
 }
 .popup__title {
 	font-weight: 700;
-	font-size: 20px;
+	font-size: toRem(17);
 	line-height: 120%;
 	color: #fff;
 }
 
 #newtarget, #all-actions {
 	.popup__content {
-		max-width: 460px;
+		max-width: toRem(384);
 
 		@media (max-width:$mobile){
-			max-width: 354px;
+			max-width: toRem(295);
 		}
 	}
 }
 .popup__body {
 	background-color: #fff;
-	padding: 23px 30px;
+	padding: toRem(19) toRem(25);
 
 	@media (max-width:$mobile){
 		padding: 0; 
@@ -95,15 +95,15 @@ body::after {
 	.row {
 		display: flex;
 		justify-content: space-between;
-		gap: 35px;
+		gap: toRem(29);
 		flex-wrap: wrap;
 
 		@media (max-width:$mobile){
-			gap: 20px;
+			gap: toRem(17);
 		}
 	}
 	.form-element-wrapper {
-		flex: 0 1 calc(50% - 18px);
+		flex: 0 1 calc(50% - toRem(15));
 
 		@media (max-width:$mobile){
 			 flex: 1 1 100%; 
@@ -111,17 +111,17 @@ body::after {
 	}
 	label {
 		font-weight: 600;
-		font-size: 17px;
+		font-size: toRem(14);
 		line-height: 141%;
 		color:#485D6B;
-		margin-bottom: 10px;
+		margin-bottom: toRem(8);
 
 		@media (max-width:$mobile){
-			font-size: 16px; 
+			font-size: toRem(13); 
 		}
 
 		@media (max-width:$mobileSmall){
-			font-size: 14px; 
+			font-size: toRem(12); 
 		}
 	}
 	.grey-button {
@@ -130,7 +130,7 @@ body::after {
 		align-items: center;
 		color: #fff;
 		font-weight: 600;
-		font-size: 16px;
+		font-size: toRem(13);
 		text-align: center;
 		background-color: #BCBCBC;
 	}
@@ -140,46 +140,46 @@ body::after {
 		align-items: center;
 		color: #fff;
 		font-weight: 600;
-		font-size: 16px;
+		font-size: toRem(13);
 		text-align: center;
 	}
 
 	.blue-button, .grey-button {
-		flex: 0 0 215px;
-		height: 50px;
+		flex: 0 0 toRem(179);
+		height: toRem(42);
 		border-radius: 4px;
 		cursor: pointer;
 
 		@media (max-width:$tablet){
-			margin-bottom: 50px;
+			margin-bottom: toRem(42);
 		}
 
 		@media (max-width:$mobileSmall){
-			flex: 0 1 165px;
+			flex: 0 1 toRem(137);
 		}
 	}
 	.buttons-wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: 30px;
-		gap: 35px;
+		padding-top: toRem(25);
+		gap: toRem(29);
 
 		@media (max-width:$mobile){
-			gap: 20px; 
-			padding-top: 20px;
+			gap: toRem(17); 
+			padding-top: toRem(17);
 		}
 	}
 }
 
 #enter-time-spent {
 	.popup__content {
-		width: 340px;
+		width: toRem(284);
 	}
 
 	.popup__body {
 		@media (max-width:$mobile){
-			padding: 12px 25px 0;
+			padding: toRem(10) toRem(21) 0;
 		}
 	}
 
@@ -190,26 +190,25 @@ body::after {
 		color: #485D6B;
 		display: flex;
 		align-items: center;
-		gap: 12px;
+		gap: toRem(10);
 	}
 
 	.blue-button {
 		@media (max-width:$mobile){
-			 margin-bottom: 30px; 
+			 margin-bottom: toRem(25); 
 		}
 	}
 		// .popup__close
 		&__close {}
-
 }
 .time-element-wrapper {
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: toRem(25);
 
 	input {
 		text-align: right;
-		flex: 0 0 166px;
+		flex: 0 0 toRem(138);
 	}
 
 	label {
@@ -219,58 +218,57 @@ body::after {
 
 #vat {
 	.popup__content {
-		max-width: 457px;
+		max-width: toRem(381);
 	}
 	.vat-body__title {
-		padding-top: 10px;
+		padding-top: toRem(8);
 		@media (max-width:$mobile){
-			 font-size: 19px;
-			 margin-bottom: 20px;
+			 font-size: toRem(16);
+			 margin-bottom: toRem(17);
 		}
 	}
 	.vat-choice-wrapper {
 		@media (max-width:$mobile){
-			 gap: 60px; 
+			 gap: toRem(50); 
 		}
 	}
 	
 	.popup__body {
 		@media (max-width:$mobile){
-			padding: 12px 25px 0;
+			padding: toRem(10) toRem(21) 0;
 		}
 	}
 
 	label {
-		padding-top: 18px;
+		padding-top: toRem(15);
 	}
-
 }
 
-
 .vat-body {
-	padding-bottom: 0;
+	padding-bottom: toRem(33);
 	// .vat-body__title
 	&__title {
 		font-weight: 500;
-		font-size: 22px;
+		font-size: toRem(18);
 		line-height: 177%;
 		text-align: center;
 		color: #485D6B;
-		margin-bottom: 30px;
+		margin-bottom: toRem(25);
 	}
 }
 .vat-choice-wrapper {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 90px;
+	gap: toRem(75);
+	padding-bottom: toRem(20);
 }
 .radio-label {
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: toRem(8);
 	font-weight: 500 !important;
-	font-size: 22px !important;
+	font-size: toRem(18) !important;
 	text-align: center;
 }
 .radio-input {

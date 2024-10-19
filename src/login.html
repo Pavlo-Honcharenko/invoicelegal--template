@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Home"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header-without-login.htm',{})
+			<main class="page">
+
+				<!-- SECTION CONTENT -->
+				<section class="content">
+					<div class="content__container">
+
+						 <div class="forgot-password">Forgot Password</div>
+						
+						<div class="login-area">
+							<div id="login-form">
+								<div class="login-area__title">
+									login-form
+								</div>
+							</div>
+
+							<div id="sign-up-form" class="hidden">
+								<div class="login-area__title">
+									sign-up-form
+								</div>
+								
+							</div>
+
+							<div id="forgot-password-form" class="hidden">
+								<div class="login-area__title">
+									forgot-password-form
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End of SECTION CONTENT -->
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div><!-- main-wrapper -->
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
