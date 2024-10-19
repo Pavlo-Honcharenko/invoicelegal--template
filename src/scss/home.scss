@@ -92,10 +92,13 @@
 .top-line__select {
 	margin-left: toRem(25);
 	margin-right: auto;
+	margin-top:  toRem(-10) !important;
 	
 	.select_form {
 		border: 1px solid #E3E5ED;
 		border-radius: toRem(3);
+		display: flex;
+		align-items: center;
 	}
 	.select__title {
 		margin: toRem(4) toRem(8) toRem(4) toRem(8);
@@ -492,7 +495,7 @@
 			gap: toRem(12);
 
 			&:not(:last-child) {
-				margin-bottom: toRem(33);
+				margin-bottom: toRem(30);
 				@media (max-width:$mobile){
 					 margin-bottom: toRem(20); 
 				}

@@ -117,8 +117,11 @@
 	text-align: left;
 	padding: toRem(12) toRem(6);
 
-	input, textarea {
+	input {
 		padding: toRem(9) toRem(11);
+	}
+	textarea {
+		padding: toRem(11);
 	}
 }
 
@@ -578,8 +581,8 @@
 }
 
 .table-create-invoice td.table-create-invoice-textarea {
-	width: 48%;
-	min-width: 48% !important;
+	width: 40%;
+	min-width: 40% !important;
 }
 
 .table-create-invoice td:first-child {
@@ -605,7 +608,21 @@
 #vat-step-2._open {
 	display: block;
 }
-
+.table.table-create-invoice.table-pc {
+	th:first-child {
+		padding: 0.75rem toRem(5) 0.75rem toRem(12);
+	}
+	td:first-child {
+		padding: 0.75rem toRem(5) 0.75rem toRem(0);
+	}
+	th:last-child {
+		padding: 0.75rem toRem(10) 0.75rem toRem(0);
+	}
+	td:last-child {
+		padding: 0.75rem toRem(12) 0.75rem toRem(5);
+		text-align: center;
+	}
+}
 //============================================MOBILE===========================================================
 .enter-details-button {
 	border: 1px solid #E3E5ED;
@@ -705,5 +722,5 @@
 }
 
 #all-actions .content-block {
-	padding: toRem(33) toRem(33) toRem(25);
+	padding: toRem(26) toRem(26) toRem(20);
 }
