@@ -12,6 +12,11 @@
 	display: flex;
 	gap: toRem(25);
 
+	@media (max-width:$mobile){
+		width: 100vw !important;
+		max-width: 100vw !important;
+	}
+
 		// .content__col
 		&__col {
 			display: flex;
@@ -52,7 +57,7 @@
 		padding: toRem(21) toRem(17) toRem(17);
 	}
 	@media (max-width:$mobileSmall){
-		padding: toRem(17) toRem(10);
+		padding: toRem(20) toRem(15);
 	}
 }
 
@@ -73,9 +78,6 @@
 		margin-top: toRem(4); 
 		font-size: toRem(16);
 	}
-	@media (max-width:$mobileSmall){
-		font-size: toRem(12);
-	}
 }
 .top-line__title--main {
 	@media (max-width:$mobile){
@@ -85,7 +87,7 @@
 	}
 
 	@media (max-width:$mobileSmall){
-		font-size: toRem(13);
+		font-size: toRem(15);
 		margin-bottom: 0 !important; 
 	}
 }
@@ -93,6 +95,14 @@
 	margin-left: toRem(25);
 	margin-right: auto;
 	margin-top:  toRem(-10) !important;
+
+	@media (max-width:$tablet){
+		margin-top:  toRem(-12) !important;
+	}
+
+	@media (max-width:$mobile){
+		margin-top:  toRem(-7) !important;
+	}
 	
 	.select_form {
 		border: 1px solid #E3E5ED;
@@ -114,6 +124,7 @@
 	}
 	@media (max-width:$mobile){
 			font-size: toRem(17); 
+			margin-top: toRem(4);
 	}
 	@media (max-width:$mobileSmall){
 		font-size: toRem(13);
@@ -187,6 +198,7 @@
 			font-size: toRem(12);
 			gap: toRem(5);
 			padding: toRem(6) toRem(10);
+			height: 35px;
 		}
 
 		.top-line__title {
@@ -194,17 +206,8 @@
 			margin-bottom: toRem(25);
 		}
 
-		.statistic__col {
-			font-size: toRem(12);
-		}
 		.total {
 			font-size: toRem(13);
-		}
-	}
-
-	@media (max-width:$mobileSmall){
-		.button-create-invoice {
-			font-size: toRem(10);
 		}
 	}
 	
@@ -286,7 +289,7 @@
 				font-size: toRem(17); 
 			}
 			@media (max-width:$mobileSmall){
-				font-size: toRem(13);
+				font-size: toRem(16);
 				margin-bottom: toRem(17);
 			}
 		}
@@ -298,16 +301,6 @@
 			margin-bottom: toRem(25);
 			color: #485D6B;
 			font-size: toRem(20);
-
-			@media (max-width:$tablet){
-				font-size: toRem(19);
-			}
-			@media (max-width:$mobile){
-				font-size: toRem(18); 
-			}
-			@media (max-width:$mobileSmall){
-				font-size: toRem(17);
-			}
 		}
 		&__diagram {
 			img {
@@ -324,19 +317,19 @@
 
 			.select_form {
 				padding: 0 toRem(21) 0 0;
+				height: 38px;
 						
 				.select__option {
 					padding: 0.3125rem toRem(4) 0.7rem;
 				}
 
 				@media (max-width:$mobileSmall){
-					padding: 0 toRem(21) 0 toRem(6);
 					margin-right: toRem(15);
 					border: 1px solid #E3E5ED;
    				border-radius: 0.25rem;
 
-					.select__body {
-						margin-bottom:  toRem(-3);
+					.select__title {
+						padding-top: 4px;
 					}
 					.select__options {
 						left: 0;
@@ -380,15 +373,6 @@
 	font-size: toRem(15);
 	font-weight: 500;
 	cursor: pointer;
-	@media (max-width:$tablet){
-		font-size: toRem(14);
-	}
-	@media (max-width:$mobile){
-		font-size: toRem(13); 
-	}
-	@media (max-width:$mobileSmall){
-		font-size: toRem(12); 
-	}
 }
 
 .content-block-3 {
@@ -431,6 +415,7 @@
 			.top-line__amount {
 				flex: 0 0 100%;
 				padding-top: toRem(17);
+				padding-right: 6px;
 			}
 		 } 
 	}
@@ -447,7 +432,7 @@
 
 .content-block-4 {
 	@media (max-width:$mobile){
-		margin-bottom: toRem(67); 
+		margin-bottom: toRem(90); 
 	}
 		// .content-block-4__title
 		&__title {
@@ -467,7 +452,7 @@
 				 font-size: toRem(17); 
 			}
 			@media (max-width:$mobileSmall){
-				font-size: toRem(13);
+				font-size: toRem(16);
 			}
 		}
 	.content-block-4__bottom-row {
@@ -545,23 +530,16 @@
 	height: toRem(38);
 	border-radius: 50%;
 	font-weight: 600;
-	font-size: toRem(13);
+	font-size: toRem(15);
 	text-align: center;
 	
 }
 .client-name {
+	padding-top: 2px;
 	font-weight: 500;
 	font-size: toRem(13);
 	line-height: 160%;
 	color: #757575;
-
-	@media (max-width:$mobile){
-		font-size: toRem(12); 
-	}
-
-	@media (max-width:$mobileSmall){
-		 font-size: toRem(11); 
-	}
 }
 
 #diagram1 {
@@ -760,9 +738,9 @@
 		display: table;
 	}
 	.table-mobile td {
-		font-size: toRem(11);
+		font-size: toRem(13);
 		@media (max-width:$mobileSmall){
-			 font-size: toRem(10); 
+			 font-size: toRem(12); 
 		}
 	}
 	.table__client {

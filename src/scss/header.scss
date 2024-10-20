@@ -24,6 +24,11 @@
 		gap: toRem(33);
 		@media (max-width:$mobile){
 			gap: toRem(29);
+			box-sizing: border-box;
+			margin-left: 15px;
+			margin-right: 15px;
+			max-width: calc(100vw - 30px) !important;
+			padding: 0;
 		}
 		@media (max-width:$mobileSmall){
 			gap: toRem(25);
@@ -179,12 +184,16 @@
 	position: relative;
 
 	img {
-		margin-top: toRem(15);
+		margin-top: toRem(14);
+
+		@media (max-width:$mobileSmall){
+			margin-top: toRem(12);
+		}
 	}
 
 	span {
 		margin-bottom: toRem(15);
-		margin-left: toRem(-3);
+		margin-left: toRem(-5);
 		width: fit-content;
 		min-width: toRem(22);
 		height: toRem(22);
@@ -218,9 +227,9 @@
 	box-shadow: 0 toRem(7) toRem(13) 0 rgba(0, 0, 0, 0.1);
 
 	@media (max-width:$mobileSmall){
-		width: calc(100vw - toRem(20));
-		min-width: calc(100vw - toRem(20));
-		max-width: calc(100vw - toRem(20));
+		width: calc(100vw - toRem(30));
+		min-width: calc(100vw - toRem(30));
+		max-width: calc(100vw - toRem(30));
 		right: 0;
 	}
 
@@ -305,9 +314,9 @@
 	box-shadow: 0 toRem(7) toRem(13) 0 rgba(0, 0, 0, 0.1);
 
 	@media (max-width:$mobileSmall){
-		width: calc(100vw - toRem(20));
-		min-width: calc(100vw - toRem(20));
-		max-width: calc(100vw - toRem(20));
+		width: calc(100vw - toRem(30));
+		min-width: calc(100vw - toRem(30));
+		max-width: calc(100vw - toRem(30));
 		right: 0;
 	}
 

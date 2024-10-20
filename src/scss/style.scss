@@ -89,6 +89,10 @@ body {
 	// Притискаємо footer
 	> main {
 		flex: 1 1 auto;
+		@media (max-width:$mobile){
+			width: 100vw !important;
+			max-width: 100vw !important; 
+		}
 	}
 	// Фікс для слайдерів
 	> * {

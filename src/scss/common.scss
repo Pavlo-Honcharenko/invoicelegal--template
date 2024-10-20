@@ -3,7 +3,9 @@
 	padding-bottom: toRem(83);
 
 	@media (max-width:$mobile){
-		 padding-bottom: 0; 
+		padding-bottom: 0; 
+		width: 100vw !important;
+		max-width: 100vw !important;
 	}
 }
 
@@ -47,11 +49,16 @@
 			align-items: center;
 			gap: 11px; 
 			cursor: pointer;
+			font-size: toRem(14);
 		}
 
 		@media (max-width:$mobileSmall){
 			 top: toRem(17);
 			 right: toRem(17); 
+		}
+
+		img {
+			margin-bottom: -2px;
 		}
 	}
 }
@@ -140,6 +147,7 @@
 	font-weight: 500;
 	white-space: nowrap;
 	padding: toRem(11) 0 toRem(7);
+	font-size: 13px !important;
 
 	@media (max-width:$mobile){
 		 padding: toRem(10) 0 toRem(7); 
@@ -184,15 +192,8 @@
 	line-height: 141%;
 	margin-bottom: toRem(8);
 
-	@media (max-width:$tablet){
-		font-size: toRem(13);
-	}
 	@media (max-width:$mobile){
 		padding-top: toRem(15);
-		font-size: toRem(13);
-	}
-	@media (max-width:$mobileSmall){
-		 font-size: toRem(12); 
 	}
 }
 textarea {
