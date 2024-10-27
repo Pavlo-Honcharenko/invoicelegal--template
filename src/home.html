@@ -4,25 +4,23 @@
 	"title":"Home"
 	})
 	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
+		@@include('html/_header.htm',{})
 
-				<div class="main-title">
-					<div class="main-title__container">
-						<div class="main-title__title">
-							<h1>Welcome Home</h1>
-						</div>
+		<div class="container main-container">
+			<div class="row">
+				<div class="col">
+					<div class="main-title__title pt-lg-2 mt-4 mb-2">
+						<h1>Welcome Home</h1>
 					</div>
 				</div>
-
-				<!-- SECTION CONTENT -->
-				<section class="content">
-					<div class="content__container">
-						<div class="content__blocks">
-
-							<div class="content__col content__col--wide">
-
+			</div>
+			
+			<div class="row">
+				<!-- Left Column (8 parts) -->
+				<div class="col-lg-8 col-12">
+					<div class="row">
+						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 1 -->
+							<div class="custom-column">
 								<!-- content-block-1 -->
 								<div class="content-block content-block-1">
 									<div class="top-line">
@@ -119,141 +117,145 @@
 											</div>
 										</div>
 									</div>
-								</div>
-
-
+								</div><!-- end of content-block-1 -->
+							</div>
+						</div>
+						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 2 -->
+							<div class="custom-column col-wide">
 								<!-- content-block-3 -->
-								<div class="content-block content-block-3" data-da=".content__col--narrow,993,0">
-										<div class="top-line">
-											<div class="top-line__title">
-												Paid Invoices
-											</div>
-											<div class="top-line__select select-mini">
-												<select name="months-paid-invoices" data-class-modif="form">
-													<option value="To Date">To Date</option>
-													<option value="Last Month" selected>Last Month</option>
-													<option value="Last 3 months">Last 3 months</option>
-													<option value="Last Year">Last Year</option>
-													<option value="Custom Range">Custom Range</option>
-												</select>
-											</div>
-											<div class="top-line__amount">
-												R 2,900.00
-											</div>
+								<div class="content-block content-block-3" data-da=".col-narrow,993">
+									<div class="top-line">
+										<div class="top-line__title">
+											Paid Invoices
 										</div>
-
-										<table class="table table-pc">
-											<thead>
-												<tr>
-													<th>Invoice</th>
-													<th>Client</th>
-													<th>Invoice Date</th>
-													<th>Amount</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>vvm1</td>
-													<td>Wade</td>
-													<td>15.02.2023</td>
-													<td class="text-align-right">R 1,600.00</td>
-												</tr>
-												<tr>
-													<td>vvm2</td>
-													<td>Brooklyn</td>
-													<td>15.02.2023</td>
-													<td class="text-align-right">R 200.00</td>
-												</tr>
-												<tr>
-													<td>vvm3</td>
-													<td>Guy</td>
-													<td>15.02.2023</td>
-													<td class="text-align-right">R 200.00</td>
-												</tr>
-												<tr>
-													<td>vvm4</td>
-													<td>Jacob</td>
-													<td>15.02.2023</td>
-													<td class="text-align-right">R 300.00</td>
-												</tr>
-												<tr>
-													<td>vvm5</td>
-													<td>Darlene</td>
-													<td>15.02.2023</td>
-													<td class="text-align-right">R 600.00</td>
-												</tr>
-											</tbody>
-										</table>
-
-										<table class="table table-mobile">
-											<tbody>
-												<tr>
-													<td>
-														<div class="table__client">Wade</div>
-														<div class="table__invoice">vvm1</div>
-														<div class="table__amount">R 1,600.00</div>
-													</td>
-													<td class="table__date">
-														15.02.2023
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="table__client">Brooklyn</div>
-														<div class="table__invoice">vvm2</div>
-														<div class="table__amount">R 200.00</div>
-													</td>
-													<td class="table__date">
-														15.02.2023
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="table__client">Guy</div>
-														<div class="table__invoice">vvm3</div>
-														<div class="table__amount">R 200.00</div>
-													</td>
-													<td class="table__date">
-														15.02.2023
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="table__client">Jacob</div>
-														<div class="table__invoice">vvm4</div>
-														<div class="table__amount">R 300.00</div>
-													</td>
-													<td class="table__date">
-														15.02.2023
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<div class="table__client">Darlene</div>
-														<div class="table__invoice">vvm5</div>
-														<div class="table__amount">R 600.00</div>
-													</td>
-													<td class="table__date">
-														15.02.2023
-													</td>
-												</tr>
-											</tbody>
-										</table>
-										
-										<div class="content-block-3__bottom-row">
-											<a href="#" class="view-all">View All</a>
+										<div class="top-line__select select-mini">
+											<select name="months-paid-invoices" data-class-modif="form">
+												<option value="To Date">To Date</option>
+												<option value="Last Month" selected>Last Month</option>
+												<option value="Last 3 months">Last 3 months</option>
+												<option value="Last Year">Last Year</option>
+												<option value="Custom Range">Custom Range</option>
+											</select>
 										</div>
-
+										<div class="top-line__amount">
+											R 2,900.00
+										</div>
 									</div>
 
+									<table class="table table-pc">
+										<thead>
+											<tr>
+												<th>Invoice</th>
+												<th>Client</th>
+												<th>Invoice Date</th>
+												<th>Amount</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>vvm1</td>
+												<td>Wade</td>
+												<td>15.02.2023</td>
+												<td class="text-align-right">R 1,600.00</td>
+											</tr>
+											<tr>
+												<td>vvm2</td>
+												<td>Brooklyn</td>
+												<td>15.02.2023</td>
+												<td class="text-align-right">R 200.00</td>
+											</tr>
+											<tr>
+												<td>vvm3</td>
+												<td>Guy</td>
+												<td>15.02.2023</td>
+												<td class="text-align-right">R 200.00</td>
+											</tr>
+											<tr>
+												<td>vvm4</td>
+												<td>Jacob</td>
+												<td>15.02.2023</td>
+												<td class="text-align-right">R 300.00</td>
+											</tr>
+											<tr>
+												<td>vvm5</td>
+												<td>Darlene</td>
+												<td>15.02.2023</td>
+												<td class="text-align-right">R 600.00</td>
+											</tr>
+										</tbody>
+									</table>
 
+									<table class="table table-mobile">
+										<tbody>
+											<tr>
+												<td>
+													<div class="table__client">Wade</div>
+													<div class="table__invoice">vvm1</div>
+													<div class="table__amount">R 1,600.00</div>
+												</td>
+												<td class="table__date">
+													15.02.2023
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="table__client">Brooklyn</div>
+													<div class="table__invoice">vvm2</div>
+													<div class="table__amount">R 200.00</div>
+												</td>
+												<td class="table__date">
+													15.02.2023
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="table__client">Guy</div>
+													<div class="table__invoice">vvm3</div>
+													<div class="table__amount">R 200.00</div>
+												</td>
+												<td class="table__date">
+													15.02.2023
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="table__client">Jacob</div>
+													<div class="table__invoice">vvm4</div>
+													<div class="table__amount">R 300.00</div>
+												</td>
+												<td class="table__date">
+													15.02.2023
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="table__client">Darlene</div>
+													<div class="table__invoice">vvm5</div>
+													<div class="table__amount">R 600.00</div>
+												</td>
+												<td class="table__date">
+													15.02.2023
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									
+									<div class="content-block-3__bottom-row">
+										<a href="#" class="view-all">View All</a>
+									</div>
+								</div><!-- end of content-block-3 -->
 							</div>
+						</div>
+					</div>
+				</div>
 
-
-							<div class="content__col content__col--narrow">
-
+				<!-- Right Column (4 parts) -->
+				<div class="col-lg-4 col-12">
+					<div class="row">
+						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 1 -->
+							<div class="custom-column col-narrow">
 								<!-- content-block-2 -->
-								<div class="content-block content-block-2" data-da=".content__col--wide,993">
+								<div class="content-block content-block-2" data-da=".col-wide,993">
 									<div class="content-block-2__title">
 										Monthly Billing Target
 									</div>
@@ -284,8 +286,11 @@
 											</select>
 										</div>
 									</div>
-								</div>
-
+								</div><!-- end of content-block-2 -->
+							</div>
+						</div>
+						<div class="col-12  gy-3 gy-lg-4"> <!-- Inner Column 2 -->
+							<div class="custom-column">
 								<!-- content-block-4 -->
 								<div class="content-block content-block-4">
 									<div class="content-block-4__title">
@@ -324,17 +329,14 @@
 										</select>
 									</div>
 									
-								</div>
+								</div><!-- end of content-block-4 -->
 							</div>
-
 						</div>
 					</div>
-				</section>
-				<!-- End of SECTION CONTENT -->
+				</div>
+			</div>
+		</div>
 
-			</main>
-			@@include('html/_footer.htm',{})
-		</div><!-- main-wrapper -->
 		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>

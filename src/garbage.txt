@@ -1,0 +1,9 @@
+main
+.page
+.content
+.content__container
+.content__blocks
+.content__col
+.content__col--wide
+.content__col--narrow
+		

@@ -1,156 +1,75 @@
-<header class="header">
-	<div class="header__container">
+<header class="header bg-dark py-2 fixed-top">
+  <div class="container d-flex justify-content-between align-items-center">
 
-		<button type="button" class="menu-header__icon icon-menu icon-menu--open"><span></span></button>
-		
-		<a href="/home.html" class="header__logo"><img src="@img/logo.svg" alt=""></a>
-		
-		<div class="menu-header">
+    <!-- Иконка бургер-меню для мобильных -->
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-			<div class="mobile-elements">
-				<a href="/home.html" class="header__logo header__logo"><img src="@img/logo.svg" alt=""></a>
-				
-				<button type="button" class="menu-header__icon icon-menu"><span></span></button>
-			</div>
-			
-			<nav class="menu-header__body">
-				<ul class="nav-menu">
-					<li class="menu-item current-menu-item">
-						<a href="/home.html"><img src="@img/icon-home.svg" alt="Home"><span>Home</span></a>
-					</li>
-					<li class="menu-item">
-						<a href="#"><img src="@img/icon-invoices.svg" alt="Invoices"><span>Invoices</span></a>
-					</li>
-					<li class="menu-item">
-						<a href="#"><img src="@img/icon-drafts.svg" alt="Drafts"><span>Drafts</span><span class="drafts-count">10</span></a>
-					</li>
-					<li class="menu-item">
-						<a href="#"><img src="@img/icon-invite.svg" alt="Invite"><span>Invite</span></a>
-					</li>
-					<li class="menu-item">
-						<span class="menu-item__more-links">More</span>
-						<ul class="more-menu-items">
-							<li class="menu-item">
-								<a href="#"><img src="@img/icon-quotations.svg" alt="Quotations"><span>Quotations</span></a>
-							</li>
-							<li class="menu-item">
-								<a href="#"><img src="@img/icon-reports.svg" alt="Reports"><span>Reports</span></a>
-							</li>
-							<li class="menu-item">
-								<a href="#"><img src="@img/icon-clients.svg" alt="Clients"><span>Clients</span></a>
-							</li>
-							<li class="menu-item">
-								<a href="#"><img src="@img/icon-settings.svg" alt="Settings"><span>Settings</span></a>
-							</li>
-							<li class="menu-item menu-item-support">
-								<a href="#"><img src="@img/icon-support.svg" alt="Help"><span>Help and Support</span></a>
-							</li>
-							<li class="menu-item">
-								<a href="#"><img src="@img/icon-contact-us.svg" alt="Contact us"><span>Contact us</span></a>
-							</li>
-						</ul>
-					</li>
-				</ul><!-- nav-menu -->
+    <!-- Логотип -->
+    <a href="/home.html" class="navbar-brand">
+      <img src="@img/logo.svg" alt="Logo" width="96" height="58">
+    </a>
 
-			</nav><!-- menu-header__body -->
-
-		</div><!-- menu-header -->
-
-		<div class="menu-header__right-col">
-			<div class="notifications">
-				<img src="@img/icon-notification.svg" alt="notitfications">
-				<span>2</span>
-			</div>
-
-			<!-- all-notifications, start -->
-			<div class="all-notifications">
-				<div class="all-notifications__header">
-					<div class="all-notifications__title">
-						Notifications
-					</div>
-					<div class="all-notifications__mark-as-read">
-						Mark as read
-					</div>
-				</div>
-				<ul>
-					<li>
-						<img src="@img/icon-notification-mail.svg" alt="">
-						<div class="all-notifications__item-content">
-							<div class="all-notifications__text">
-								Email for Invoice:0001 have been read
-							</div>
-							<div class="all-notifications__date">
-								2 min ago
-							</div>
-						</div>
+    <!-- Меню навигации -->
+    <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarMenu">
+      <ul class="navbar-nav flex-lg-row"> <!-- Добавлен класс flex-lg-row -->
+        <li class="nav-item me-lg-3">
+          <a href="/home.html" class="nav-link active"><img src="@img/icon-home.svg" alt="Home" class="me-2"><span>Home</span></a>
+        </li>
+        <li class="nav-item me-lg-3">
+          <a href="#" class="nav-link"><img src="@img/icon-invoices.svg" alt="Invoices" class="me-2"><span>Invoices</span></a>
+        </li>
+        <li class="nav-item me-lg-3">
+				<a href="#" class="nav-link"><img src="@img/icon-drafts.svg" alt="Drafts" class="me-2"><span>Drafts</span><span class="drafts-count">10</span></a>
+			</li>
+			<li class="nav-item me-lg-3">
+				<a href="#" class="nav-link"><img src="@img/icon-invite.svg" alt="Invite" class="me-2"><span>Invite</span></a>
+			</li>
+			<li class="nav-item me-lg-3">
+				<span class="nav-item__more-links">More</span>
+				<ul class="more-menu-items">
+					<li class="nav-item">
+						<a href="#"><img src="@img/icon-quotations.svg" alt="Quotations"><span>Quotations</span></a>
 					</li>
-					<li>
-						<img src="@img/icon-notification-subscription.svg" alt="">
-						<div class="all-notifications__item-content">
-							<div class="all-notifications__text">
-								Your pro subscription expires in a weeks time. upgrade
-							</div>
-							<div class="all-notifications__date">
-								2 min ago
-							</div>
-						</div>
+					<li class="nav-item">
+						<a href="#"><img src="@img/icon-reports.svg" alt="Reports"><span>Reports</span></a>
 					</li>
-					<li>
-						<img src="@img/icon-notification-mail.svg" alt="">
-						<div class="all-notifications__item-content">
-							<div class="all-notifications__text">
-								Email for Invoice: VVM1 have been read
-							</div>
-							<div class="all-notifications__date">
-								4w ago
-							</div>
-						</div>
+					<li class="nav-item">
+						<a href="#"><img src="@img/icon-clients.svg" alt="Clients"><span>Clients</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="#"><img src="@img/icon-settings.svg" alt="Settings"><span>Settings</span></a>
+					</li>
+					<li class="nav-item menu-item-support">
+						<a href="#"><img src="@img/icon-support.svg" alt="Help"><span>Help and Support</span></a>
+					</li>
+					<li class="nav-item">
+						<a href="#"><img src="@img/icon-contact-us.svg" alt="Contact us"><span>Contact us</span></a>
 					</li>
 				</ul>
-			</div>
-			<!-- all-notifications, end -->
+			</li>
+      </ul>
+    </div>
 
-			<div class="user-button">
-				<img src="@img/user.jpg" alt="user">
-			</div>
-
-			<div class="profile-menu">
-				<div class="upgrade-to-pro">
-					<span>Upgrade to </span>
-					<a href="#" class="upgrade-to-pro__button">Pro</a>
-				</div>
-				<div class="profile-menu__name">
-					Deirdre
-				</div>
-				<ul>
-					<li>
-						<a href="#" class="button">
-							<img src="@img/icon-edit-account.svg" alt="">
-							Edit Account
-						</a>
-					</li>
-					<li>
-						<a href="#" class="button">
-							<img src="@img/icon-subscription.svg" alt="">
-							Subscription
-						</a>
-					</li>
-					<li>
-						<a href="#" class="button">
-							<img src="@img/icon-settings-grey.svg" alt="">
-							Settings
-						</a>
-					</li>
-					<li>
-						<a href="#" class="button">
-							<img src="@img/icon-logout.svg" alt="">
-							Logout
-						</a>
-					</li>
-				</ul>
-			</div>
-
-		</div>
-		
-	</div><!-- header__container -->
+    <!-- Правая колонка с уведомлениями и профилем -->
+    <div class="d-flex align-items-center">
+      <div class="position-relative me-4">
+        <img src="@img/icon-notification.svg" alt="Notifications">
+        <span class="badge bg-primary rounded-circle position-absolute top-0 start-100 translate-middle">2</span>
+      </div>
+      <div class="dropdown">
+        <a href="#" class="d-flex align-items-center" data-bs-toggle="dropdown">
+          <img src="@img/user.jpg" alt="user" class="rounded-circle" width="40" height="40">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a href="#" class="dropdown-item">Edit Account</a></li>
+          <li><a href="#" class="dropdown-item">Subscription</a></li>
+          <li><a href="#" class="dropdown-item">Settings</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a href="#" class="dropdown-item">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </header>

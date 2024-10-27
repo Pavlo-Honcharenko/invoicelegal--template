@@ -87,13 +87,13 @@ body {
 		overflow: clip;
 	}
 	// Притискаємо footer
-	> main {
-		flex: 1 1 auto;
-		@media (max-width:$mobile){
-			width: 100vw !important;
-			max-width: 100vw !important; 
-		}
-	}
+	// > main {
+	// 	flex: 1 1 auto;
+	// 	@media (max-width:$mobile){
+	// 		width: 100vw !important;
+	// 		max-width: 100vw !important; 
+	// 	}
+	// }
 	// Фікс для слайдерів
 	> * {
 		min-width: 0;
@@ -150,40 +150,40 @@ body {
 }
 
 
-@media (min-width: toEm(1239)){
-	.page {
-		padding-left: 5.4%;
-		padding-right: 5.4%;
-	}
-	.header {
-		padding-left: 5.4%;
-		padding-right: 5.4%;
-	}
-}
-@media (min-width: toEm(1350)){
-	.page {
-		// padding-left: 9.4%;
-		// padding-right: 9.4%;
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-	.header {
-		// padding-left: 9.4%;
-		// padding-right: 9.4%;
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-}
-@media (min-width: toEm(1800)){
-	.page {
-		padding-left: 13%;
-		padding-right: 13%;
-	}
-	.header {
-		padding-left: 13%;
-		padding-right: 13%;
-	}
-}
+// @media (min-width: toEm(1239)){
+// 	.page {
+// 		padding-left: 5.4%;
+// 		padding-right: 5.4%;
+// 	}
+// 	.header {
+// 		padding-left: 5.4%;
+// 		padding-right: 5.4%;
+// 	}
+// }
+// @media (min-width: toEm(1350)){
+// 	.page {
+// 		// padding-left: 9.4%;
+// 		// padding-right: 9.4%;
+// 		padding-left: 10%;
+// 		padding-right: 10%;
+// 	}
+// 	.header {
+// 		// padding-left: 9.4%;
+// 		// padding-right: 9.4%;
+// 		padding-left: 10%;
+// 		padding-right: 10%;
+// 	}
+// }
+// @media (min-width: toEm(1800)){
+// 	.page {
+// 		padding-left: 13%;
+// 		padding-right: 13%;
+// 	}
+// 	.header {
+// 		padding-left: 13%;
+// 		padding-right: 13%;
+// 	}
+// }
 
 
 // (i) Експерементальний функціонал

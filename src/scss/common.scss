@@ -1,4 +1,4 @@
-.page {
+.main-container {
 	padding-top: toRem(83);
 	padding-bottom: toRem(83);
 
@@ -10,31 +10,43 @@
 }
 
 .main-title {
-	// .main-title__container
-	&__container {
-		padding-top: toRem(33);
-		padding-bottom: toRem(33);
-		position: relative;
+	// // .main-title__container
+	// &__container {
+	// 	padding-top: toRem(33);
+	// 	padding-bottom: toRem(33);
+	// 	position: relative;
 
-		@media (max-width:$tablet){
-			padding-top: toRem(29);
-			padding-bottom: toRem(29);
-		}
-		@media (max-width:$mobile){
-			padding-top: toRem(25);
-			padding-bottom: toRem(25); 
-		}
-		@media (max-width:$mobileSmall){
-			padding-top: toRem(17);
-			padding-bottom: toRem(17);
-		}
-	}
+	// 	@media (max-width:$tablet){
+	// 		padding-top: toRem(29);
+	// 		padding-bottom: toRem(29);
+	// 	}
+	// 	@media (max-width:$mobile){
+	// 		padding-top: toRem(25);
+	// 		padding-bottom: toRem(25); 
+	// 	}
+	// 	@media (max-width:$mobileSmall){
+	// 		padding-top: toRem(17);
+	// 		padding-bottom: toRem(17);
+	// 	}
+	// }
+
 	// .main-title__title
 	&__title {
 		font-weight: 700;
 		line-height: 100%;
 		color: #485D6B;
-		@include adaptiveValue("font-size", 26, 16);
+		font-size: 26px;
+
+		@media (max-width:$tablet){
+			font-size: 24px;
+		}
+
+		@media (max-width:$mobile){
+			font-size: 21px;
+		}
+		@media (max-width:$mobileSmall){
+			font-size: 18px; 
+		}
 	}
 
 	.actions {
@@ -53,8 +65,8 @@
 		}
 
 		@media (max-width:$mobileSmall){
-			 top: toRem(17);
-			 right: toRem(17); 
+			top: toRem(17);
+			right: toRem(17); 
 		}
 
 		img {
