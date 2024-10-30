@@ -5,24 +5,6 @@ import { flsModules } from "./modules.js";
 
 
 
-
-
-// Find the element with the class ".nav-item__more-links"
-// const moreLinks = document.querySelector('.nav-item__more-links');
-// // Check if the element exists
-// if (moreLinks) {
-// 	// Add a click event listener to the element
-// 	moreLinks.addEventListener('click', function () {
-// 		// Find the closest parent element and toggle the "_open" class
-// 		const parent = this.closest('.menu-item'); // Replace with the actual parent class
-// 		if (parent) {
-// 			parent.classList.toggle('_open');
-// 		}
-// 	});
-// }
-
-
-
 // Find the element with the class ".new-row"
 const newRow = document.querySelector('.new-row');
 // Check if the element exists
@@ -120,27 +102,6 @@ if (colorPicker) {
 		colorPicker.classList.add('selected'); // Добавляем класс для скрытия текста
 	});
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -4568,33 +4529,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-// Opening and closing the window with a list with all notifications when clicking on the element '.notifications'
-// Find the element with the class 'notifications'
-const notificationElement = document.querySelector('.notifications');
-
-if (notificationElement) {
-	// Listen for a click event on the notifications element
-	notificationElement.addEventListener('click', function () {
-		// Toggle the class '_open' on the element with the class 'all-notifications'
-		const allNotificationsElement = document.querySelector('.all-notifications');
-		if (allNotificationsElement) {
-			allNotificationsElement.classList.toggle('_open');
-		}
-	});
-}
-
-const userButtonElement = document.querySelector('.user-button');
-if (userButtonElement) {
-	// Listen for a click event on the notifications element
-	userButtonElement.addEventListener('click', function () {
-		// Toggle the class '_open' on the element with the class 'profile-menu'
-		const profileMenuElement = document.querySelector('.profile-menu');
-		if (profileMenuElement) {
-			profileMenuElement.classList.toggle('_open');
-		}
-	});
-}
-
 const actionsElement = document.querySelector('.actions');
 if (actionsElement) {
 	// Listen for a click event on the notifications element
@@ -4672,74 +4606,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.error('One or more elements are missing on the page.');
 	}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
