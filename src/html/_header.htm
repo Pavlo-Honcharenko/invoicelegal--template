@@ -1,62 +1,61 @@
 <header class="header bg-dark py-2 fixed-top">
-  <div class="container d-flex justify-content-between align-items-center">
+  <div class="container d-flex justify-content-between align-items-center gap-lg-3">
 
-    <!-- Иконка бургер-меню для мобильных -->
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Логотип -->
     <a href="/home.html" class="navbar-brand">
       <img src="@img/logo.svg" alt="Logo" width="96" height="58">
     </a>
 
-    <!-- Меню навигации -->
-    <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarMenu">
-      <ul class="navbar-nav flex-lg-row"> <!-- Добавлен класс flex-lg-row -->
-        <li class="nav-item me-lg-3">
-          <a href="/home.html" class="nav-link active"><img src="@img/icon-home.svg" alt="Home" class="me-2"><span>Home</span></a>
-        </li>
-        <li class="nav-item me-lg-3">
-          <a href="#" class="nav-link"><img src="@img/icon-invoices.svg" alt="Invoices" class="me-2"><span>Invoices</span></a>
-        </li>
-        <li class="nav-item me-lg-3">
-				<a href="#" class="nav-link"><img src="@img/icon-drafts.svg" alt="Drafts" class="me-2"><span>Drafts</span><span class="drafts-count">10</span></a>
-			</li>
-			<li class="nav-item me-lg-3">
-				<a href="#" class="nav-link"><img src="@img/icon-invite.svg" alt="Invite" class="me-2"><span>Invite</span></a>
-			</li>
-			<li class="nav-item me-lg-3">
-				<span class="nav-item__more-links">More</span>
-				<ul class="more-menu-items">
-					<li class="nav-item">
-						<a href="#"><img src="@img/icon-quotations.svg" alt="Quotations"><span>Quotations</span></a>
-					</li>
-					<li class="nav-item">
-						<a href="#"><img src="@img/icon-reports.svg" alt="Reports"><span>Reports</span></a>
-					</li>
-					<li class="nav-item">
-						<a href="#"><img src="@img/icon-clients.svg" alt="Clients"><span>Clients</span></a>
-					</li>
-					<li class="nav-item">
-						<a href="#"><img src="@img/icon-settings.svg" alt="Settings"><span>Settings</span></a>
-					</li>
-					<li class="nav-item menu-item-support">
-						<a href="#"><img src="@img/icon-support.svg" alt="Help"><span>Help and Support</span></a>
-					</li>
-					<li class="nav-item">
-						<a href="#"><img src="@img/icon-contact-us.svg" alt="Contact us"><span>Contact us</span></a>
-					</li>
+    <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="navbarMenu">
+      <div class="offcanvas-header">
+        <a href="/home.html" class="navbar-brand">
+				<img src="@img/logo.svg" alt="Logo" width="96" height="58">
+			</a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-lg-3">
+          <li class="nav-item current-nav-item">
+            <a href="/home.html" class="nav-link text-white"><img src="@img/icon-home.svg" alt="Home" class="me-3"><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white"><img src="@img/icon-invoices.svg" alt="Invoices" class="me-3"><span>Invoices</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white">
+					<img src="@img/icon-drafts.svg" alt="Drafts" class="me-3">
+					<span>Drafts</span>
+					<span class="badge bage-circle bg-primary rounded-circle position-absolute start-100 translate-middle" style="top: 5px;">10</span>
+				</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white"><img src="@img/icon-invite.svg" alt="Invite" class="me-3"><span>Invite</span></a>
+          </li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				More
+				</a>
+				<ul class="dropdown-menu dropdown-menu-dark">
+				<li><a class="dropdown-item text-white" href="#"><img src="@img/icon-quotations.svg" alt="Quotations"  class="me-3"><span>Quotations</span></a></li>
+				<li><a class="dropdown-item text-white" href="#"><img src="@img/icon-reports.svg" alt="Reports" class="me-3"><span>Reports</span></a></li>
+				<li><a class="dropdown-item text-white" href="#"><img src="@img/icon-clients.svg" alt="Clients" class="me-3"><span>Clients</span></a></li>
+				<li><a class="dropdown-item text-white" href="#"><img src="@img/icon-settings.svg" alt="Settings" class="me-3"><span>Settings</span></a></li>
+				<li><a class="dropdown-item text-white dropdown-item-support" href="#"><img src="@img/icon-support.svg" alt="Help" class="me-3"><span>Help and Support</span></a></li>
+				<li><a class="dropdown-item text-white" href="#"><img src="@img/icon-contact-us.svg" alt="Contact us" class="me-3"><span>Contact us</span></a></li>
 				</ul>
 			</li>
-      </ul>
+        </ul>
+      </div>
     </div>
 
-    <!-- Правая колонка с уведомлениями и профилем -->
+    <!-- Right column with notifications and profile -->
     <div class="d-flex align-items-center">
       <div class="position-relative me-4">
-        <img src="@img/icon-notification.svg" alt="Notifications">
-        <span class="badge bg-primary rounded-circle position-absolute top-0 start-100 translate-middle">2</span>
+        <img src="@img/icon-notification.svg" class="pt-2" alt="Notifications">
+        <span class="badge bage-circle bg-primary rounded-circle position-absolute start-100 translate-middle" style="top: 5px;">2</span>
       </div>
       <div class="dropdown">
         <a href="#" class="d-flex align-items-center" data-bs-toggle="dropdown">
@@ -71,5 +70,6 @@
         </ul>
       </div>
     </div>
+
   </div>
 </header>

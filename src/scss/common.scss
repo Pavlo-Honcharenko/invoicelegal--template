@@ -9,6 +9,31 @@
 	}
 }
 
+.bg-primary {
+	background-color: #7715cd !important;
+}
+.bage-circle {
+	min-height: toRem(22);
+	aspect-ratio: 1;
+	padding: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 500;
+	font-size: 0.75rem;
+	line-height: 120%;
+	text-align: center;
+}
+.nav-item .bage-circle {
+	@media (max-width:$tablet){
+		position: relative !important;
+		left: initial !important;
+		top: initial !important;
+		transform: initial !important;
+		margin-left: 12px;
+	}
+}
+
 .main-title {
 	// // .main-title__container
 	// &__container {
