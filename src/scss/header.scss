@@ -266,12 +266,14 @@
 	max-width: toRem(208);
 	min-width: toRem(208);
 	box-shadow: 0 toRem(7) toRem(13) 0 rgba(0, 0, 0, 0.1);
+	transform: translate3d(0px, 50px, 0px) !important;
 
 	@media (max-width:$mobileSmall){
 		width: calc(100vw - toRem(30));
 		min-width: calc(100vw - toRem(30));
 		max-width: calc(100vw - toRem(30));
 		right: 0;
+		transform: translate3d(-3px, 50px, 0px) !important;
 	}
 
 	// .profile-menu__name
@@ -357,12 +359,14 @@
 	max-width: toRem(308);
 	min-width: toRem(308);
 	box-shadow: 0 toRem(7) toRem(13) 0 rgba(0, 0, 0, 0.1);
+	transform: translate3d(-24px, 45px, 0px) !important;
 
 	@media (max-width:$mobileSmall){
 		width: calc(100vw - toRem(30));
 		min-width: calc(100vw - toRem(30));
 		max-width: calc(100vw - toRem(30));
 		right: 0;
+		transform: translate3d(37px, 45px, 0px) !important;
 	}
 
 	// .all-notifications__header
@@ -433,9 +437,6 @@
 		line-height: 200%;
 		color: #485D6B;
 	}
-}
-.all-notifications._open {
-	display: block;
 }
 
 .user-button {
