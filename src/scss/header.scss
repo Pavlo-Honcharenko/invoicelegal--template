@@ -283,8 +283,10 @@
 		color: #485D6B;
 	}
 	ul {
+		margin: 0;
+		padding: 0;
 		li {
-			padding: toRem(8) toRem(12);
+			padding: 0;
 			font-weight: 500;
 			line-height: 185%;
 			color: #485D6B;
@@ -295,9 +297,11 @@
 				border-bottom: 1px solid #F7F7F7;
 			}
 
-			a.button {
+			a.dropdown-item {
 				display: flex;
 				align-items: center;
+				margin: 0;
+				font-size: .8125rem;
 			}
 
 			img {
@@ -306,9 +310,9 @@
 		}
 	}
 }
-.profile-menu._open {
-	display: block;
-}
+// .profile-menu._open {
+// 	display: block;
+// }
 
 .upgrade-to-pro {
 	display: flex;
