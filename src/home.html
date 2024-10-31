@@ -17,15 +17,15 @@
 			
 			<div class="row">
 				<!-- Left Column (8 parts) -->
-				<div class="col-lg-8 col-12">
+				<div class="col-xl-9 col-lg-8 col-12">
 					<div class="row">
 						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 1 -->
 							<div class="custom-column">
 								<!-- content-block-1 -->
 								<div class="content-block content-block-1">
-									<div class="top-line">
-										<div class="top-line__title top-line__title--main">Outstanding Invoices</div>
-										<a href="create-invoice.html" class="button-create-invoice">
+									<div class="top-line d-flex justify-content-between align-items-start pb-3">
+										<div class="top-line__title fw-bold top-line__title--main">Outstanding Invoices</div>
+										<a href="create-invoice.html" class="button-create-invoice bg-primary">
 											<img src="@img/icon-plus.svg" alt="">
 											<span>Create Invoice</span>
 										</a>
@@ -124,12 +124,13 @@
 							<div class="custom-column col-wide">
 								<!-- content-block-3 -->
 								<div class="content-block content-block-3" data-da=".col-narrow,993">
-									<div class="top-line">
-										<div class="top-line__title">
+
+									<div class="top-line d-flex justify-content-between align-items-start border-bottom pb-3 mb-3">
+										<div class="top-line__title fw-bold">
 											Paid Invoices
 										</div>
-										<div class="top-line__select select-mini">
-											<select name="months-paid-invoices" data-class-modif="form">
+										<div class="top-line__select select-mini ms-4">
+											<select name="months-paid-invoices" class="form-select">
 												<option value="To Date">To Date</option>
 												<option value="Last Month" selected>Last Month</option>
 												<option value="Last 3 months">Last 3 months</option>
@@ -137,7 +138,7 @@
 												<option value="Custom Range">Custom Range</option>
 											</select>
 										</div>
-										<div class="top-line__amount">
+										<div class="top-line__amount fw-semibold text-end">
 											R 2,900.00
 										</div>
 									</div>
@@ -240,9 +241,12 @@
 										</tbody>
 									</table>
 									
-									<div class="content-block-3__bottom-row">
-										<a href="#" class="view-all">View All</a>
+									<div class="row">
+										<div class="col-12 d-flex justify-content-end">
+											<a href="#" class="view-all">View All</a>
+										</div>
 									</div>
+
 								</div><!-- end of content-block-3 -->
 							</div>
 						</div>
@@ -250,7 +254,7 @@
 				</div>
 
 				<!-- Right Column (4 parts) -->
-				<div class="col-lg-4 col-12">
+				<div class="col-xl-3 col-lg-4 col-12">
 					<div class="row">
 						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 1 -->
 							<div class="custom-column col-narrow">
@@ -274,18 +278,20 @@
 										<div class="diagram2__number">70%</div>
 
 									</div>
-									<div class="content-block-2__bottom-row">
-										<div class="content-block-2__col">
+
+									<div class="row">
+										<div class="col-6">
 											<span class="set-target" data-popup="#settarget">Set target</span>
 										</div>
-										<div class="content-block-2__col content-block-2__col--right">
-											<select name="month-target" data-class-modif="form">
+										<div class="col-6 d-flex justify-content-end">
+											<select name="month-target" class="me-custom-n1">
 												<option value="1" selected>This Month</option>
 												<option value="2">Last month</option>
 												<option value="3">2 months ago</option>
 											</select>
 										</div>
 									</div>
+
 								</div><!-- end of content-block-2 -->
 							</div>
 						</div>
@@ -320,13 +326,15 @@
 										</div>
 									</div>
 
-									<div class="content-block-4__bottom-row select-years">
-										<select name="year-5-clients" data-class-modif="form">
-											<option value="1" selected>This Year</option>
-											<option value="2">Last Year</option>
-											<option value="3">2 years ago</option>
-											<option value="4">3 years ago</option>
-										</select>
+									<div class="row">
+										<div class="col-12 d-flex justify-content-end">
+											<select name="year-5-clients" class="me-custom-n1">
+												<option value="1" selected>This Year</option>
+												<option value="2">Last Year</option>
+												<option value="3">2 years ago</option>
+												<option value="4">3 years ago</option>
+											</select>
+										</div>
 									</div>
 									
 								</div><!-- end of content-block-4 -->

@@ -1,3 +1,10 @@
+* {
+  outline: none !important;
+}
+.me-custom-n1 {
+	margin-right: -8px !important;
+}
+
 .main-container {
 	padding-top: toRem(83);
 	padding-bottom: toRem(83);
@@ -11,6 +18,12 @@
 
 .bg-primary {
 	background-color: #7715cd !important;
+
+	@media (any-hover: hover) {
+		&:hover {
+			opacity: 0.9;
+		}
+	}
 }
 .bage-circle {
 	min-height: toRem(22);
@@ -197,7 +210,7 @@
 	width: min-content;
 }
 
-.select__content {
+.form-select {
 	font-family: "Montserrat" !important;
 	font-weight: 500 !important;
 	font-size: toRem(13) !important;
