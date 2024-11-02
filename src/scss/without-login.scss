@@ -5,10 +5,6 @@
 .button-login, .button-sign-up {
 	width: toRem(109);
 	height: toRem(38);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-weight: 500;
 	font-size: toRem(18);
 	text-align: center;
 	color: #fff;
@@ -36,7 +32,6 @@
 	background-color: #fff;
 }
 .login-area__title {
-	font-weight: 700;
 	font-size: toRem(28);
 	line-height: 100%;
 	text-align: center;

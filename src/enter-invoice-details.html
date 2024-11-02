@@ -10,10 +10,10 @@
 
 				<!-- SECTION CONTENT -->
 				<section class="content">
-					<div class="content__container mt-30">
+					<div class="content__container mt-4">
 						<div class="content__blocks">
 
-							<a href="create-invoice.html" class="title-link">
+							<a href="create-invoice.html" class="title-link d-flex justify-content-center align-items-center fw-bold">
 								<img src="@img/icon-enter-details.svg" alt="">
 								<span>Enter invoice details</span>
 							</a>
@@ -27,15 +27,15 @@
 										<div class="row">
 											
 											<div class="form-element-wrapper">
-												<label for="invoiceNumber">Invoice Number</label>
-												<input id="invoiceNumber" autocomplete="off" type="text" name="invoice-number" placeholder="" class="input" value="">
+												<label for="invoiceNumber" class="fw-semibold">Invoice Number</label>
+												<input id="invoiceNumber" autocomplete="off" type="text" name="invoice-number" placeholder="" class="input fw-medium" value="">
 											</div>
 											<div class="form-element-wrapper">
-												<label for="date">Date</label>
-												<input id="date" type="text" name="invoice-date" class="input datepicker" value="" placeholder="19.02.2023" >
+												<label for="date" class="fw-semibold">Date</label>
+												<input id="date" type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="19.02.2023" >
 											</div>
 											<div class="form-element-wrapper select-mini">
-												<label for="invoiceDue">Invoice Due</label>
+												<label for="invoiceDue" class="fw-semibold">Invoice Due</label>
 												<select id="invoiceDue" name="invoice-due">
 													<option value="0" selected>Select One</option>
 													<option value="7">7 Days</option>
@@ -45,20 +45,20 @@
 												</select>
 											</div>
 											<div class="form-element-wrapper">
-												<label for="ratePerHour">Rate per Hour</label>
-												<input id="ratePerHour" autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input" value="">
+												<label for="ratePerHour" class="fw-semibold">Rate per Hour</label>
+												<input id="ratePerHour" autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input fw-medium" value="">
 											</div>
 											<div class="form-element-wrapper">
-												<label for="ratePerDay">Rate per Day</label>
-												<input id="ratePerDay" autocomplete="off" type="text" name="invoice-rate-day" placeholder="" class="input" value="R 50.00">
+												<label for="ratePerDay" >Rate per Day</label>
+												<input id="ratePerDay" autocomplete="off" type="text" name="invoice-rate-day" placeholder="" class="input fw-medium" value="R 50.00">
 											</div>
 											
 										</div>
 										<div class="buttons-wrapper">
-											<div data-close class="grey-button mt-20 pc-element">
+											<div data-close class="grey-button fw-semibold mt-3 pc-element">
 												Cancel
 											</div>
-											<div data-close class="blue-button mt-20">
+											<div data-close class="blue-button d-flex justify-content-center align-items-center fw-semibold mt-3">
 												Save
 											</div>
 										</div>

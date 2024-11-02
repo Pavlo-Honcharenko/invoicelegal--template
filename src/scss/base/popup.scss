@@ -42,9 +42,6 @@ body::after {
 	min-height: 100%;
 	flex: 1 1 auto;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 .popup__content {
 	visibility: hidden;
@@ -69,7 +66,6 @@ body::after {
 	padding: toRem(19) toRem(25);
 }
 .popup__title {
-	font-weight: 700;
 	font-size: toRem(17);
 	line-height: 120%;
 	color: #fff;
@@ -110,7 +106,6 @@ body::after {
 		}
 	}
 	label {
-		font-weight: 600;
 		font-size: toRem(14);
 		line-height: 141%;
 		color:#485D6B;
@@ -129,7 +124,6 @@ body::after {
 		justify-content: center;
 		align-items: center;
 		color: #fff;
-		font-weight: 600;
 		font-size: toRem(13);
 		text-align: center;
 		background-color: #BCBCBC;
@@ -139,7 +133,6 @@ body::after {
 		justify-content: center;
 		align-items: center;
 		color: #fff;
-		font-weight: 600;
 		font-size: toRem(13);
 		text-align: center;
 	}
@@ -249,7 +242,6 @@ body::after {
 	padding-bottom: toRem(33);
 	// .vat-body__title
 	&__title {
-		font-weight: 500;
 		font-size: toRem(18);
 		line-height: 177%;
 		text-align: center;
@@ -258,9 +250,6 @@ body::after {
 	}
 }
 .vat-choice-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: toRem(75);
 	padding-bottom: toRem(20);
 }

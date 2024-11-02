@@ -405,11 +405,11 @@ button.swiper-pagination-bullet {
 	display: none;
 }
 .swiper-zoom-container {
-	width: 100%;
-	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 100%;
 	text-align: center;
 }
 .swiper-zoom-container > canvas,

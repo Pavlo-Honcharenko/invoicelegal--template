@@ -91,14 +91,10 @@
 .nav-item {
 	padding: 0 toRem(13);
 	border-radius: toRem(5);
-	font-weight: 400;
 	font-size: toRem(15);
 	line-height: 133%;
 	text-align: center;
 	color: #fff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	position: relative;
 
 	@media (max-width:$tablet){
@@ -218,9 +214,6 @@
 }
 
 .notifications {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	cursor: pointer;
 	position: relative;
 
@@ -244,7 +237,6 @@
 		text-align: center;
 		background-color: #7715CD;
 		padding: toRem(3);
-		font-weight: 400;
 		font-size: toRem(15);
 		line-height: 133%;
 		text-align: center;
@@ -278,7 +270,6 @@
 
 	// .profile-menu__name
 	&__name {
-		font-weight: 600;
 		font-size: toRem(12);
 		padding: toRem(8) toRem(12);
 		line-height: 171%;
@@ -289,7 +280,6 @@
 		padding: 0;
 		li {
 			padding: 0;
-			font-weight: 500;
 			line-height: 185%;
 			color: #485D6B;
 			display: flex;
@@ -325,7 +315,6 @@
 	padding: toRem(8) toRem(12);
 	background-color: #485D6B;
 	color: #fff;
-	font-weight: 500;
 	font-size: toRem(12);
 	word-spacing: toRem(7);
 
@@ -337,7 +326,6 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		font-weight: 500;
 		font-size: toRem(12);
 		text-align: center;
 		background-color: #fff;
@@ -381,14 +369,12 @@
 	}
 	// .all-notifications__title
 	&__title {
-		font-weight: 600;
 		font-size: toRem(14);
 		line-height: 141%;
 		padding-bottom: 3px;
 	}
 	// .all-notifications__mark-as-read
 	&__mark-as-read {
-		font-weight: 500;
 		font-size: toRem(12);
 		line-height: 171%;
 		white-space: nowrap;
@@ -425,14 +411,12 @@
 	// .all-notifications__text
 	&__text {
 		padding-top: toRem(3);
-		font-weight: 500;
 		font-size: toRem(12);
 		line-height: 171%;
 		color: #485D6B;
 	}
 	// .all-notifications__date
 	&__date {
-		font-weight: 400;
 		font-size: toRem(10);
 		line-height: 200%;
 		color: #485D6B;
