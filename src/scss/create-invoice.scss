@@ -8,13 +8,12 @@
 		margin: 0;
 		padding: toRem(10) toRem(17);
 	}
-	.select__options {
-		padding: toRem(8) toRem(15) toRem(4);
-	}
+	// .select__options {
+	// 	padding: toRem(8) toRem(15) toRem(4);
+	// }
 }
 
 .choice-of-currency__label, .choice-of-colour__label {
-	font-weight: 600;
 	font-size: toRem(14);
 	line-height: 141%;
 	margin-bottom: toRem(8);
@@ -27,7 +26,6 @@
 	border-radius: toRem(3);
 	margin: 0;
 	padding: toRem(11) toRem(8) toRem(11) toRem(17);
-	font-weight: 500;
 	font-size: toRem(13);
 	line-height: 160%;
 	display: flex;
@@ -126,7 +124,6 @@
 }
 
 .table-create-invoice.table-mobile {
-	font-weight: 500;
 	font-size: toRem(10);
 	border-collapse: separate;
    border-spacing: 0 toRem(8);
@@ -160,7 +157,6 @@
 	}
 
 	.table__date {
-		font-weight: 700;
 		text-align: left !important;
 		font-size: toRem(10);
 		justify-content: flex-start;
@@ -189,7 +185,6 @@
 		&__row {
 			display: flex;
 			gap: toRem(125);
-			font-weight: 500;
 			font-size: toRem(13);
 			line-height: 160%;
 			overflow: hidden;
@@ -232,11 +227,7 @@
 	}
 }
 .add-note {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: toRem(7);
-	font-weight: 600;
 	font-size: toRem(13);
 	line-height: 160%;
 	color: #7715CD;
@@ -249,7 +240,6 @@
 
 .created {
 	margin-top: toRem(54);
-	font-weight: 500;
 	font-size: toRem(12);
 	line-height: 171%;
 	text-align: right;
@@ -303,7 +293,6 @@
 }
 
 .form-element-note {
-	font-weight: 500;
 	font-size: toRem(11);
 	line-height: 185%;
 	color: #757575;
@@ -321,7 +310,6 @@
 }
 .top-line--invoice .top-line__col {
 	min-width: toRem(15);
-	font-weight: 500;
 
 	@media (max-width:$mobileSmall){
 		min-width: toRem(100);
@@ -342,7 +330,6 @@
 			display: flex;
 			align-items: center;
 			gap: toRem(17);
-			font-weight: 500;
 			font-size: toRem(13);
 			line-height: 160%;
 
@@ -355,7 +342,6 @@
 .invoice-info {
 	font-size: toRem(13);
 	line-height: 160%;
-	font-weight: 500;
 	white-space: nowrap;
 	padding-top: toRem(13);
 
@@ -378,7 +364,7 @@
 			flex: 0 0 calc(50% - toRem(8));
 		}
 		bold {
-			font-weight: 600;
+			font-weight: 600 !important;
 		}
 }
 .invoice-row {
@@ -389,7 +375,6 @@
 		// .invoice-row__col
 		&__col {
 			flex: 0 1 50%;
-			font-weight: 500;
 			font-size: toRem(13);
 			line-height: 160%;
 
@@ -402,7 +387,6 @@
 		}
 		// .invoice-row__label
 		&__label {
-			font-weight: 500;
 			font-size: toRem(14);
 			line-height: 141%;
 			color: #757575;
@@ -418,14 +402,13 @@
 		}
 
 		strong {
-			font-weight: 700;
+			font-weight: 700 !important;
 		}
 }
 
 .central-text {
 	margin-top: toRem(17);
 	margin-bottom: toRem(17);
-	font-weight: 600;
 	font-size: toRem(15);
 	line-height: 133%;
 	text-align: center;
@@ -457,7 +440,6 @@
 
 	a {
 		padding-bottom: toRem(10);
-		font-weight: 600;
 		color:#7715CD;
 	}
 }
@@ -481,7 +463,6 @@
 }
 
 .blue-button.new-row {
-	font-weight: 600;
 	font-size: toRem(12);
 	padding: toRem(7) toRem(12);
 	@media (max-width:$mobile){
@@ -519,7 +500,6 @@
 			display: flex;
 			align-items: center;
 			padding: toRem(4) toRem(12);
-			font-weight: 500;
 			font-size: toRem(13);
 			line-height: 160%;
 			color: #fff;
@@ -624,7 +604,6 @@
 	display: flex;
 	align-items: center;
 	padding: toRem(4) toRem(33) toRem(4) toRem(17);
-	font-weight: 500;
 	font-size: toRem(12);
 	color: #485D6B;
 	background: url('@img/icon-enter-details.svg') center right toRem(17) no-repeat;
@@ -639,13 +618,9 @@
 }
 
 .title-link {
-	font-weight: 700;
 	font-size: toRem(14);
 	line-height: 160%;
 	color: #485D6B;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: toRem(8);
 	cursor: pointer;
 	margin-bottom: toRem(17);
@@ -659,7 +634,6 @@
 
 .vat-label {
 	display: inline-block;
-	font-weight: 600;
 	font-size: toRem(10);
 	color: #485D6B;
 	margin-left: toRem(8);
@@ -670,7 +644,6 @@
 	display: none;
 	padding-top: toRem(4);
 	padding-bottom: toRem(20);
-	font-weight: 600;
 	font-size: toRem(1);
 	line-height: 171%;
 
