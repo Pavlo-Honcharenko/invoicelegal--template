@@ -4,80 +4,77 @@
 	"title":"Enter Your Details"
 	})
 	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
+		
+		@@include('html/_header.htm',{})
+			
+		<!-- SECTION CONTENT -->
+		<section class="content">
+			<div class="container main-container mt-4">
+				<div class="content__blocks">
 
-				<!-- SECTION CONTENT -->
-				<section class="content">
-					<div class="content__container mt-4">
-						<div class="content__blocks">
+					<div class="content__col content__col--wide mobile-element">
 
-							<div class="content__col content__col--wide mobile-element">
-
-								<!-- content-block -->
-								<div class="content-block">
+						<!-- content-block -->
+						<div class="content-block">
+							
+							<div class="popup__body">
+								<div class="row">
 									
-									<div class="popup__body">
-										<div class="row">
-											
-											<div class="form-element-wrapper">
-												<label for="date" class="fw-semibold">Date</label>
-												<input id="date" type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="Enter Date" >
-											</div>
-
-											<div class="form-element-wrapper">
-												<label for="description" class="fw-semibold">Description</label>
-												<textarea class="fw-medium" name="invoice-description" id="" cols="30" rows="5"></textarea>
-											</div>
-											
-											<div class="form-element-wrapper">
-												<label for="ratePerHour" class="fw-semibold">Time Spent</label>
-												<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input fw-medium text-end" value="09:00">
-											</div>
-											<div class="form-element-wrapper">
-												<label for="rateAmount" class="fw-semibold">Rate / Amount</label>
-												<input id="rateAmount" autocomplete="off" type="text" name="invoice-rate-amount" placeholder="" class="input fw-medium" value="">
-											</div>
-
-											<div class="form-element-wrapper">
-												<input data-popup="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
-												<label class="checkbox__label fw-semibold" for="invoice-checkbox"></label>
-												<div class="vat-label fw-semibold">VAT</div>
-											</div>
-
-											<div class="form-element-wrapper">
-												<label for="total fw-semibold" class="fw-semibold">Total</label>
-												<input id="total" autocomplete="off" type="text" name="invoice-total" placeholder="" class="input fw-medium" value="">
-											</div>
-
-											
-											
-										</div>
-										<div class="buttons-wrapper">
-											<div data-close class="grey-button fw-semibold mt-3 pc-element">
-												Cancel
-											</div>
-											<div data-close class="blue-button d-flex justify-content-center align-items-center fw-semibold mt-3">
-												Save
-											</div>
-										</div>
+									<div class="form-element-wrapper">
+										<label for="date" class="fw-semibold">Date</label>
+										<input id="date" type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="Enter Date" >
 									</div>
 
+									<div class="form-element-wrapper">
+										<label for="description" class="fw-semibold">Description</label>
+										<textarea class="fw-medium" name="invoice-description" id="" cols="30" rows="5"></textarea>
+									</div>
+									
+									<div class="form-element-wrapper">
+										<label for="ratePerHour" class="fw-semibold">Time Spent</label>
+										<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input fw-medium text-end" value="09:00">
+									</div>
+									<div class="form-element-wrapper">
+										<label for="rateAmount" class="fw-semibold">Rate / Amount</label>
+										<input id="rateAmount" autocomplete="off" type="text" name="invoice-rate-amount" placeholder="" class="input fw-medium" value="">
+									</div>
 
+									<div class="form-element-wrapper">
+										<input data-popup="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+										<label class="checkbox__label fw-semibold" for="invoice-checkbox"></label>
+										<div class="vat-label fw-semibold">VAT</div>
+									</div>
+
+									<div class="form-element-wrapper">
+										<label for="total fw-semibold" class="fw-semibold">Total</label>
+										<input id="total" autocomplete="off" type="text" name="invoice-total" placeholder="" class="input fw-medium" value="">
+									</div>
+
+									
+									
 								</div>
-								<!-- end of content-block -->
-
+								<div class="buttons-wrapper">
+									<div data-close class="grey-button fw-semibold mt-3 pc-element">
+										Cancel
+									</div>
+									<div data-close class="blue-button d-flex justify-content-center align-items-center fw-semibold mt-3">
+										Save
+									</div>
+								</div>
 							</div>
 
-						</div>
-					</div>
-				</section>
-				<!-- End of SECTION CONTENT -->
 
-			</main>
-			@@include('html/_footer.htm',{})
-		</div><!-- main-wrapper -->
+						</div>
+						<!-- end of content-block -->
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End of SECTION CONTENT -->
+
+		@@include('html/_footer.htm',{})
 		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>

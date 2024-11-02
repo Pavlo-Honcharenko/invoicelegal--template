@@ -1,5 +1,7 @@
-* {
-  outline: none !important;
+select:focus {
+   border-color: inherit;
+    outline: 0;
+    box-shadow: initial !important;
 }
 .me-custom-n1 {
 	margin-right: -8px !important;
@@ -350,7 +352,13 @@ textarea:focus, input:focus {
 }
 
 
-
+.select-in-form {
+	border: 1px solid #E3E5ED;
+   border-radius: 4px;
+	height: 2.375rem;
+   padding: .3125rem .625rem 1px;
+	width: 100%;
+}
 
 .blue-button {
 	font-size: toRem(13);

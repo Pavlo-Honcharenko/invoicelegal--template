@@ -4,76 +4,74 @@
 	"title":"Enter Banking Details"
 	})
 	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
+		@@include('html/_header.htm',{})
+		<!-- SECTION CONTENT -->
+		<section class="content">
+			<div class="container main-container mt-4">
+				<div class="content__blocks">
 
-				<!-- SECTION CONTENT -->
-				<section class="content">
-					<div class="content__container mt-4">
-						<div class="content__blocks">
-
+					<div class="row">
+						<div class="col">
 							<a href="create-invoice.html" class="title-link d-flex justify-content-center align-items-center fw-bold">
 								<img src="@img/icon-enter-details.svg" alt="">
 								<span>Enter banking details</span>
 							</a>
-
-							<div class="content__col content__col--wide mobile-element">
-
-								<!-- content-block -->
-								<div class="content-block">
-									
-									<div class="popup__body">
-										<div class="row">
-											<div class="form-element-wrapper">
-												<label for="accountName" class="fw-semibold">Account Name</label>
-												<input id="accountName" autocomplete="off" type="text" name="Account Name" placeholder="" class="input fw-medium" value="">
-											</div>
-											<div class="form-element-wrapper">
-												<label for="bank" class="fw-semibold">Bank</label>
-												<input id="bank" autocomplete="off" type="text" name="Bank" placeholder="" class="input fw-medium" value="">
-											</div>
-											<div class="form-element-wrapper">
-												<label for="accountNumber" class="fw-semibold">Account Number</label>
-												<input id="accountNumber" autocomplete="off" type="text" name="Account Number" placeholder="" class="input fw-medium" value="">
-											</div>
-											<div class="form-element-wrapper">
-												<label for="confirmAccountNumber" class="fw-semibold">Confirm Account Number</label>
-												<input id="confirmAccountNumber" autocomplete="off" type="text" name="Confirm Account Number" placeholder="" class="input fw-medium" value="">
-											</div>
-											<div class="form-element-wrapper">
-												<label for="branchCode" class="fw-semibold">Branch Code</label>
-												<input id="branchCode" autocomplete="off" type="text" name="Branch Code" placeholder="" class="input fw-medium" value="">
-												<div class="form-element-note fw-medium">(optional)</div>
-											</div>
-											<div class="form-element-wrapper">
-												<label for="reference" class="fw-semibold">Reference</label>
-												<input id="reference" autocomplete="off" type="text" name="Reference" placeholder="" class="input fw-medium" value="">
-											</div>
-										</div>
-										<div class="buttons-wrapper">
-											<div data-close class="grey-button fw-semibold mt-3">
-												Cancel
-											</div>
-											<div data-close class="blue-button d-flex justify-content-center align-items-center fw-semibold mt-3">
-												Save
-											</div>
-										</div>
-									</div>
-									
-								</div>
-								<!-- end of content-block -->
-
-							</div>
-
 						</div>
 					</div>
-				</section>
-				<!-- End of SECTION CONTENT -->
 
-			</main>
-			@@include('html/_footer.htm',{})
-		</div><!-- main-wrapper -->
+					<div class="content__col content__col--wide mobile-element">
+
+						<!-- content-block -->
+						<div class="content-block">
+							
+							<div class="popup__body">
+								<div class="row">
+									<div class="form-element-wrapper">
+										<label for="accountName" class="fw-semibold">Account Name</label>
+										<input id="accountName" autocomplete="off" type="text" name="Account Name" placeholder="" class="input fw-medium" value="">
+									</div>
+									<div class="form-element-wrapper">
+										<label for="bank" class="fw-semibold">Bank</label>
+										<input id="bank" autocomplete="off" type="text" name="Bank" placeholder="" class="input fw-medium" value="">
+									</div>
+									<div class="form-element-wrapper">
+										<label for="accountNumber" class="fw-semibold">Account Number</label>
+										<input id="accountNumber" autocomplete="off" type="text" name="Account Number" placeholder="" class="input fw-medium" value="">
+									</div>
+									<div class="form-element-wrapper">
+										<label for="confirmAccountNumber" class="fw-semibold">Confirm Account Number</label>
+										<input id="confirmAccountNumber" autocomplete="off" type="text" name="Confirm Account Number" placeholder="" class="input fw-medium" value="">
+									</div>
+									<div class="form-element-wrapper">
+										<label for="branchCode" class="fw-semibold">Branch Code</label>
+										<input id="branchCode" autocomplete="off" type="text" name="Branch Code" placeholder="" class="input fw-medium" value="">
+										<div class="form-element-note fw-medium">(optional)</div>
+									</div>
+									<div class="form-element-wrapper">
+										<label for="reference" class="fw-semibold">Reference</label>
+										<input id="reference" autocomplete="off" type="text" name="Reference" placeholder="" class="input fw-medium" value="">
+									</div>
+								</div>
+								<div class="buttons-wrapper">
+									<div data-close class="grey-button fw-semibold mt-3">
+										Cancel
+									</div>
+									<div data-close class="blue-button d-flex justify-content-center align-items-center fw-semibold mt-3">
+										Save
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						<!-- end of content-block -->
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End of SECTION CONTENT -->
+		@@include('html/_footer.htm',{})
 		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>

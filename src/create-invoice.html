@@ -4,285 +4,279 @@
 	"title":"Create Invoice"
 	})
 	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
+		@@include('html/_header.htm',{})
+		<!-- SECTION CONTENT -->
+		<section class="content">
+			<div class="container main-container mt-4">
+				<div class="content__blocks">
 
-				<!-- SECTION CONTENT -->
-				<section class="content">
-					<div class="content__container mt-4">
-						<div class="content__blocks">
+					<div class="content__col content__col--wide">
 
-							<div class="content__col content__col--wide">
-
-								<!-- content-block -->
-								<div class="content-block">
-									<div class="top-line">
-										<div class="top-line__title">INVOICE</div>
-										<img class="logo-company" src="@img/logo-company.svg" alt="company">
-									</div>
-
-									<div class="form-row">
-										<div class="form-row__col">
-											<div class="form-row__label fw-semibold">From :</div>
-											<textarea class="pc-element fw-medium" data-popup="#enter-your-details" name="from" id="from" cols="30" rows="7" placeholder="Enter Your Details"></textarea>
-											<a class="mobile-element" href="enter-your-details.html" class="button">
-												<div class="enter-details-button fw-medium">
-													Enter Your Details
-												</div>
-											</a>
-										</div>
-										<div class="form-row__col">
-											<div class="form-row__label fw-semibold">To :</div>
-											<textarea class="pc-element fw-medium" data-popup="#client-details" name="to" id="to" cols="30" rows="7" placeholder="Enter Client Details"></textarea>
-											<a class="mobile-element" href="enter-client-details.html" class="button">
-												<div class="enter-details-button fw-medium">
-													Enter Client Details
-												</div>
-											</a>
-										</div>
-
-										<div class="form-row__col mobile-element">
-											<div class="form-row__label fw-semibold">Invoice Details :</div>
-											<a class="mobile-element" href="enter-invoice-details.html" class="button">
-												<div class="enter-details-button fw-medium">
-													Enter Invoice Details
-												</div>
-											</a>
-										</div>
-										
-									</div>
-
-									<div class="pc-element">
-										<div class="grey-line mt-4 mb-4"></div>
-
-										<div class="form-row mb-4">
-											<div class="form-row__col">
-												<div class="form-row__label fw-semibold">Invoice Number</div>
-												<input autocomplete="off" type="text" name="invoice-number" placeholder="" class="input fw-medium" value="INV001">
-											</div>
-											<div class="form-row__col">
-												<div class="form-row__label fw-semibold">Date</div>
-												<input type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="19.02.2023" >
-											</div>
-										</div>
-
-										<div class="form-row mb-4">
-											<div class="form-row__col select-mini">
-												<div class="form-row__label fw-semibold">Invoice Due</div>
-												<select name="invoice-due">
-													<option value="0" selected>Select One</option>
-													<option value="7">7 Days</option>
-													<option value="30">30 Days</option>
-													<option value="90">90 Days</option>
-													<option value="custom">Custom</option>
-												</select>
-											</div>
-											<div class="form-row__col">
-												<div class="form-row__label fw-semibold">Rate per Hour</div>
-												<input autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input fw-medium" value="">
-											</div>
-										</div>
-									</div>
-
-									<div class="form-row">
-										<div class="form-row__col pc-element">
-											<div class="form-row__label fw-semibold">Rate per Day</div>
-											<input autocomplete="off" type="text" name="invoice-rate-day" placeholder="" class="input fw-medium" value="R 50.00">
-										</div>
-										<div class="form-row__col">
-											<div class="form-row__label fw-semibold">Matter/Subject</div>
-											<input autocomplete="off" type="text" name="invoice-matter" placeholder="" class="input fw-medium value="">
-										</div>
-									</div>
-
-									<div class="grey-line pc-element mt-4 mb-4"></div>
-
-									<table class="table table-create-invoice table-pc">
-										<thead class="fw-semibold">
-											<tr>
-												<th>Date</th>
-												<th>Description</th>
-												<th>Time Spent</th>
-												<th>Rate/Amount</th>
-												<th>Total</th>
-												<th>VAT</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr id="row1">
-												<td>
-													<input type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="Enter" >
-												</td>
-												<td class="table-create-invoice-textarea">
-													<textarea class="fw-medium" name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
-												</td>
-												<td>
-													<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input fw-medium text-end"  value="09:00">
-												</td>
-												<td>
-													<input autocomplete="off" type="text" name="invoice-amount" placeholder="0" class="input fw-medium text-end">
-												</td>
-												<td>
-													<input autocomplete="off" type="text" name="invoice-total" placeholder="0" class="input fw-medium text-end">
-												</td>
-												<td>
-													<input data-popup="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
-													<label class="checkbox__label" for="invoice-checkbox"></label>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<div class="create-invoice__title-mobile fw-semibold">
-										Items
-									</div>
-
-									<table class="table table-create-invoice table-mobile fw-medium">
-										<tbody>
-
-											<tr>
-												<td>
-													<div class="table__date fw-bold">
-														11.05.2014
-													</div>
-													<div class="table__description">
-														Consulting
-													</div>
-												</td>
-												<td>
-													<div class="table__amount">
-														R 200.00
-													</div>
-													<div class="table__total">
-														1.0 × R 200.00
-													</div>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<div class="grey-line mt-4 mb-4 mobile-display-none"></div>
-
-									<div class="new-row-wrapper">
-										<div class="blue-button d-flex justify-content-center align-items-center fw-semibold new-row pc-element-flex"><img src="@img/icon-plus.svg" alt=""> <span>New Row</span></div>
-										<div class="new-row__items-wrapper pc-element">
-											<div class="new-row__items">
-												<div class="new-row__item fw-medium">Time Based Billing</div>
-												<div class="new-row__item fw-medium">Fixed amount Billing</div>
-												<div class="new-row__item fw-medium">Date 1 to Date 2 Billing</div>
-												<div class="new-row__item fw-medium">Expense/Disbursement</div>
-											</div>
-										</div>
-
-										<a href="enter-new-row.html" class="blue-button d-flex justify-content-center align-items-center fw-semibold new-row mobile-element-flex"><img src="@img/icon-plus.svg" alt=""> <span>Add New Row</span></a>
-									</div>
-
-									<div class="grey-line pc-element mt-4 mb-4"></div>
-
-									<div class="summary">
-										<div class="summary__content">
-											<div class="summary__row fw-medium">
-												<div class="summary__col">Sub Total</div>
-												<div class="summary__col summary__col--right">R 0.00</div>
-											</div>
-											<div class="summary__row fw-medium">
-												<div class="summary__col">VAT 0%</div>
-												<div class="summary__col summary__col--right">R 0.00</div>
-											</div>
-											<div class="grey-line"></div>
-											<div class="summary__row fw-bold">
-												<div class="summary__col">Total</div>
-												<div class="summary__col summary__col--right">R 0.00</div>
-											</div>
-											<div class="summary__row fw-bold bg-gray">
-												<div class="summary__col">Balance Due</div>
-												<div class="summary__col summary__col--right">R 0.00</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="grey-line pc-element mt-4 mb-4"></div>
-										
-									<div class="form-row form-row-details">
-										<div class="form-row__col">
-											<div class="form-row__label fw-semibold">Banking Details</div>
-											<input data-popup="#banking-details" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input fw-medium pc-element">
-											<a class="mobile-element" href="enter-client-details.html" class="button">
-												<div class="enter-details-button fw-medium">
-													Enter Banking Details
-												</div>
-											</a>
-										</div>
-										<div class="form-row__col">
-											<div class="add-note d-flex justify-content-center align-items-center fw-semibold">
-												<img src="@img/icon-plus-blue.svg" alt="">
-												<span>Add Note</span>
-											</div>
-										</div>
-									</div>
-
-									<div class="created fw-medium">
-										Created at <a href="https://www.invoicelegal.com" target="_blank">www.invoicelegal.com</a>
-									</div>
-
-								</div>
-								<!-- end of content-block -->
-
-								<div class="create-invoice-buttons">
-									<a href="#">
-										<div class="blue-button d-flex justify-content-center align-items-center fw-semibold grey-button">
-											Save as Draft
-										</div>
-									</a>
-									<a href="invoice-001.html">
-										<div class="blue-button d-flex justify-content-center align-items-center fw-semibold">
-											Done
-										</div>
-									</a>
-								</div>
-
+						<!-- content-block -->
+						<div class="content-block">
+							<div class="top-line">
+								<div class="top-line__title">INVOICE</div>
+								<img class="logo-company" src="@img/logo-company.svg" alt="company">
 							</div>
 
-
-							<div class="content__col content__col--narrow pc-element">
-
-								<!-- content-block -->
-								<div class="content-block">
-									<div class="choice-of-currency">
-										<div class="choice-of-currency__label fw-semibold">Currency</div>
-										<div class="choice-of-currency__select">
-											<select name="select-currency">
-												<option value="ZAR" selected>ZAR</option>
-												<option value="Euro">Euro</option>
-												<option value="Dollar">Dollar</option>
-											</select>
+							<div class="form-row">
+								<div class="form-row__col">
+									<div class="form-row__label fw-semibold">From :</div>
+									<textarea class="pc-element fw-medium" data-popup="#enter-your-details" name="from" id="from" cols="30" rows="7" placeholder="Enter Your Details"></textarea>
+									<a class="mobile-element" href="enter-your-details.html" class="button">
+										<div class="enter-details-button fw-medium">
+											Enter Your Details
 										</div>
+									</a>
+								</div>
+								<div class="form-row__col">
+									<div class="form-row__label fw-semibold">To :</div>
+									<textarea class="pc-element fw-medium" data-popup="#client-details" name="to" id="to" cols="30" rows="7" placeholder="Enter Client Details"></textarea>
+									<a class="mobile-element" href="enter-client-details.html" class="button">
+										<div class="enter-details-button fw-medium">
+											Enter Client Details
+										</div>
+									</a>
+								</div>
+
+								<div class="form-row__col mobile-element">
+									<div class="form-row__label fw-semibold">Invoice Details :</div>
+									<a class="mobile-element" href="enter-invoice-details.html" class="button">
+										<div class="enter-details-button fw-medium">
+											Enter Invoice Details
+										</div>
+									</a>
+								</div>
+								
+							</div>
+
+							<div class="pc-element">
+								<div class="grey-line mt-4 mb-4"></div>
+
+								<div class="form-row mb-4">
+									<div class="form-row__col">
+										<div class="form-row__label fw-semibold">Invoice Number</div>
+										<input autocomplete="off" type="text" name="invoice-number" placeholder="" class="input fw-medium" value="INV001">
 									</div>
-									<div class="choice-of-colour">
-										<div class="choice-of-colour__label fw-semibold">Colour</div>
-										
-										<div class="choice-of-colour__select fw-medium>
-											<div class="color-picker-wrapper">
-												<input class="fw-medium" type="color" id="colorPicker" name="colour">
-												<div class="color-placeholder">Select</div>
-												<img class="icon-colour" src="@img/icon-colour.svg" alt="colour">
-											</div>
-										</div>
+									<div class="form-row__col">
+										<div class="form-row__label fw-semibold">Date</div>
+										<input type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="19.02.2023" >
 									</div>
 								</div>
-								<!-- end of content-block -->
 
+								<div class="form-row mb-4">
+									<div class="form-row__col select-mini">
+										<div class="form-row__label fw-semibold">Invoice Due</div>
+										<select name="invoice-due">
+											<option value="0" selected>Select One</option>
+											<option value="7">7 Days</option>
+											<option value="30">30 Days</option>
+											<option value="90">90 Days</option>
+											<option value="custom">Custom</option>
+										</select>
+									</div>
+									<div class="form-row__col">
+										<div class="form-row__label fw-semibold">Rate per Hour</div>
+										<input autocomplete="off" type="text" name="invoice-rate-hour" placeholder="" class="input fw-medium" value="">
+									</div>
+								</div>
+							</div>
+
+							<div class="form-row">
+								<div class="form-row__col pc-element">
+									<div class="form-row__label fw-semibold">Rate per Day</div>
+									<input autocomplete="off" type="text" name="invoice-rate-day" placeholder="" class="input fw-medium" value="R 50.00">
+								</div>
+								<div class="form-row__col">
+									<div class="form-row__label fw-semibold">Matter/Subject</div>
+									<input autocomplete="off" type="text" name="invoice-matter" placeholder="" class="input fw-medium value="">
+								</div>
+							</div>
+
+							<div class="grey-line pc-element mt-4 mb-4"></div>
+
+							<table class="table table-create-invoice table-pc">
+								<thead class="fw-semibold">
+									<tr>
+										<th>Date</th>
+										<th>Description</th>
+										<th>Time Spent</th>
+										<th>Rate/Amount</th>
+										<th>Total</th>
+										<th>VAT</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="row1">
+										<td>
+											<input type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="Enter" >
+										</td>
+										<td class="table-create-invoice-textarea">
+											<textarea class="fw-medium" name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
+										</td>
+										<td>
+											<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input fw-medium text-end"  value="09:00">
+										</td>
+										<td>
+											<input autocomplete="off" type="text" name="invoice-amount" placeholder="0" class="input fw-medium text-end">
+										</td>
+										<td>
+											<input autocomplete="off" type="text" name="invoice-total" placeholder="0" class="input fw-medium text-end">
+										</td>
+										<td>
+											<input data-popup="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+											<label class="checkbox__label" for="invoice-checkbox"></label>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="create-invoice__title-mobile fw-semibold">
+								Items
+							</div>
+
+							<table class="table table-create-invoice table-mobile fw-medium">
+								<tbody>
+
+									<tr>
+										<td>
+											<div class="table__date fw-bold">
+												11.05.2014
+											</div>
+											<div class="table__description">
+												Consulting
+											</div>
+										</td>
+										<td>
+											<div class="table__amount">
+												R 200.00
+											</div>
+											<div class="table__total">
+												1.0 × R 200.00
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="grey-line mt-4 mb-4 mobile-display-none"></div>
+
+							<div class="new-row-wrapper">
+								<div class="blue-button d-flex justify-content-center align-items-center fw-semibold new-row pc-element-flex"><img src="@img/icon-plus.svg" alt=""> <span>New Row</span></div>
+								<div class="new-row__items-wrapper pc-element">
+									<div class="new-row__items">
+										<div class="new-row__item fw-medium">Time Based Billing</div>
+										<div class="new-row__item fw-medium">Fixed amount Billing</div>
+										<div class="new-row__item fw-medium">Date 1 to Date 2 Billing</div>
+										<div class="new-row__item fw-medium">Expense/Disbursement</div>
+									</div>
+								</div>
+
+								<a href="enter-new-row.html" class="blue-button d-flex justify-content-center align-items-center fw-semibold new-row mobile-element-flex"><img src="@img/icon-plus.svg" alt=""> <span>Add New Row</span></a>
+							</div>
+
+							<div class="grey-line pc-element mt-4 mb-4"></div>
+
+							<div class="summary">
+								<div class="summary__content">
+									<div class="summary__row fw-medium">
+										<div class="summary__col">Sub Total</div>
+										<div class="summary__col summary__col--right">R 0.00</div>
+									</div>
+									<div class="summary__row fw-medium">
+										<div class="summary__col">VAT 0%</div>
+										<div class="summary__col summary__col--right">R 0.00</div>
+									</div>
+									<div class="grey-line"></div>
+									<div class="summary__row fw-bold">
+										<div class="summary__col">Total</div>
+										<div class="summary__col summary__col--right">R 0.00</div>
+									</div>
+									<div class="summary__row fw-bold bg-gray">
+										<div class="summary__col">Balance Due</div>
+										<div class="summary__col summary__col--right">R 0.00</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="grey-line pc-element mt-4 mb-4"></div>
+								
+							<div class="form-row form-row-details">
+								<div class="form-row__col">
+									<div class="form-row__label fw-semibold">Banking Details</div>
+									<input data-popup="#banking-details" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input fw-medium pc-element">
+									<a class="mobile-element" href="enter-client-details.html" class="button">
+										<div class="enter-details-button fw-medium">
+											Enter Banking Details
+										</div>
+									</a>
+								</div>
+								<div class="form-row__col">
+									<div class="add-note d-flex justify-content-center align-items-center fw-semibold">
+										<img src="@img/icon-plus-blue.svg" alt="">
+										<span>Add Note</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="created fw-medium">
+								Created at <a href="https://www.invoicelegal.com" target="_blank">www.invoicelegal.com</a>
 							</div>
 
 						</div>
-					</div>
-				</section>
-				<!-- End of SECTION CONTENT -->
+						<!-- end of content-block -->
 
-			</main>
-			@@include('html/_footer.htm',{})
-		</div><!-- main-wrapper -->
+						<div class="create-invoice-buttons">
+							<a href="#">
+								<div class="blue-button d-flex justify-content-center align-items-center fw-semibold grey-button">
+									Save as Draft
+								</div>
+							</a>
+							<a href="invoice-001.html">
+								<div class="blue-button d-flex justify-content-center align-items-center fw-semibold">
+									Done
+								</div>
+							</a>
+						</div>
+
+					</div>
+
+
+					<div class="content__col content__col--narrow pc-element">
+
+						<!-- content-block -->
+						<div class="content-block">
+							<div class="choice-of-currency">
+								<div class="choice-of-currency__label fw-semibold">Currency</div>
+								<div class="choice-of-currency__select">
+									<select name="select-currency">
+										<option value="ZAR" selected>ZAR</option>
+										<option value="Euro">Euro</option>
+										<option value="Dollar">Dollar</option>
+									</select>
+								</div>
+							</div>
+							<div class="choice-of-colour">
+								<div class="choice-of-colour__label fw-semibold">Colour</div>
+								
+								<div class="choice-of-colour__select fw-medium>
+									<div class="color-picker-wrapper">
+										<input class="fw-medium" type="color" id="colorPicker" name="colour">
+										<div class="color-placeholder">Select</div>
+										<img class="icon-colour" src="@img/icon-colour.svg" alt="colour">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- end of content-block -->
+
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<!-- End of SECTION CONTENT -->
+		@@include('html/_footer.htm',{})
 		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})
 	</body>
