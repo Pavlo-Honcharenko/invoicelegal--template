@@ -17,35 +17,34 @@
 						<!-- content-block -->
 						<div class="content-block">
 							
-							<div class="popup__body">
+							<div class="details-body">
 								<div class="row">
-									
-									<div class="form-element-wrapper">
+									<div class="col-12 pb-2">
 										<label for="date" class="fw-semibold">Date</label>
 										<input id="date" type="text" name="invoice-date" class="input fw-medium datepicker" value="" placeholder="Enter Date" >
 									</div>
 
-									<div class="form-element-wrapper">
+									<div class="col-12 pb-2">
 										<label for="description" class="fw-semibold">Description</label>
 										<textarea class="fw-medium" name="invoice-description" id="" cols="30" rows="5"></textarea>
 									</div>
 									
-									<div class="form-element-wrapper">
+									<div class="col-12 pb-2">
 										<label for="ratePerHour" class="fw-semibold">Time Spent</label>
-										<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input fw-medium text-end" value="09:00">
+										<input data-bs-toggle="modal" data-bs-target="#enterTimeSpent" type="text" name="invoice-time" class="input fw-medium text-end" value="09:00">
 									</div>
-									<div class="form-element-wrapper">
+									<div class="col-12 pb-2">
 										<label for="rateAmount" class="fw-semibold">Rate / Amount</label>
 										<input id="rateAmount" autocomplete="off" type="text" name="invoice-rate-amount" placeholder="" class="input fw-medium" value="">
 									</div>
 
-									<div class="form-element-wrapper">
-										<input data-popup="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+									<div class="col-12 pb-2">
+										<input data-bs-toggle="modal" data-bs-target="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
 										<label class="checkbox__label fw-semibold" for="invoice-checkbox"></label>
 										<div class="vat-label fw-semibold">VAT</div>
 									</div>
 
-									<div class="form-element-wrapper">
+									<div class="col-12 pb-2">
 										<label for="total fw-semibold" class="fw-semibold">Total</label>
 										<input id="total" autocomplete="off" type="text" name="invoice-total" placeholder="" class="input fw-medium" value="">
 									</div>

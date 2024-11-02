@@ -22,7 +22,7 @@
 							<div class="form-row">
 								<div class="form-row__col">
 									<div class="form-row__label fw-semibold">From :</div>
-									<textarea class="pc-element fw-medium" data-popup="#enter-your-details" name="from" id="from" cols="30" rows="7" placeholder="Enter Your Details"></textarea>
+									<textarea class="pc-element fw-medium" data-bs-toggle="modal" data-bs-target="#enterYourDetails" name="from" id="from" cols="30" rows="7" placeholder="Enter Your Details"></textarea>
 									<a class="mobile-element" href="enter-your-details.html" class="button">
 										<div class="enter-details-button fw-medium">
 											Enter Your Details
@@ -31,7 +31,7 @@
 								</div>
 								<div class="form-row__col">
 									<div class="form-row__label fw-semibold">To :</div>
-									<textarea class="pc-element fw-medium" data-popup="#client-details" name="to" id="to" cols="30" rows="7" placeholder="Enter Client Details"></textarea>
+									<textarea class="pc-element fw-medium" data-bs-toggle="modal" data-bs-target="#enterClientDetails" name="to" id="to" cols="30" rows="7" placeholder="Enter Client Details"></textarea>
 									<a class="mobile-element" href="enter-client-details.html" class="button">
 										<div class="enter-details-button fw-medium">
 											Enter Client Details
@@ -65,9 +65,9 @@
 								</div>
 
 								<div class="form-row mb-4">
-									<div class="form-row__col select-mini">
+									<div class="form-row__col">
 										<div class="form-row__label fw-semibold">Invoice Due</div>
-										<select name="invoice-due">
+										<select name="invoice-due" class="form-select select-in-form">
 											<option value="0" selected>Select One</option>
 											<option value="7">7 Days</option>
 											<option value="30">30 Days</option>
@@ -115,7 +115,7 @@
 											<textarea class="fw-medium" name="invoice-description" cols="25" rows="4" placeholder="State work done"></textarea>
 										</td>
 										<td>
-											<input data-popup="#enter-time-spent" type="text" name="invoice-time" class="input fw-medium text-end"  value="09:00">
+											<input data-bs-toggle="modal" data-bs-target="#enterTimeSpent" type="text" name="invoice-time" class="input fw-medium text-end"  value="09:00">
 										</td>
 										<td>
 											<input autocomplete="off" type="text" name="invoice-amount" placeholder="0" class="input fw-medium text-end">
@@ -124,7 +124,7 @@
 											<input autocomplete="off" type="text" name="invoice-total" placeholder="0" class="input fw-medium text-end">
 										</td>
 										<td>
-											<input data-popup="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
+											<input data-bs-toggle="modal" data-bs-target="#vat" class="checkbox__input fw-medium" type="checkbox" value="1" name="invoice-checkbox" id="invoice-checkbox" checked>
 											<label class="checkbox__label" for="invoice-checkbox"></label>
 										</td>
 									</tr>
@@ -204,7 +204,7 @@
 							<div class="form-row form-row-details">
 								<div class="form-row__col">
 									<div class="form-row__label fw-semibold">Banking Details</div>
-									<input data-popup="#banking-details" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input fw-medium pc-element">
+									<input data-bs-toggle="modal" data-bs-target="#enterBankingDetails" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input fw-medium pc-element">
 									<a class="mobile-element" href="enter-client-details.html" class="button">
 										<div class="enter-details-button fw-medium">
 											Enter Banking Details

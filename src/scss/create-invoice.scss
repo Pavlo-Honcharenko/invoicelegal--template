@@ -125,7 +125,7 @@
 
 .table-create-invoice.table-mobile {
 	font-size: toRem(10);
-	border-collapse: separate;
+	border-pb-2apse: separate;
    border-spacing: 0 toRem(8);
 	background-color: #F4F1FF;
 	border: 1px solid #E3E5ED;
@@ -290,6 +290,15 @@
 			height: 40px;
 		}
 	}
+}
+.details-body label {
+	padding: 10px 0 12px;
+}
+.grey-button {
+	background-color: #757575;
+	width: 100%;
+	height: 40px;
+	color: #fff;
 }
 
 .form-element-note {

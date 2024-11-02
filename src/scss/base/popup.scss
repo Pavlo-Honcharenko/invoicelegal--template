@@ -1,185 +1,87 @@
-body::after {
-	content: "";
-	background-color: rgba(0, 0, 0, 0.5);
-	position: fixed;
+.modal-dialog {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	transition: opacity 0.8s ease 0s;
-	pointer-events: none;
-	z-index: 149;
+   max-width: 46.875rem;
 }
-.popup-show body::after {
-	opacity: 1;
-}
-.popup {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	padding: toRem(25) toRem(8);
-	transition: visibility 0.8s ease 0s;
-	visibility: hidden;
-	pointer-events: none;
-}
-.popup_show {
-	z-index: 150;
-	visibility: visible;
-	overflow: auto;
-	pointer-events: auto;
-}
-.popup_show .popup__content {
-	visibility: visible;
-	transform: scale(1);
-}
-.popup__wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	min-height: 100%;
-	flex: 1 1 auto;
-	width: 100%;
-}
-.popup__content {
-	visibility: hidden;
-	transform: scale(0);
-	transition: transform 0.3s ease 0s;
-	background-color: #fff;
-	padding: 0;
-	width: 100%;
-	max-width: toRem(750);
 
-	.lock & {
-		visibility: visible;
-		overflow: hidden;
-    	border-radius: 4px;
-	}
-}
-.popup__header {
+.modal-header {
 	background-color: #485D6B;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: toRem(19) toRem(25);
+	padding: toRem(19) toRem(20);
+	border-bottom: initial !important;
 }
-.popup__title {
+.modal-title {
 	font-size: toRem(17);
 	line-height: 120%;
 	color: #fff;
 }
+.modal-body {
+	padding: toRem(20);
 
-#newtarget, #all-actions {
-	.popup__content {
-		max-width: toRem(384);
-
-		@media (max-width:$mobile){
-			max-width: toRem(295);
-		}
+	label {
+		padding: 10px 0 12px;
 	}
 }
-.popup__body {
-	background-color: #fff;
-	padding: toRem(19) toRem(25);
+.modal-footer {
+	border-top: initial !important;
+	padding-top: 0;
+	padding-bottom: 25px;
 
-	@media (max-width:$mobile){
-		padding: 0; 
-	}
-
-	.row {
-		display: flex;
-		justify-content: space-between;
-		gap: toRem(29);
-		flex-wrap: wrap;
-
-		@media (max-width:$mobile){
-			gap: toRem(17);
-		}
-	}
-	.form-element-wrapper {
-		flex: 0 1 calc(50% - toRem(15));
-
-		@media (max-width:$mobile){
-			 flex: 1 1 100%; 
-		}
-	}
-	label {
-		font-size: toRem(14);
-		line-height: 141%;
-		color:#485D6B;
-		margin-bottom: toRem(8);
-
-		@media (max-width:$mobile){
-			font-size: toRem(13); 
-		}
-
-		@media (max-width:$mobileSmall){
-			font-size: toRem(12); 
-		}
-	}
-	.grey-button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #fff;
-		font-size: toRem(13);
-		text-align: center;
-		background-color: #BCBCBC;
-	}
-	.blue-button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: #fff;
-		font-size: toRem(13);
-		text-align: center;
-	}
-
-	.blue-button, .grey-button {
-		flex: 0 0 toRem(179);
-		height: toRem(42);
-		border-radius: 4px;
-		cursor: pointer;
-
-		@media (max-width:$tablet){
-			margin-bottom: toRem(42);
-		}
-
-		@media (max-width:$mobileSmall){
-			flex: 0 1 toRem(137);
-		}
-	}
 	.buttons-wrapper {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding-top: toRem(25);
-		gap: toRem(29);
+		gap: 1.5rem;
+		width: 100%;
+	}
 
-		@media (max-width:$mobile){
-			gap: toRem(17); 
-			padding-top: toRem(17);
-		}
+	.blue-button, .grey-button {
+		flex: 0 0 11.1875rem;
+		height: 2.625rem;
+		border-radius: 4px;
+		cursor: pointer;
 	}
 }
 
-#enter-time-spent {
-	.popup__content {
-		width: toRem(284);
+
+
+
+#newtarget, #all-actions {
+	.modal-dialog {
+		width: 100%;
+		max-width: toRem(384) !important;
+
+		@media (max-width:$mobile){
+			max-width: toRem(295) !important;
+		}
+	}
+}
+#setTarget {
+	.modal-dialog {
+		width: 100%;
+		max-width: toRem(380) !important;
+	}
+}
+#enterTimeSpent {
+	.modal-dialog {
+		width: 100%;
+		width: toRem(284) !important;
 	}
 
-	.popup__body {
+	.modal-body {
 		@media (max-width:$mobile){
-			padding: toRem(10) toRem(21) 0;
+			padding: toRem(10) toRem(20) 0;
 		}
 	}
 
-	.popup__header {
+	.modal-header {
 		background-color: #fff;
 	}
-	.popup__title {
+	.modal-title {
 		color: #485D6B;
 		display: flex;
 		align-items: center;
@@ -188,16 +90,21 @@ body::after {
 
 	.blue-button {
 		@media (max-width:$mobile){
-			 margin-bottom: toRem(25); 
+			margin-bottom: toRem(25); 
 		}
 	}
-		// .popup__close
-		&__close {}
 }
 .time-element-wrapper {
 	display: flex;
 	align-items: center;
 	gap: toRem(25);
+	&:not(:last-child) {
+		margin-bottom: 25px;
+	}
+	&:last-child {
+		margin-bottom: 10px;
+	}
+
 
 	input {
 		text-align: right;
@@ -210,10 +117,10 @@ body::after {
 }
 
 #vat {
-	.popup__content {
+	.modal-dialog {
 		max-width: toRem(380);
 	}
-	.vat-body__title {
+	.modal-title {
 		padding-top: toRem(8);
 		@media (max-width:$mobile){
 			 font-size: toRem(16);
@@ -226,7 +133,7 @@ body::after {
 		}
 	}
 	
-	.popup__body {
+	.modal-body {
 		@media (max-width:$mobile){
 			padding: toRem(10) toRem(21) 0;
 		}
@@ -239,14 +146,16 @@ body::after {
 
 
 .vat-body {
-	padding-bottom: toRem(33);
 	// .vat-body__title
 	&__title {
 		font-size: toRem(18);
 		line-height: 177%;
 		text-align: center;
 		color: #485D6B;
-		margin-bottom: toRem(25);
+	}
+	button {
+		max-width: 180px;
+		min-width: 180px;
 	}
 }
 .vat-choice-wrapper {
@@ -263,18 +172,4 @@ body::after {
 }
 .radio-input {
    transform: scale(1.3);
-}
-
-#settarget {
-
-	.popup__content {
-		max-width: toRem(380);
-	}
-	
-	@media (max-width:$tablet){
-		.popup__body {
-			padding: 20px 20px 0;
-		}
-	}
-
 }
