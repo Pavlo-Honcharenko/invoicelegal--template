@@ -1,7 +1,6 @@
 .content-block {
 	padding: toRem(33) toRem(25) toRem(25);
 	background-color: #fff;
-	border-radius: toRem(3);
 
 	@media (max-width: 1300px){
 		padding: toRem(25) toRem(25) toRem(17);
@@ -12,7 +11,7 @@
 	@media (max-width:$mobileSmall){
 		padding: toRem(20) toRem(15);
 	}
-}
+} 
 
 .top-line__title {
 	line-height: 100%;
@@ -52,18 +51,11 @@
 		margin-left: toRem(5) !important;
 	}
 	
-	.select_form {
-		// border: 1px solid #E3E5ED;
-		// border-radius: toRem(3);
-		// display: flex;
-		// align-items: center;
-	}
 	.select__title {
 		margin: toRem(4) toRem(8) toRem(4) toRem(8);
 	}
 }
 .top-line__amount {
-	text-align: right;
 	font-size: toRem(20);
 
 	@media (max-width:$tablet){
@@ -260,11 +252,11 @@
 		.select__body {
 			margin-bottom:  toRem(-3);
 		}
-		// .select__options {
-		// 	left: 0;
-		// 	top: calc(100% + 1px);
-		// }
 	}
+}
+.select_form {
+	display: flex;
+	align-items: center;
 }
 .content-block-2__col--right {
 	display: flex;
@@ -272,7 +264,7 @@
 }
 .set-target {
 	display: block;
-	padding: 0 0 toRem(4);
+	padding: 0 0 toRem(2);
 	font-size: toRem(15);
 	cursor: pointer;
 }
@@ -289,12 +281,6 @@
 		}
 	}
 
-	// @media (max-width:$mobile){
-	// 	 .select__option {
-	// 				font-size: toRem(13);
-	// 			} 
-	// }
-
 	@media (max-width:$mobileSmall){
 		 .top-line {
 			flex-wrap: wrap;
@@ -302,10 +288,6 @@
 			.top-line__select {
 				margin-left: auto;
 				margin-right: 0;
-
-				// .select__option {
-				// 	font-size: toRem(13);
-				// }
 			}
 
 			.top-line__amount {
@@ -517,7 +499,8 @@
 .table {
 	width: 100%;
 	border-spacing: 0;
-	border-pb-2apse: pb-2apse;
+	border-collapse: collapse;
+	color: #485d6b !important;
 
 	thead {
 		background-color: #F1F2F6;
@@ -576,10 +559,6 @@
 	th:last-child {
 		text-align: right;
 		padding: toRem(12) 12px toRem(12) toRem(20);
-
-		// @media (max-width: $mobile) {
-		// 	padding: toRem(10) 4% toRem(10) toRem(15);
-		// }
 	}
 }
 
@@ -601,7 +580,7 @@
 	.table-mobile td {
 		font-size: toRem(13);
 		@media (max-width:$mobileSmall){
-			 font-size: toRem(12); 
+			font-size: toRem(12); 
 		}
 	}
 	.table__client {
@@ -618,10 +597,6 @@
 
 .content-block-3 .select-mini {
 	margin-top: toRem(-5);
-
-	// .select_form {
-	// 	padding: toRem(1) toRem(10);
-	// }
 }
 
 #diagram1 {

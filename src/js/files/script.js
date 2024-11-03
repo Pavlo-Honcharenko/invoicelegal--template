@@ -4527,20 +4527,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-const actionsElement = document.querySelector('.actions');
-if (actionsElement) {
-	// Listen for a click event on the notifications element
-	actionsElement.addEventListener('click', function () {
-		// Toggle the class '_open' on the element with the class 'profile-menu'
-		const allActionsElement = document.querySelector('#all-actions');
-		if (allActionsElement) {
-			allActionsElement.classList.toggle('_open');
-		}
-	});
-}
-
 // Close the window with a list with all notifications:
 // Find the element with the class 'page'
 const pageElement = document.querySelector('.page');

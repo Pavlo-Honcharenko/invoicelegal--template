@@ -9,20 +9,21 @@
 		<div class="container main-container">
 			<div class="row">
 				<div class="col">
-					<div class="main-title__title fw-bold pt-lg-2 mt-4 mb-2">
+					<div class="main-title__title fw-bold pt-lg-2 mt-4 mb-2 d-flex align-items-center">
 						<h1>Welcome Home</h1>
 					</div>
 				</div>
 			</div>
+
 			
 			<div class="row">
-				<!-- Left Column (8 parts) -->
+				<!-- Left Column -->
 				<div class="col-xl-9 col-lg-8 col-12">
 					<div class="row">
 						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 1 -->
 							<div class="custom-column">
 								<!-- content-block-1 -->
-								<div class="content-block content-block-1">
+								<div class="content-block content-block-1 rounded">
 									<div class="top-line d-flex justify-content-between align-items-start pb-3">
 										<div class="top-line__title fw-bold top-line__title--main">Outstanding Invoices</div>
 										<a href="create-invoice.html" class="button-create-invoice d-flex justify-content-center align-items-center fw-semibold bg-primary">
@@ -45,9 +46,9 @@
 											<div class="statistic">
 
 												<div class="statistic__row">
-													<div class="statistic__col fw-medium">
+													<div class="statistic__col">
 														<div class="item-1__color"></div>
-														<div class="item-1__text">
+														<div class="item-1__text fw-medium">
 															1 - 30 days overdue
 														</div>
 													</div>
@@ -59,9 +60,9 @@
 												</div>
 
 												<div class="statistic__row">
-													<div class="statistic__col fw-medium">
+													<div class="statistic__col">
 														<div class="item-2__color"></div>
-														<div class="item-2__text">
+														<div class="item-2__text fw-medium">
 															31 - 60 days overdue
 														</div>
 													</div>
@@ -73,42 +74,42 @@
 												</div>
 
 												<div class="statistic__row">
-													<div class="statistic__col fw-medium">
+													<div class="statistic__col">
 														<div class="item-3__color"></div>
-														<div class="item-3__text">
+														<div class="item-3__text fw-medium">
 															61 - 90 days overdue
 														</div>
 													</div>
-													<div class="statistic__col statistic__col--right fw-medium">
-														<div class="item-3__result">
-															R <span class="diagram1-value">900.00</span>
+													<div class="statistic__col statistic__col--right">
+														<div class="item-3__result fw-medium">
+															R <span class="diagram1-value fw-medium">900.00</span>
 														</div>
 													</div>
 												</div>
 
 												<div class="statistic__row">
-													<div class="statistic__col fw-medium">
+													<div class="statistic__col">
 														<div class="item-4__color">
 															
 														</div>
-														<div class="item-4__text">
+														<div class="item-4__text fw-medium">
 															90 days + overdue
 														</div>
 													</div>
-													<div class="statistic__col statistic__col--right fw-medium">
-														<div class="item-4__result">
-															R <span class="diagram1-value">1,600.00</span>
+													<div class="statistic__col statistic__col--right">
+														<div class="item-4__result fw-medium">
+															R <span class="diagram1-value fw-medium">1,600.00</span>
 														</div>
 													</div>
 												</div>
 
 												<div class="statistic__row">
-													<div class="statistic__col fw-medium">
+													<div class="statistic__col">
 														<div class="total fw-semibold">
 															Total
 														</div>
 													</div>
-													<div class="statistic__col statistic__col--right fw-medium">
+													<div class="statistic__col statistic__col--right">
 														<div class="total fw-semibold">
 															R 3,800.00
 														</div>
@@ -123,14 +124,14 @@
 						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 2 -->
 							<div class="custom-column col-wide">
 								<!-- content-block-3 -->
-								<div class="content-block content-block-3" data-da=".col-narrow,993">
+								<div class="content-block content-block-3 rounded" data-da=".col-narrow,993">
 
-									<div class="top-line d-flex justify-content-between align-items-start border-bottom pb-3 mb-4">
-										<div class="top-line__title fw-bold">
+									<div class="top-line d-flex justify-content-between align-items-start border-bottom pb-4 mb-4">
+										<div class="top-line__title fw-bold me-3">
 											Paid Invoices
 										</div>
 										<div class="top-line__select select-mini ms-4">
-											<select name="months-paid-invoices" class="form-select">
+											<select name="months-paid-invoices" class="form-select rounded">
 												<option value="To Date">To Date</option>
 												<option value="Last Month" selected>Last Month</option>
 												<option value="Last 3 months">Last 3 months</option>
@@ -194,7 +195,7 @@
 													<div class="table__invoice">vvm1</div>
 													<div class="table__amount">R 1,600.00</div>
 												</td>
-												<td class="table__date fw-bold">
+												<td class="table__date fw-medium">
 													15.02.2023
 												</td>
 											</tr>
@@ -204,7 +205,7 @@
 													<div class="table__invoice">vvm2</div>
 													<div class="table__amount">R 200.00</div>
 												</td>
-												<td class="table__date fw-bold">
+												<td class="table__date fw-medium">
 													15.02.2023
 												</td>
 											</tr>
@@ -214,7 +215,7 @@
 													<div class="table__invoice">vvm3</div>
 													<div class="table__amount">R 200.00</div>
 												</td>
-												<td class="table__date fw-bold">
+												<td class="table__date fw-medium">
 													15.02.2023
 												</td>
 											</tr>
@@ -224,7 +225,7 @@
 													<div class="table__invoice">vvm4</div>
 													<div class="table__amount">R 300.00</div>
 												</td>
-												<td class="table__date fw-bold">
+												<td class="table__date fw-medium">
 													15.02.2023
 												</td>
 											</tr>
@@ -234,7 +235,7 @@
 													<div class="table__invoice">vvm5</div>
 													<div class="table__amount">R 600.00</div>
 												</td>
-												<td class="table__date fw-bold">
+												<td class="table__date fw-medium">
 													15.02.2023
 												</td>
 											</tr>
@@ -253,13 +254,13 @@
 					</div>
 				</div>
 
-				<!-- Right Column (4 parts) -->
+				<!-- Right Column -->
 				<div class="col-xl-3 col-lg-4 col-12">
 					<div class="row">
 						<div class="col-12 gy-3 gy-lg-4"> <!-- Inner Column 1 -->
 							<div class="custom-column col-narrow">
 								<!-- content-block-2 -->
-								<div class="content-block content-block-2" data-da=".col-wide,993">
+								<div class="content-block content-block-2 rounded" data-da=".col-wide,993">
 									<div class="content-block-2__title fw-bold">
 										Monthly Billing Target
 									</div>
@@ -280,8 +281,8 @@
 									</div>
 
 									<div class="row">
-										<div class="col-6 pb-2">
-											<span class="set-target fw-semibold" data-bs-toggle="modal" data-bs-target="#enterYourDetails">Set target</span>
+										<div class="col-6">
+											<span class="set-target fw-medium" data-bs-toggle="modal" data-bs-target="#enterYourDetails">Set target</span>
 										</div>
 										<div class="col-6 d-flex justify-content-end">
 											<select name="month-target" class="me-custom-n1">
@@ -298,7 +299,7 @@
 						<div class="col-12  gy-3 gy-lg-4"> <!-- Inner Column 2 -->
 							<div class="custom-column">
 								<!-- content-block-4 -->
-								<div class="content-block content-block-4">
+								<div class="content-block content-block-4 rounded">
 									<div class="content-block-4__title fw-bold">
 										Top 5 Clients
 									</div>
@@ -345,6 +346,7 @@
 				</div>
 			</div>
 		</div>
+
 
 		@@include('html/_popup.htm',{})
 		@@include('html/_js.htm',{})

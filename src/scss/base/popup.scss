@@ -90,7 +90,8 @@
 
 	.blue-button {
 		@media (max-width:$mobile){
-			margin-bottom: toRem(25); 
+			margin-top:  toRem(15);
+			margin-bottom: toRem(5); 
 		}
 	}
 }
@@ -123,13 +124,13 @@
 	.modal-title {
 		padding-top: toRem(8);
 		@media (max-width:$mobile){
-			 font-size: toRem(16);
-			 margin-bottom: toRem(17);
+			font-size: toRem(16);
+			margin-bottom: toRem(4);
 		}
 	}
 	.vat-choice-wrapper {
 		@media (max-width:$mobile){
-			 gap: toRem(50); 
+			gap: toRem(50); 
 		}
 	}
 	
@@ -156,6 +157,10 @@
 	button {
 		max-width: 180px;
 		min-width: 180px;
+
+		@media (max-width:$mobile){
+			 margin-bottom: 15px; 
+		}
 	}
 }
 .vat-choice-wrapper {
