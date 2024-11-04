@@ -1,5 +1,5 @@
 .content-block {
-	padding: toRem(33) toRem(25) toRem(25);
+	padding: toRem(25) toRem(25) toRem(25);
 	background-color: #fff;
 
 	@media (max-width: 1300px){
@@ -16,13 +16,15 @@
 .top-line__title {
 	line-height: 100%;
 	color:#485D6B;
-	font-size: toRem(20);
+	font-size: toRem(19);
+	padding-top: 10px;
+
 	@media (max-width:$tablet){
-		font-size: toRem(17);
+		font-size: toRem(18);
 	}
 	@media (max-width:$mobile){
 		margin-top: toRem(4); 
-		font-size: toRem(16);
+		font-size: toRem(17);
 	}
 }
 .top-line__title--main {
@@ -211,7 +213,8 @@
 			text-align: center;
 			margin-bottom: toRem(25);
 			color: #485D6B;
-			font-size: toRem(20);
+			font-size: toRem(19);
+			padding-top: 10px;
 
 			@media (max-width:$tablet){
 				font-size: toRem(18);
@@ -275,6 +278,10 @@
 		border-bottom: 1px solid #E3E5ED;
 		margin-bottom: toRem(25);
 
+		.top-line__title {
+			padding-top: 0;
+		}
+
 		@media (max-width:$mobileSmall){
 			border-bottom: initial;
 			margin-bottom: 0;
@@ -323,7 +330,7 @@
 		color: #485D6B;
 		padding-bottom: toRem(25);
 		border-bottom: 1px solid #F7F7F7;
-		font-size: toRem(20);
+		font-size: toRem(19);
 
 		@media (max-width:$tablet){
 			font-size: toRem(18);

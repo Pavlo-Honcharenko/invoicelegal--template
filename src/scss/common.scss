@@ -4,8 +4,28 @@
 		max-width: 100vw !important; 
 	}
 }
+@media (min-width: 992px) {
+    .container {
+        max-width: 920px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1130px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1195px;
+    }
+}
 h1 {
 	margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+	.h1, h1 {
+		font-size: 24px;
+	}
 }
 select {
 	padding-left: 8px;
@@ -23,6 +43,12 @@ select:focus {
 }
 .dropdown-menu {
 	z-index: 2;
+
+	.dropdown-item {
+		@media (min-width:$tablet){
+			font-size: 15px;
+		}
+	}
 }
 
 .main-container {
